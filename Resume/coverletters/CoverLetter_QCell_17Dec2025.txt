@@ -1,0 +1,17 @@
+Dear Hiring Team,
+
+I am writing to express interest in the Senior iOS Engineer position on Qcells’ Mobile Residential Applications team. The opportunity to build next-generation mobile experiences for solar homeowners and installers—particularly around system commissioning, real-time telemetry, and long-term engagement—aligns well with my background in native iOS development, mobile architecture, and building reliable, data-driven applications at scale.
+
+I currently serve as a Principal iOS Engineer at Walmart, where I lead development on mission-critical consumer mobile applications used at national scale. In this role, I collaborate closely with backend services, product managers, designers, and cross-functional partners to deliver intuitive, high-performance mobile experiences. Much of my work involves leading architectural discussions, setting engineering standards, and ensuring applications remain reliable under demanding real-world conditions—experience that translates directly to mobile systems supporting connected devices and real-time data.
+
+I have several decades of professional software development experience, with 15 years in native iOS development, and have developed deep expertise in the iOS world. I am comfortable designing modular, scalable architectures that account for offline behavior, synchronization, state management, and data visualization—key concerns for field-facing and homeowner-focused applications. I place a strong emphasis on code quality, performance, and maintainability, and I actively promote best practices through design reviews, code reviews, and mentorship.
+
+I do not have direct experience in the solar industry, but I have worked extensively in domains that require collaboration with hardware-adjacent teams and real-time data pipelines, including implementing reliable operations in imperfect network conditions. I enjoy learning new technical domains and have consistently ramped quickly in complex ecosystems by partnering closely with subject-matter experts and translating domain constraints into thoughtful mobile design decisions.
+
+In addition to my enterprise experience, I have independently developed and shipped numerous iOS applications across healthcare, education, and enterprise domains, which has reinforced a pragmatic, ownership-oriented approach to development. I am comfortable working across remote teams and time zones and value clear communication and collaboration as essential components of successful delivery.
+
+Qcells’ mission to make tomorrow greener through innovative solar technology intrigues me, and I would welcome the opportunity to contribute my mobile expertise to a product that delivers tangible, real-world impact. I look forward to the possibility of discussing how my experience could support your mobile platform and long-term vision.
+
+Thank you for your consideration.
+Sincerely,
+Douglas W. Sjoquist

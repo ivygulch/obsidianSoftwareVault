@@ -1,0 +1,125 @@
+Douglas W. Sjoquist                                       dwSjoquist@sunetos.com
+Sunetos, Inc.                                                    www.sunetos.com
+                                                                    January 2004
+
+Summary 
+  Experienced system architect with excellent communication, analysis, design 
+  and development skills. Strong background with multi-tier, distributed system 
+  design and development on handhelds (Palm OS, J2ME; PocketPC, Personal Java, 
+  Embedded Visual tools), servers (J2EE, JRun, Tomcat, JBoss, IBM WebSphere), 
+  application clients (Delphi, Java, Swing), and web clients (Servlets, JSP, 
+  Struts).  Rapid problem analysis with the ability to work with users in 
+  developing and refining requirements. Good grasp of how each piece fits in 
+  with organization's overall goals and needs.  Extensive experience with 
+  object oriented design and development.  Ability to learn and integrate new 
+  development techniques, tools, and skills quickly, soon becoming productive 
+  in the new environment. 
+
+Project Experience
+Java Servlet/Applet timecard (2003) 
+  Developed time card applet interface to existing small business accounting 
+  system that includes employee entry, modification and signing of hours and 
+  supervisor approval and printing. 
+Configurable real time engine data display (2003)
+  Developed prototype system to provide a user configurable display system for 
+  an integrated bridge system.  The system monitors and displays real time data 
+  feeds from multiple engines in text or graphics mode. 
+Port J2EE application from JBoss to WebSphere (2003) 
+  Ported human resources application from JBoss to IBM WebSphere. 
+Custom Java Servlet development (2003)
+  Supported an integrated university course information system with faculty 
+  submitted and maintained syllabi with custom servlets and applications.  
+  Developed a servlet wrapper around an existing Perl based on-line courses 
+  application.  Developed a custom Windows application to convert MS Word files 
+  to PDF.  Developed a servlet wrapper for conversion application to support 
+  web-based submission of documents to be converted.  Developed a control 
+  servlet that manages the links between course information, document 
+  conversion, on-line courses, and syllabi. 
+Web portal development / Java mentoring (2003) 
+  Assisted information technology personnel in an existing web portal project 
+  (Java/Servlet based running under Tomcat).  I assisted with the integration 
+  of their web portal with their LDAP server, existing network applications, 
+  and custom security modules. 
+Human resources employee evaluation web application (2002-2003) 
+  Developed workflow application using open-source J2EE/Java components 
+  (JBoss/Jetty/Jakarta Struts) for the creation, modification, and review of 
+  employee evaluations.  Supervisors, managers, and human resources personnel 
+  each have an active role to play in the automated workflow, making decisions 
+  that modify the evaluation, return it for further review, or send it farther 
+  in the workflow process.  
+J2EE Mentoring (2002) 
+  Mentored a client’s internal development group (Java developers) in the use 
+  of J2EE/EJB.  Trained key personnel in design guidelines for distributed 
+  architecture based on J2EE.  Assisted in migration of their custom Java 
+  framework to a J2EE/EJB framework using JBoss. 
+Subscription based web application for building a document library (2002) 
+  Developed role-based J2EE application (JBoss/Jetty) using JSP, Servlets, and 
+  EJB to allow an organization to build a community library of original 
+  documents (MS-Word, text, and HTML), abstracts, and other references.  The 
+  library allows custom categories, full text searching, and document browsing.  
+Data distribution and collection application with WinCE/PocketPC client (2002) 
+  Developed data distribution and collection application (Java) that allows a 
+  non-programmer to generate custom forms and wizards for use on a handheld 
+  client.  The administrator may then distribute data in XML format to handheld 
+  clients and allow automatic or selective updates after the client uploads the 
+  modified dataset. 
+System Analysis for a multi-tier, DII-COE system (2001) 
+  Analyzed components of several systems to develop set of requirements and 
+  level of effort for a logistical analysis tool for the Air Force that must 
+  comply with security and DII-COE (Defense Information Infrastructure, Common 
+  Operating Environment) 
+WRM-CA, War Reserve Materiel Capability Assessment (1999-2001) 
+  System architect and lead developer for this multi-tier, distributed 
+  component system.  The server layers are built on Allaire’s Enterprise Java 
+  Beans (EJB 1.1) server, JRun, with an Oracle database used for persistence 
+  and Java Message Service (JMS) used for automatic notification of clients and 
+  users.  The primary client interface is pure Java using Swing components.  
+  Portions of the server components are also accessible through a CORBA 
+  interface to provide a link with non-Java clients. 
+
+Douglas W. Sjoquist                                       dwSjoquist@sunetos.com
+Sunetos, Inc.                                                    www.sunetos.com
+                                                                    January 2004
+
+Design experience 
+  J2EE, Java 2 Enterprise Edition design and development     5 years
+  Multi-tier, distributed systems design and development     9 years
+  Software and database analysis, design, and development   24 years
+  Handheld systems design and development                    1 year
+  Peer to peer (P2P) design and development                  4 years
+  CORBA, Common Object Request Broker Architecture           2 years
+  Object oriented design and development                    15 years
+
+Languages and Tools experience 
+  Java             Intellij/Idea                             3 years
+                   Borland/JBuilder                          6 years
+  J2EE             Allaire/JRun                              4 years
+                   JBoss/Jetty                               3 years
+                   IBM WebSphere                             1 year
+  Delphi           Borland/Delphi                            9 years
+  Palm OS          Java 2 Micro Edition (J2ME)               1 year
+  PocketPC/WinCE   Personal Java                             1 year
+                   Embedded Visual tools                     1 year
+  SQL              Oracle, Microsoft                         9 years
+  Linux            Red Hat distribution                      4 years
+  CORBA            Inprise/VisiBroker                        2 years
+  Other databases  UniData RDBMS
+  Other languages  C, FORTRAN, UniBasic, COBOL
+
+Work Experience 
+  Sunetos, Inc.      1998-present
+                     Multi-tier, distributed system architect and developer
+  Synergy, Inc.      1996-1998
+                     Software design and development
+  Rotman & Sjoquist  1988-1996
+                     Extensive consulting and programming in a partnership
+  Cedarville College 1982-1996
+                     Various roles ending with Asst. Dir. of Computer Services
+  Cedarville College 1985-1994
+                     Adjunct Instructor, computer language courses
+  Custom development 1980-1988
+                     Custom software development for various businesses.
+
+Education 
+  B.A. Business Administration, Cedarville College, June 1982, GPA 3.5/4.0
+  Computer Information Systems emphasis

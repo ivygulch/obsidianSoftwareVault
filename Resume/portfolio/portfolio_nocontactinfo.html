@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Craftsman Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --bg-card: #141416;
+            --bg-card-hover: #1a1a1e;
+            --text-primary: #f5f5f7;
+            --text-secondary: #86868b;
+            --accent: #2997ff;
+            --accent-glow: rgba(41, 151, 255, 0.15);
+            --border: rgba(255, 255, 255, 0.08);
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --gradient-5: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Noise texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding: 80px 0;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            pointer-events: none;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+
+        .hero-eyebrow {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--accent);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease 0.1s forwards;
+        }
+
+        .hero-title span {
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease 0.2s forwards;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease 0.3s forwards;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 80px 0 120px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .section-note {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 28px;
+            align-items: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .project-card:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        .project-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .project-icon::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 20px;
+            background: inherit;
+            opacity: 0.3;
+            filter: blur(12px);
+            z-index: -1;
+        }
+
+        .project-content {
+            min-width: 0;
+        }
+
+        .project-category {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .project-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .project-badge {
+            font-size: 0.625rem;
+            font-weight: 600;
+            padding: 4px 8px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            border-radius: 4px;
+            letter-spacing: 0.05em;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        .project-meta {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .project-rating {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+
+        .project-rating svg {
+            color: #ffd60a;
+        }
+
+        .project-downloads {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+        }
+
+        .project-arrow {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover .project-arrow {
+            background: var(--accent);
+            transform: translateX(4px);
+        }
+
+        .project-arrow svg {
+            width: 18px;
+            height: 18px;
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        .project-card:hover .project-arrow svg {
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer-text {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .footer-text a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-text a:hover {
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .project-card {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 24px;
+            }
+
+            .project-icon {
+                width: 56px;
+                height: 56px;
+                font-size: 1.5rem;
+            }
+
+            .project-meta {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .hero-stats {
+                gap: 32px;
+            }
+
+            .stat-value {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="hero-eyebrow">iOS Craftsman</p>
+                <h1 class="hero-title"><span>Crafting exceptional mobile experiences</span></h1>
+                <p class="hero-subtitle">Principal Software Engineer with 15+ years building iOS applications for Fortune 100 companies, startups, and everything in between. Specialized in Swift and scalable mobile architecture.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">20M+</span>
+                        <span class="stat-label">App Store Ratings</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5+</span>
+                        <span class="stat-label">Industries</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Work</h2>
+                    <p class="section-note">Click to view on the App Store</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Walmart -->
+                    <a href="https://apps.apple.com/us/app/walmart-shopping-savings/id338137227" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon" style="background: var(--gradient-3);">
+                            🛒
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">Retail • Fortune 1</p>
+                            <h3 class="project-name">
+                                Walmart: Shopping & Savings
+                                <span class="project-badge">EDITORS' CHOICE</span>
+                            </h3>
+                            <p class="project-description">Lead iOS checkout development for the world's largest retailer. Building shopping experiences that serve millions of customers daily with real-time order tracking, Scan & Go, and seamless payment flows.</p>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                4.8
+                            </div>
+                            <p class="project-downloads">16M ratings</p>
+                            <div class="project-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sam's Club -->
+                    <a href="https://apps.apple.com/us/app/sams-club-pickup-delivery/id382497397" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon" style="background: var(--gradient-1);">
+                            📦
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">Retail • Warehouse Club</p>
+                            <h3 class="project-name">Sam's Club: Pickup & Delivery</h3>
+                            <p class="project-description">Core iOS development for the membership warehouse experience. Implementing Scan & Go checkout, curbside pickup workflows, and integrated fuel payment systems that streamline the in-club and digital shopping journey.</p>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                4.9
+                            </div>
+                            <p class="project-downloads">4.6M ratings</p>
+                            <div class="project-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharpen -->
+                    <a href="https://apps.apple.com/us/app/sharpen-college-exam-prep/id1595642363" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon" style="background: var(--gradient-4);">
+                            📚
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">EdTech • McGraw Hill</p>
+                            <h3 class="project-name">Sharpen - College Exam Prep</h3>
+                            <p class="project-description">Built an AI-powered study platform for college students. Features personalized learning paths, adaptive quizzes, bite-sized video content, and seamless textbook integration across 20+ academic disciplines.</p>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                4.7
+                            </div>
+                            <p class="project-downloads">2.7K ratings</p>
+                            <div class="project-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- TherexRX -->
+                    <a href="https://apps.apple.com/us/app/therexrx/id1116781780" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon" style="background: var(--gradient-2);">
+                            🏥
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">Healthcare • Medical</p>
+                            <h3 class="project-name">TherexRX</h3>
+                            <p class="project-description">Point-of-care clinical reference app for physical therapists and medical providers. Evidence-based exercise prescription with video instruction, research summaries, and patient education handouts.</p>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                3.4
+                            </div>
+                            <p class="project-downloads">Medical</p>
+                            <div class="project-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Showlead -->
+                    <a href="https://apps.apple.com/us/app/showlead/id1619121369" target="_blank" rel="noopener" class="project-card">
+                        <div class="project-icon" style="background: var(--gradient-5);">
+                            📊
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">Business • B2B</p>
+                            <h3 class="project-name">Showlead+</h3>
+                            <p class="project-description">Trade show lead retrieval solution for sales teams. Badge scanning, custom qualification workflows, offline sync capabilities, and CRM integration—built to work reliably in challenging convention environments.</p>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                New
+                            </div>
+                            <p class="project-downloads">Business</p>
+                            <div class="project-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

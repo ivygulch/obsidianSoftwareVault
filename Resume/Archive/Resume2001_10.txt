@@ -1,0 +1,83 @@
+Douglas W. Sjoquist	dwSjoquist@sunetos.com
+Sunetos, Inc.	www.sunetos.com
+October 2001
+
+Summary 
+Experienced system architect with excellent analysis, design and development skills. 
+Strong background with multi-tier, distributed system design and development on both 
+the Java and Win32 platforms.  Rapid problem analysis with the ability to work with 
+users in developing and refining requirements. Good grasp of how each piece fits in 
+with organization's overall goals and needs. Extensive experience with object oriented 
+design and development. Ability to learn and integrate new development techniques, 
+tools, and skills quickly, soon becoming productive in the new environment.
+
+Project Experience 
+	System Analysis for a multi-tier, DII-COE system (2001) 
+Analyzed components of several existing systems to develop initial set of requirements 
+and level of effort for a logistical analysis tool for the Air Force.  The new system 
+needed to comply with security and other external requirements such as DII-COE 
+(Defense Information Infrastructure, Common Operating Environment)
+WRM-CA, War Reserve Materiel Capability Assessment (1999-2001) 
+System architect and lead developer for this multi-tier, distributed component system.  
+The server layers are built on Allaire's Enterprise Java Beans (EJB 1.1) server, JRun, 
+with an Oracle database used for persistence and Java Message Service (JMS) used for 
+automatic notification of clients and users.  The primary client interface is pure Java 
+using Swing components.  Portions of the server components are also accessible 
+through a CORBA interface to provide a link with UTC-DT and other non-Java clients.
+CBP, Collaborative Beddown Planner (1999-2000) 
+CORBA (Common Object Request Broker Architecture) developer for this multi-tier, 
+distributed component system.  A CORBA interface was added to an existing Win32 
+application (Delphi) to use it as a server component in this EJB system. 
+ALA, Air Logistics Application (1998-1999)
+CORBA and Java developer for this multi-tier, distributed component system.  A 
+CORBA interface was added to an existing Win32 application (Delphi) to use it as a 
+server component in this Java/CORBA system. 
+UTC-DT, Unit Type Code Development and Tailoring (1996-1999)
+System architect and developer of this peer to peer system.  UTC-DT automates the 
+generation of equipment requirements based on user defined rules and enables 
+individuals to tailor those requirements.  It uses a custom peer-to-peer socket 
+communication protocol developed for this project to allow multiple users across a 
+LAN or the Internet to efficiently view and update the same detailed information.
+Client/server system for secure database access (1995-1996) 
+Developed the server and clients including book rental and sales, dormitory checkout, 
+and secure network requests for information from the administrative database such as 
+transcripts and account information.
+
+Douglas W. Sjoquist	dwSjoquist@sunetos.com
+Sunetos, Inc.	www.sunetos.com
+October 2001
+
+Design experience 
+Multi-tier, distributed systems design and development		7 years
+Peer to peer (P2P) design and development			3 years
+Database design and development					15 years
+CORBA, Common Object Request Broker Architecture		2 years
+Object oriented design and development				11 years
+J2EE, Java 2 Enterprise Edition design and development		2+ years
+Software analysis, design, and development			21 years
+
+Languages and Tools experience 
+Java			Borland/JBuilder				5 years
+J2EE		Allaire/JRun					2+ years
+Delphi		Borland/Delphi				7 years
+Palm OS		Java 2 Micro Edition (J2ME)			6 months
+SQL			Oracle, Microsoft 				7 years
+Linux		Red Hat distribution				2 years
+CORBA		Inprise/VisiBroker				2 years
+Other databases	UniData RDBMS				8 years
+Other languages	C, FORTRAN, UniBasic, COBOL		21 years
+
+Work Experience 
+Sunetos, Inc.		1998-present	Contract software design and development with an 
+emphasis on multi-tier, distributed component architectures
+Synergy, Inc.		1996-1998	Software design and development
+Rotman & Sjoquist	1988-1996	Extensive consulting and custom programming as part of a 
+partnership
+Cedarville College	1982-1996	Various roles beginning with programmer and ending with 
+Assistant Director of Computer Services
+Cedarville College	1985-1994	Adjunct Instructor, computer language courses
+Custom development	1980-1988	Custom software development for various businesses.
+
+Education 
+B.A. Business Administration, Cedarville College, June 1982, GPA 3.5/4.0
+Computer Information Systems emphasis

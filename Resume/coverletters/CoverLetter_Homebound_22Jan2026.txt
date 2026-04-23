@@ -1,0 +1,13 @@
+Homebound's mission to modernize residential construction is intriguing, and the opportunity to build mobile systems that power real-world field operations aligns very closely with the work I have been doing throughout my career. 
+
+I am currently a Principal Software Engineer at Walmart, where I lead the iOS checkout platform for one of the highest-traffic consumer mobile applications in the world. My responsibilities span end-to-end feature ownership, long-term architectural direction, CI/CD and release practices, performance and observability initiatives, and hands-on development that supports business-critical workflows. 
+
+Earlier in my career, I spent many years as an independent developer delivering custom mobile solutions across healthcare, logistics, and operations-heavy environments. That background, combined with large-scale platform leadership at Walmart, has given me a deep appreciation for offline-aware design, local data management, synchronization challenges, and building systems that real people depend on to do their jobs. 
+
+My technical background aligns with your stack and goals: modern Swift and SwiftUI development, unidirectional and reactive architectures, GraphQL integrations, strong testing and quality practices, and close partnership with product, design, and backend teams. I have also led mentoring, onboarding, and engineering standards efforts, and care deeply about developer experience and building sustainable mobile platforms. 
+
+Homebound’s focus on construction workflows, real-time field data, and intelligent tooling is particularly interesting. I've worked with several building contractors over the years in my personal life and have a feel for how complex the changing requirements can be. I would welcome the opportunity to discuss how my experience owning mission-critical mobile platforms could contribute to building the next generation of Homebound’s iOS applications. 
+
+Thank you for your time and consideration. I look forward to the possibility of speaking further.
+
+Sincerely, Doug Sjoquist

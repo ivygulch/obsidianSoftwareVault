@@ -1,0 +1,14 @@
+Dear Hiring Manager,
+
+I am applying for the Staff iOS Engineer role at Gabb. The combination of hands-on delivery and architectural leadership, with a focus on performance, reliability, and safe, family-focused products, closely matches the scope of my current work and long-term interests .
+
+My recent experience has been as principal software engineer at Walmart, leading the iOS checkout team, and several contract positions with other organizations. I have extensive experience leading large, production iOS platforms where I split my time between building features and setting architectural and quality standards across teams. My recent work has focused on Swift and modern iOS architecture, unidirectional and reactive designs, modularization with Swift Package Manager, and building highly testable systems using dependency injection and comprehensive unit and integration testing. I have led sustained efforts to improve crash-free sessions, reduce production defects, and raise engineering standards through automated testing, release readiness practices, and platform-level guidance.
+
+Gabb’s emphasis on performance, reliability, and operational metrics strongly aligns with how I operate. I have owned observability and reliability initiatives for high-traffic mobile systems, including instrumentation of critical user flows, crash and hang reduction, and continuous improvement of CI and release pipelines. I am comfortable using profiling and diagnostics tools to investigate memory, performance, and lifecycle issues, and I routinely partner with backend and platform teams to resolve end-to-end performance and stability problems.
+
+Setting technical direction for a multi-app and SDK-based mobile portfolio is particularly appealing. I have led modularization efforts, defined package boundaries, and evolved legacy codebases toward modern tooling while maintaining delivery velocity. I also bring a collaborative, pragmatic leadership style and a strong track record of guiding architectural decisions, mentoring engineers, and aligning product, design, QA, and backend partners around clear technical trade-offs.
+
+I would welcome the opportunity to help Gabb continue to build safe, reliable, and high-performance mobile experiences for families at scale.
+
+Sincerely,
+Doug Sjoquist

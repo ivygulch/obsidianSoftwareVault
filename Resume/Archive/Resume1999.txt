@@ -1,0 +1,90 @@
+Douglas W. Sjoquist
+Sunetos, Inc.
+dwSjoquist@sunetos.com
+www.sunetos.com
+
+Summary
+ Experienced system analyst with excellent design and programming skills. 
+ The ability to analyze problems rapidly and clearly, and then work with 
+ users in developing and refining requirements. Good grasp of how each 
+ piece fits in with organization's overall goals and needs. Extensive 
+ experience with object oriented programming. Ability to learn and 
+ integrate new development techniques, tools, and skills quickly, soon 
+ becoming productive in the new environment. 
+
+Development expertise
+ Proficient with Delphi Client/Server and JBuilder Client/Server, with 
+ extensive experience using SQL, Visibroker, Oracle database server, MS 
+ SQL Server, UniData, and other development tools. 
+
+Education
+ B.A. Business Administration, Cedarville College, June 1982, GPA 3.5/4.0
+ Computer Information Systems emphasis
+
+Major Software Projects
+
+War Reserver Material Capability Assessment (WRM-CA)
+ WRM-CA is currently being developed as a research project for the Air 
+ Force to track current status and allocation of equipment distributed 
+ around the world.  It is being developed with JBuilder 3 Enterprise 
+ with a distributed component architecture built around Enterprise Java 
+ Beans (EJB) and CORBA.  It will support collaborative work by 
+ geographically distant users using a graphical, map based user 
+ interface. 
+
+Unit Type Code Development and Tailoring (UTC-DT)
+ UTC-DT was developed for the Air Force to generate a list of 
+ required equipment based on a user defined constraints and rules.  
+ It is a collaborative, network based application based on 
+ distributed, replicated objects implemented with Delphi C/S.
+ Multiple users can view and edit the same dataset simultaneously 
+ with their changes propogated over the network to the other 
+ users.  
+
+Air Logistics Application (ALA)
+ ALA was developed for the Defense Advanced Research Projects Agency
+ (DARPA) as part of an integrated logistics planning tool. During 
+ the design and development, I
+ - helped develop the multi-tier architecture for ALA,
+ - encapsulated an existing application in a CORBA wrapper 
+   with Delphi C/S,
+ - designed and developed the multi-thread assessment tier,
+ - and wrote the interface between the GUI tier and a third party 
+   mapping component. 
+
+DataServer
+ DataServer was developed for use on Cedarville College's campus 
+ network.  It was developed to allow students and faculty to 
+ request electronic copies of personal or work-related information 
+ to be delivered to them via e-mail.  (It was developed before 
+ web-based forms processing was an available option.) 
+
+
+Other Software Projects
+- DOS protected mode client/server system for secure database access
+- Automated data transfers between disparate databases
+- Distributed requisition entry and approval system
+- On-line network surveys
+- Network and local MS Windows shell integration
+- Student loan application system
+- Optical mark scanner serial interface 
+- UniData data query and extraction language
+- UniData spool queue control
+
+Corporate Experience
+Sunetos, Inc.
+ 1998-present, Software development
+  Develop custom Delphi, Oracle, Java, and CORBA software under 
+  contract to Synergy for USAF and DARPA contracts.
+
+Synergy, Inc.
+ 1996-1998, System Analyst and Programmer
+  Develop software on contract to the Logistics Research division 
+  of the Air Force's Armstrong Labs 
+
+Cedarville College
+ 1987-1996, Assistant Director of Computer Services
+ 1985-1994, Adjunct Computer Programming Instructor
+ 1982-1987, Various positions within computer services
+ 1988-1996, Technical consultant to more than a dozen colleges.
+

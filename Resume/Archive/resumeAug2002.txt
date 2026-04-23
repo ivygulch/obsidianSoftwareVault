@@ -1,0 +1,84 @@
+Summary 
+
+Experienced system architect with excellent analysis, design and development skills. Strong background with multi-tier, distributed system design and development on handhelds (Palm OS, J2ME; PocketPC, Personal Java, Embedded Visual tools), servers (J2EE, JRun, JBoss), and clients (Delphi; Java, Swing).  Rapid problem analysis with the ability to work with users in developing and refining requirements. Good grasp of how each piece fits in with organization's overall goals and needs. Extensive experience with object oriented design and development. Ability to learn and integrate new development techniques, tools, and skills quickly, soon becoming productive in the new environment.
+
+Project Experience 
+
+- Subscription based web application for building a document library (2002) 
+
+Developed J2EE application (JBoss/Jetty) using JSP, Servlets, and EJB to 
+allow an organization to build a community library of original documents 
+(MS-Word, text, and HTML), abstracts, and other references.  The library 
+allows custom categories, full text searching, and document browsing.  
+Document access and submission is controlled by the administrator via user 
+roles.  Users register themselves but must respond to a server generated 
+e-mail validation request. 
+
+- Data distribution and collection application with WinCE/PocketPC client (2002) 
+
+Developed data distribution and collection application that allows a non-
+programmer to generate custom forms and wizards for use on a handheld 
+client.  The administrator may then distribute selected subsets of data 
+from the database (in XML format) to multiple handheld clients and allow 
+database updates (automatically or with selective approval of the 
+administrator) after the client uploads the modified dataset. 
+
+- System Analysis for a multi-tier, DII-COE system (2001) 
+
+Analyzed components of several existing systems to develop initial set of 
+requirements and level of effort for a logistical analysis tool for the 
+Air Force.  The new system needed to comply with security and other 
+external requirements such as DII-COE (Defense Information Infrastructure, 
+Common Operating Environment) 
+
+- WRM-CA, War Reserve Materiel Capability Assessment (1999-2001) 
+
+System architect and lead developer for this multi-tier, distributed 
+component system.  The server layers are built on Allaire’s Enterprise 
+Java Beans (EJB 1.1) server, JRun, with an Oracle database used for 
+persistence and Java Message Service (JMS) used for automatic notification 
+of clients and users.  The primary client interface is pure Java using 
+Swing components.  Portions of the server components are also accessible 
+through a CORBA interface to provide a link with UTC-DT and other non-Java 
+clients. 
+
+- CBP, Collaborative Beddown Planner (1999-2000) 
+
+CORBA (Common Object Request Broker Architecture) developer for this 
+multi-tier, distributed component system.  A CORBA interface was added to 
+an existing Win32 application (Delphi) to use it as a server component in 
+this EJB system. 
+
+- UTC-DT, Unit Type Code Development and Tailoring (1996-1999)
+
+System architect and developer of this peer to peer system.  UTC-DT 
+automates the generation of equipment requirements based on user defined 
+rules and enables individuals to tailor those requirements.  It uses a 
+custom peer-to-peer socket communication protocol developed for this 
+project to allow multiple users across a LAN or the Internet to 
+efficiently view and update the same detailed information. 
+
+Design experience 
+
+- Handheld systems design and development; 1 year
+- Multi-tier, distributed systems design and development; 8 years
+- Peer to peer (P2P) design and development; 4 years
+- Database design and development; 16 years
+- CORBA, Common Object Request Broker Architecture; 2 years
+- Object oriented design and development; 12 years
+- J2EE, Java 2 Enterprise Edition design and development; 4 years
+- Software analysis, design, and development; 22 years
+
+Languages and Tools experience 
+
+- Java; Borland/JBuilder, Intellij/IDEA; 6 years
+- J2EE; Allaire/JRun; 4 years; JBoss/Jetty; 1 year
+- Delphi; Borland/Delphi; 8 years
+- Palm OS; Java 2 Micro Edition (J2ME); 6 months
+- PocketPC/WinCE; Personal Java, Embedded Visual tools; 1 year
+- SQL; Oracle, Microsoft ; 8 years
+- Linux; Red Hat distribution; 2 years
+- CORBA; Inprise/VisiBroker; 2 years
+- Other databases; UniData RDBMS; 8 years
+- Other languages; C, FORTRAN, UniBasic, COBOL; 22 years
+

@@ -1,0 +1,23 @@
+Hello,
+
+I’m an experienced iOS engineer with over a decade of production mobile development and deep ownership of large-scale consumer applications. Most recently, I served as Principal iOS Engineer for Walmart Checkout, where I owned platform architecture and delivery for one of the highest-volume eCommerce systems in the world, supporting millions of daily users. Across my career, I’ve worked in both large organizations and small product teams, frequently joining existing codebases and becoming productive quickly. I’m now transitioning back into consulting and custom iOS work, and your project aligns very closely with the kind of impact-driven, growth-focused development I specialize in.
+
+My core strengths match your needs closely:
+• Subscription and growth systems: extensive experience implementing and evolving paywalls, upgrade flows, entitlement handling, analytics instrumentation, and conversion-critical features. I’ve led integrations of RevenueCat-style subscription systems and multiple analytics and experimentation platforms, building infrastructure that is measurable, testable, and resilient.
+• Modern + legacy codebases: expert-level Swift and UIKit, with production SwiftUI experience. My recent work includes shipping new SwiftUI features while incrementally modernizing large UIKit applications.
+• Data and reliability: experienced with Core Data–backed architectures, offline-first design, and complex synchronization and migration scenarios.
+• Rapid codebase ramp-up: I regularly join unfamiliar, business-critical systems and ship meaningful improvements quickly, without extended onboarding.
+• Growth experimentation: hands-on experience instrumenting products at Walmart and McGraw Hill, supporting A/B testing, and building tight feedback loops between product hypotheses and real-world data.
+From a working-style perspective, I operate as a true autonomous owner. I’m comfortable taking loosely defined goals, clarifying scope, proposing technical direction, and delivering iteratively with clear async communication. I routinely document decisions, write concise updates, and partner closely with product and design to ship polished, native experiences—even when requirements start rough.
+High-level background:
+• iOS experience: 15+ years shipping iOS apps; Principal Engineer leading checkout platform at Walmart; independent consultant building and maintaining 20+ client apps across healthcare, education, and consumer domains.
+• Team environments: solo consultant, small startup teams, and large multi-team organizations.
+• Shipped apps: large-scale retail/eCommerce, education, healthcare, and consumer utility apps. Sample portfolio: https://www.ivygulch.com/portfolio.html
+• Growth & tooling: subscriptions (including RevenueCat), analytics platforms, CI/CD ownership, automated testing, and observability.
+
+I’m happy to start with a small paid engagement to demonstrate fit and development velocity.
+
+Thank you for your time and consideration. I’d welcome the opportunity to discuss your apps, current growth goals, and where I could deliver the fastest impact.
+
+Best regards,
+Doug Sjoquist

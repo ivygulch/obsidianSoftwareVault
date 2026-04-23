@@ -1,0 +1,119 @@
+Douglas W. Sjoquist                        dwSjoquist@sunetos.com
+Sunetos, Inc.                                     www.sunetos.com
+                                                 October 15, 2000
+
+Summary
+  Experienced system architect with excellent analysis, design 
+  and development skills.  Strong background with distributed 
+  system design and development on both the Java and Win32 
+  platforms.  Rapid problem analysis with the ability to work 
+  with users in developing and refining requirements. Good grasp 
+  of how each piece fits in with organization's overall goals and 
+  needs. Extensive experience with object oriented design and 
+  development. Ability to learn and integrate new development 
+  techniques, tools, and skills quickly, soon becoming productive 
+  in the new environment. 
+
+Project Experience
+  WRM-CA, War Reserve Materiel Capability Assessment (1999-2000) 
+      System architect and lead developer for this distributed 
+      component system.  The server layers are built on Allaire's 
+      Enterprise Java Beans (EJB 1.1) server, JRun, with an 
+      Oracle database used for persistence and Java Message 
+      Service (JMS) used for automatic notification of clients 
+      and users.  The primary client interface is pure Java using 
+      Swing components.  Portions of the server components are 
+      also accessible through a CORBA interface to provide a link 
+      with UTC-DT and other non-Java clients. 
+  CBP, Collaborative Beddown Planner (1999-2000)
+      CORBA (Common Object Request Broker Architecture) developer 
+      for this distributed component system.  A CORBA interface 
+      was added to an existing Win32 application (Delphi) to use 
+      it as a server component in this system built on an EJB 
+      architecture. 
+  ALA, Air Logistics Application (1998-1999)
+      CORBA and Java developer for this distributed component 
+      system.  A CORBA interface was added to an existing Win32 
+      application (Delphi) to use it as a server component in 
+      this system built on a Java/CORBA architecture. 
+  UTC-DT, Unit Type Code Development and Tailoring (1996-1999)
+      System architect and developer of this peer to peer system.
+      UTC-DT automates the initial generation of equipment 
+      requirements based on user defined rules and enables 
+      individuals to tailor those requirements.  It uses a custom 
+      peer-to-peer socket communication protocol developed for 
+      this project to allow multiple users across a LAN or the 
+      Internet to view and update the same detailed information. 
+      After the initial data load, only the changes to the data 
+      are sent around the network to reduce the bandwidth 
+      requirements. 
+  Client/server system for secure database access (1995-1996)
+      Developed this system using local and server databases and 
+      the Novell SDK to run continuously and monitor various 
+      directories on the network for transaction files to
+      update secure database files. The client programs include 
+      book rental and sales, dormitory checkout, and secure 
+      network requests for information from the administrative 
+      database such as transcripts and account information. 
+  Distributed requisition entry and approval system (1992)
+      Developed this system for a client to allow departments to 
+      enter, maintain, and track their own requisitions. It used 
+      a rule based system to calculate and then track the 
+      necessary approvals required before a purchase order would 
+      be created. 
+  Novell tools and utilities (1993-1996)
+      Developed many tools and utilities for Cedarville to 
+      support their 1200+ station campus network and provide an 
+      integrated user experience prior to and during the growth 
+      of the World Wide Web. 
+  Unidata tools (1989-1996)
+      Developed query tools, import/export tools, and other 
+      utilities that were released to the public domain.  These 
+      popular tools have been widely used by UniData RDBMS users 
+      with great success to leverage their systems. 
+
+Design experience
+  Distributed systems design and development             6 years
+  Database design and development                        14 years
+  CORBA, Common Object Request Broker architecture       2 years
+  Object oriented design and development                 10 years
+  J2EE, Java 2 Enterprise Edition design and development 1+ years
+  Software analysis, design, and development             20 years
+
+Languages and Tools experience
+  CORBA            Inprise/VisiBroker                    2 years
+  J2EE             Allaire/JRun                          1+ years
+  Java             Borland/JBuilder                      3 years
+  Delphi           Borland/Delphi                        6 years
+  SQL              Oracle Database Server                4 years
+                   Microsoft SQL Server                  4 years
+  Other databases  UniData RDBMS                         8 years
+  Other languages  C, FORTRAN, UniBasic, COBOL           20 years
+
+Work Experience
+  Sunetos, Inc.       1998-present
+                        Contract software design and development 
+                        with an emphasis on distributed component 
+                        architectures 
+  Synergy, Inc.       1996-1998 
+                        Software design and development
+  Rotman & Sjoquist   1988-1996 
+                        Extensive consulting and custom 
+                        programming for more than a dozen 
+                        colleges and universities as part of a 
+                        partnership 
+  Cedarville College  1982-1996 
+                        Various roles beginning with programmer 
+                        and ending with Assistant Director of 
+                        Computer Services 
+  Cedarville College  1985-1994 
+                        Adjunct Instructor, various computer 
+                        language and application courses 
+  Custom development  1980-1988 
+                        Custom software development for various 
+                        businesses and organizations. 
+
+Education
+  B.A. Business Administration, Cedarville College, June 1982
+  Computer Information Systems emphasis
+

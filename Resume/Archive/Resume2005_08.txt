@@ -1,0 +1,115 @@
+Douglas W. Sjoquist                                       dwSjoquist@sunetos.com
+Sunetos, Inc.                                                    www.sunetos.com
+                                                                     August 2005
+
+Summary 
+  Experienced system architect with excellent communication, analysis, design  
+  and development skills. Strong background with multi-tier, distributed system 
+  design and development on servers (J2EE, Tomcat, JBoss, IBM WebSphere, BEA 
+  WebLogic, TIBCO BusinessWorks, TIBCO Rendezvous, Oracle,  IBM DB2), 
+  application clients (Java, Swing, Delphi), and web clients (Servlets, JSP, 
+  JSF, Struts), and handhelds (Palm OS, PocketPC, J2ME).  Rapid problem analysis 
+  with the ability to work with users in developing and refining requirements. 
+  Good grasp of how each piece fits in with organization's overall goals and 
+  needs.  Extensive experience with object oriented design and development.  
+  Ability to learn and integrate new development techniques, tools, and skills 
+  quickly, soon becoming productive in the new environment. 
+
+Project Experience
+Job posting and application web applications (2005) 
+  Developing job posting and job application web applications to allow HR 
+  department to quickly build new listings from existing postings or templates, 
+  allow current employees to apply over the corporate intranet, and others to 
+  apply over a secure internet application. 
+Software agent research prototype (2004-2005) 
+  Designed and developed java subsystems for a proof of concept distributed 
+  agent system: rule engine subsystem, end-user rule builder GUI, tracking 
+  subsystem, other subsystem APIs, and system utilities.  Mentored team members 
+  in J2EE design, Java patterns, and refactoring.  Worked with client 
+  representatives in developing roadmap for overall project. 
+Java Servlet/Applet timecard (2003) 
+  Developed time card applet interface to an existing small business accounting 
+  system including employee entry and signing of hours and supervisor approval 
+  and printing. 
+Configurable real time engine data display (2003)
+  Developed prototype system to provide a user configurable display system for 
+  an integrated bridge system for Navy small boats.  The system monitors and 
+  displays real time data feeds from multiple engines in text or graphics mode. 
+Port J2EE application from JBoss to WebSphere (2003) 
+  Ported human resources application from JBoss to IBM WebSphere. 
+Custom Java Servlet development (2003)
+  Supported an integrated university course information system with faculty 
+  submitted and maintained syllabi with custom servlets and applications.  
+  Developed a servlet wrapper around an existing Perl based on-line courses 
+  application, conversion applications to support web-based submission of 
+  documents, and controllers to manage the links between course information, 
+  documents, on-line courses, and syllabi. 
+Web portal development / Java mentoring (2003) 
+  Assisted information technology personnel in an existing web portal project 
+  and the integration with LDAP server, existing applications, and custom 
+  security modules. 
+Human resources employee evaluation web application (2002-2003) 
+  Developed workflow employee evaluation J2EE application.  Supervisors, 
+  managers, and human resources personnel each play an active role making 
+  decisions that modify the evaluation, return it for review, or send it further 
+  in the workflow process.  
+J2EE Mentoring (2002) 
+  Mentored a client's Java developers in the use of J2EE/EJB.  Trained key 
+  personnel in design guidelines and assisted in migration of their custom 
+  framework to JBoss. 
+Subscription based web application for building a document library (2002) 
+  Developed role-based J2EE application (JBoss/Jetty) using JSP, Servlets, and 
+  EJB to allow an organization to build a community library of original 
+  documents, abstracts, and other references with custom categories, full text 
+  searching, and browsing.  
+Data distribution and collection application with WinCE/PocketPC client (2002) 
+  Developed data distribution and collection application (J2ME) to allow a non-
+  programmer to generate custom forms and wizards for use on a handheld client.  
+  The administrator distributes data in XML format to handheld clients and 
+  performs automatic or selective updates after the client uploads the modified 
+  dataset. 
+WRM-CA, War Reserve Materiel Capability Assessment (1999-2001) 
+  System architect and lead developer for a multi-tier system using Java Message 
+  Service for automatic notification of clients and users and Java/Swing client.  
+  Portions of the server components are also accessible through a CORBA 
+  interface. 
+ 
+Design experience 
+  J2EE, Java 2 Enterprise Edition design and development       6 years
+  Web Services design and development                          1 year
+  Multi-tier, distributed systems design and development      10 years
+  Software and database analysis, design, and development     25 years
+  Handheld systems design and development                      1 year
+  Peer to peer (P2P) design and development                    5 years
+  CORBA, Common Object Request Broker Architecture             2 years
+  Object oriented design and development                      16 years
+
+Languages and Tools experience 
+  Java                                                         8 years
+  J2EE (IBM WebSphere, BEA WebLogic, Tomcat, JBoss)            6 years
+  TIBCO (BusinessWorks/Rendezvous)                             1+ years
+  Borland/Delphi                                              10 years
+  Palm OS/Java 2 Micro Edition (J2ME)                          1 year
+  PocketPC/WinCE                                               1 year
+  SQL (Oracle, Microsoft, DB2)                                 9 years
+  Others (CORBA, Pick/UniData, C/C++, FORTRAN, COBOL)
+
+
+
+Work Experience 
+  Sunetos, Inc.      1998-present
+                     Multi-tier, distributed system architect and developer
+  Synergy, Inc.      1996-1998
+                     Software design and development
+  Rotman & Sjoquist  1988-1996
+                     Extensive consulting and programming in a partnership
+  Cedarville College 1982-1996
+                     Various roles ending with Asst. Dir. of Computer Services
+  Cedarville College 1985-1994
+                     Adjunct Instructor, computer language courses
+  Custom development 1980-1988
+                     Custom software development for various businesses.
+
+Education 
+  B.A. Business Administration, Cedarville College, June 1982, GPA 3.5/4.0
+  Computer Information Systems emphasis
