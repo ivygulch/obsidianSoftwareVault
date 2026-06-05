@@ -12,12 +12,12 @@ team_size: "120+ iOS engineers (org); checkout team within"
 team_context: "platform owner, checkout"
 scale: "high-volume e-commerce"
 tech: [Swift, Combine, MVVM, UIKit, SwiftUI, XCTest, XCUITest, GraphQL, Swift Package Manager, CI/CD, Microsoft Copilot, Visual Studio, Builder.io, Figma]
-practices: [Technical Leadership, Code Review, Mentorship, iOS Architecture, Modularization, Release Management, Unit Testing, Integration Testing, UI Testing, Engineering Standards, AI-Assisted Development, Agentic Tooling Evaluation, Cross-Team Training]
-themes: [architecture, testing, mentorship, standards, platform-ownership, reactive, api-design, release-management, agentic-tooling, ai-development, training, builder-io, design-system-integration]
+practices: [Technical Leadership, Code Review, Mentorship, iOS Architecture, Modularization, Performance Optimization, Reliability Engineering, Release Management, Unit Testing, Integration Testing, UI Testing, Engineering Standards, AI-Assisted Development, Agentic Tooling Evaluation, Cross-Team Training]
+themes: [architecture, testing, mentorship, standards, platform-ownership, reactive, real-time, event-driven, scale, dau, api-design, release-management, agentic-tooling, ai-development, training, builder-io, design-system-integration]
 deliverables: [checkout-platform, ios-engineering-standards, testing-discipline, interview-onboarding]
 status: past
 created: 2026-04-22
-updated: 2026-04-22
+updated: 2026-06-04
 ---
 
 # Walmart - Checkout Platform 2021-2026
@@ -33,7 +33,10 @@ Principal Software Engineer with ownership over iOS technical strategy for check
 ## Achievements
 
 - Owned iOS technical strategy for checkout: architecture evolution, modularization, long-term platform maintainability. #architecture #platform-ownership
+- Responsible for the checkout flow in Walmart's flagship iOS app, serving 5–6 million daily active users. #scale #checkout #platform-ownership #dau
 - Architected unidirectional, reactive iOS systems in Swift and Combine with MVVM-style patterns. #architecture #reactive
+- Architected and scaled reactive iOS systems using Swift, Combine, and GraphQL for high-traffic checkout flows serving millions of users. #architecture #reactive #combine #graphql #scale
+- Drove real-time performance and reliability initiatives handling traffic spikes and event-driven interactions. #reliability #performance #real-time #event-driven
 - Established automated testing discipline (unit, integration, UI) with XCTest and XCUITest; raised coverage to ~85% with a measurable drop in post-release defects. #testing #metrics
 - Maintained 99.9%+ crash-free sessions; instrumented ~90% of core checkout flows. #reliability #metrics #instrumentation
 - Defined and enforced iOS engineering standards across architecture, performance, security, and testing for the full 120+ iOS engineer organization. #standards #leadership
@@ -56,6 +59,8 @@ _AI tooling arc at Walmart: early efforts (late 2024) centered on Microsoft Copi
 _Adoption scale: 80+ iOS engineers trained directly in live sessions, with additional engineers onboarded via session recordings. Builder.io was mandated by engineering management for all new iOS view work and offered as an option for updating existing views; adoption was actively growing across the 120+ iOS engineer organization at time of departure. Percentage-of-view-work numbers (if a target resume needs them) are still to be captured._
 
 _UI framework context: primary UI was UIKit (Swift + Combine + MVVM). SwiftUI was just beginning to ramp up during the Principal era; included in `tech` for ATS keyword match but was not a dominant framework on this engagement. Testing was XCTest and XCUITest throughout — Swift Testing (the newer framework) was not used here; that's FirefighterSpot and CLEAR era._
+
+_Scale figures: checkout flow cited at 5–6 million daily active users; "high-traffic / millions of users" and the real-time / traffic-spike / event-driven framing added 2026-06-04. Confirm the exact DAU number before a target resume leans on it._
 
 ## Related
 

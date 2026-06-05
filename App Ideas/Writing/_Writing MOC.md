@@ -4,3 +4,4 @@ Ideas, brainstorming, and research for app concepts related to authors or reader
 
 ## Ideas
 - [[StoryRiffs/StoryRiffs|StoryRiffs]] — Collaborative turn-based storytelling app (campfire stories + "yes, and")
+- [[TrailDraft/TrailDraft|TrailDraft]] — Hands-free, voice-controlled iOS dictation app for first-draft writing on the move (working name)

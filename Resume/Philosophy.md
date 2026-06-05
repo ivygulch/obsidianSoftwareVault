@@ -13,6 +13,27 @@ This vault is a queryable career database. The goal is to produce targeted resum
 
 The database is designed to be queried by Dataview across multiple axes — industry, employment type, technology, theme, date — so a targeted resume can be assembled from facts rather than copy-edited from a single master document.
 
+## Target output
+
+The end state this vault is designed for: a Claude session that takes two inputs —
+
+1. The contents of this Resume folder (the queryable career database).
+2. A job posting or contract description (the target).
+
+— and produces three **markdown** outputs that I paste manually into existing `.docx` resume templates:
+
+1. **ATS resume content** — reverse-chronological experience selected from engagements matching the target's requirements, with keyword matches and skills consolidated from frontmatter. Plain markdown bullets grouped by company / engagement.
+2. **Focused resume content** — pillar-forward narrative drawn from `Framing/`, with pillars and engagement bullets curated to address the target's emphasis areas.
+3. **Cover letter** addressing the specific needs, requirements, and questions stated in the posting — grounded in concrete engagements and bullets drawn from the database.
+
+No custom tool is needed — a Claude session with access to the vault and the posting is sufficient. Output is markdown; docx formatting is the template's job.
+
+The schema and structure of this vault are designed to make that generation reliable. **Conventions** (ATS-canonical casing in `tech` / `industry` / `practices`; atomic tagged bullets; engagement-level `concurrent_with` edges; pillar `pull_bullet_tags`; specific frontmatter field names) are tactical choices that serve generation — they can be revisited if they get in the way.
+
+**Core principles** — Engagement facts separated from Framing editorial; Private Notes never output; Record once, Link everywhere — are not overridden by generation needs. If a principle genuinely blocks generation, the generation approach is wrong, not the principle.
+
+Editorial policies (sourcing discipline, company About scope, Summary length) are between the two: more negotiable than principles, more deliberate than conventions.
+
 ## Core principles
 
 **Record once. Link everywhere.** Engagements hold all substantive content — bullets, scope, metrics, tech. Companies are navigation layers with entity-level metadata, nothing more. No narrative fact should live in two files.
