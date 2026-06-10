@@ -1,0 +1,11 @@
+I build iOS software that solves real business problems, from Walmart's checkout architecture to custom solutions as an independent contractor.
+
+At Walmart I joined the small team that rebuilt the flagship iOS app from scratch, then spent five years as Principal Software Engineer owning its checkout platform — the highest-stakes flow, serving 5–6 million daily users in a 120+ engineer iOS org.
+
+I've built apps for large enterprises, manufacturers, and startups — from Walmart's e-commerce app to a physical-therapy tool (TherexRx) to McGraw-Hill's Sharpen study app.
+
+I've led technically, mentored engineers, and I'm as comfortable on a team as owning a build end-to-end.
+
+I'm highly productive with modern LLM and agent harnesses like Claude Code, Codex, and GitHub Speckit, and at Walmart I led AI-tooling rollout and trained 80+ engineers.
+
+My forte is quickly understanding a client's needs, balancing budget against goals, and turning that into a plan that hits the objective.

@@ -12,8 +12,8 @@ team_size: "6-engineer iOS team"
 team_context: "senior subcontractor, mentor"
 scale: "flagship consumer app"
 tech: [Swift, Swift 6.2, SwiftUI, Swift Testing, Structured Concurrency, async/await, actors, iOS, Fastlane, Claude Code, Codex]
-practices: [iOS Architecture, Structured Concurrency Migration, Swift 6 Migration, Architecture Modernization, User Experience, Codebase Evaluation, Codebase Research, Technical Mentorship, Agentic Tooling Rollout, PRD Development, AI-Assisted Code Development, AI-Assisted Testing, CI/CD, Build Automation]
-themes: [architecture, concurrency, migration, modernization, user-experience, mentorship, agentic-tooling, current, codebase-research, prd, ci-cd, build-automation, travel]
+practices: [iOS Architecture, Structured Concurrency Migration, Swift 6 Migration, Architecture Modernization, User Experience, Codebase Evaluation, Codebase Research, Technical Mentorship, Agentic Tooling Rollout, AI-Assisted Code Development, AI-Assisted Testing, CI/CD, Build Automation]
+themes: [architecture, concurrency, migration, modernization, user-experience, mentorship, agentic-tooling, current, codebase-research, ci-cd, build-automation, travel]
 deliverables: [concurrency-migration-plan, architectural-recommendations, agentic-tooling-mentorship, ios-ux-enhancements]
 status: current
 created: 2026-04-22
@@ -35,13 +35,13 @@ Senior iOS subcontractor whose primary focus is enhancing the user experience of
 - Enhance the user experience of CLEAR's flagship iOS app — the primary focus of the engagement — for an airline-traveler user base. #user-experience #ux #ios #feature-delivery
 - Improve traveler-facing iOS flows in an app that syncs users' calendars to detect upcoming airline flights and surfaces flight details via a backend FlightAware integration. #user-experience #travel #ios
 - Research the flagship CLEAR iOS codebase using Claude Code and Codex to surface architectural patterns, technical debt, and improvement opportunities. #codebase-research #agentic-tooling #claude-code #codex
-- Develop architectural proposals and Product Requirements Documents (PRDs) with agentic tooling assisting both research and drafting. #architecture #prd #agentic-tooling
+- Develop architectural proposals with agentic tooling assisting both research and drafting. #architecture #agentic-tooling
 - Built out a phased plan to migrate CLEAR's production iOS app to Swift 6.2+ with structured concurrency — async/await, actors, `Sendable`, and strict concurrency checking. #concurrency #swift6 #structured-concurrency #migration-planning #architecture
 - Implementing the structured-concurrency migration step by step across the production codebase. #concurrency #swift6 #migration #ios #modernization
 - Apply Claude Code and Codex to day-to-day code assistance and test development across the flagship iOS app, using the same patterns carried over from other iOS client work. #code-assistance #testing #agentic-tooling
 - Use SwiftUI for all recent and new-feature work on the flagship iOS app, aligned with the team's modernization direction; write new test coverage with the Swift Testing framework. #swiftui #swift-testing #modernization
 - Maintain and extend the team's Fastlane CI/CD configuration for the flagship iOS app — currently updating and tweaking lanes as the team's build automation needs evolve. #fastlane #ci-cd #build-automation
-- Mentoring a six-engineer iOS team on integrating Claude Code and Codex into their day-to-day development workflow. #agentic-tooling #mentorship #leadership
+- Mentoring a six-engineer iOS team on development practices, modern Swift usage, and integrating agentic tooling (Claude Code, Codex) into their day-to-day workflow. #mentorship #leadership #modern-swift #agentic-tooling
 - Applying agentic tools across planning, specification, implementation, testing, verification, and deployment as accelerators for engineering judgment. #agentic-tooling #process
 
 ## Tech Stack

@@ -1,0 +1,21 @@
+Dear Ford EVDD Hiring Team,
+
+I'm applying for the Senior Software Engineer, iOS role on the Electric Vehicles, Digital and Design team. Building a customer-facing iOS app used by millions of drivers — software whose results literally show up on the road — is the kind of work I've spent my career on. For five years I was Principal Software Engineer on Walmart's iOS app, owning the checkout platform: the highest-stakes flow in a high-volume e-commerce app serving 5–6 million daily active users, inside a 120+ iOS engineer organization. Shipping reliable, customer-facing iOS at that scale, early and often, is exactly what the Ford App demands.
+
+On native iOS and Swift depth: I've shipped production iOS for fifteen-plus years across 20-plus apps, and my current work is in modern Swift 6.2 and SwiftUI. On CLEAR's flagship consumer app I'm leading the migration to Swift 6.2 structured concurrency — async/await, actors, Sendable, strict concurrency checking — across a live production codebase, building all new feature work in SwiftUI with the Swift Testing framework.
+
+On mobile architecture — modular design, state management, navigation: this is the center of how I work. At Walmart I architected checkout on a unidirectional, reactive design (Swift and Combine, MVVM-style) and modularized the app with Swift Package Manager so a large team could work in parallel behind clean boundaries; I also helped defined the iOS engineering standards — architecture, performance, security, testing — for the whole 120+ iOS engineer organization. Your "even better" list names the Composable Architecture, and it happens to be exactly what I'm building in right now: a SwiftUI app structured as a thin app shell plus SPM feature packages on TCA — reducers with injected dependencies, NavigationStack-based navigation modeled as data, and the business logic pinned under exhaustive TestStore tests. So TCA isn't a "working knowledge" checkbox for me; it's current, hands-on practice, on top of years of the unidirectional-reactive paradigm it formalizes.
+
+On CI/CD, Fastlane, and Ruby: I help maintain the Fastlane CI/CD configuration on CLEAR's flagship app.
+
+On testing and operations: I pushed our Walmart checkout team to reach and maintain 85% test coverage and held 99.9%+ crash-free sessions with around 90% instrumentation on core flows. Reliability, observability, and tracing production problems were standing commitments, not cleanup projects. I bring a strong testing ethos and I'm at home in agile teams shipping a shippable increment early and often.
+
+On working cross-functionally: defining standards and mentoring across a 120+ engineer organization meant influencing peers without authority. At the accessibility team's request I taught accessibility — the reasoning and the iOS implementation techniques — across Walmart's iOS engineering organization, served as an iOS interview bar-raiser, and collaborated closely with design, including leading the 2025 rollout of Builder.io that connected the design library to Figma to generate iOS views, and training 80+ engineers on it. I adapt how I communicate to engineering, product, and design, because a great customer experience depends on all three pulling together.
+
+On end-to-end ownership: my most recent independent engagement is the sharpest proof. I took a non-technical client's requirements all the way to a shipped version 1.0 — a local-first SwiftUI app on Swift 6.2 that synchronizes across devices, backed by a Supabase backend I built and operate — owning client, API, data, and rollout.
+
+I am based in the U.S. Eastern time zone, so a remote role is straightforward. I'd welcome a conversation on any of my experience. Thank you for considering the application.
+
+Regards,
+Doug Sjoquist
+dwsjoquist@sunetos.com

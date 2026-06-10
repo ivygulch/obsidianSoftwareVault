@@ -1,0 +1,27 @@
+Dear Speechify Hiring Team,
+
+I'm applying for the Software Engineer, iOS Core Product role, and the pull is personal before it's professional. I've spent years as a writer, I value literacy as much as anything I work on, and with the young people in my life I encourage them to learn to love reading however they can. That last part is why Speechify's mission lands for me: turning a PDF or a textbook into audio isn't a workaround, it's another doorway in — the same conviction that reading should never stand between someone and what they want to learn.
+
+It also runs straight into work I've led. At Walmart, at the request of the engineering accessibility team, I taught sessions across the iOS engineering organization on the reasoning behind accessibility and the techniques for building accessible iOS apps. A product built to remove reading as a barrier — for people with dyslexia, low vision, ADD, or a second language — on a complex, high-traffic iOS app at the intersection of AI and audio is squarely where I want to be.
+
+On supporting a large, growing user base and maintaining complex existing architecture. For five years I was Principal Software Engineer on Walmart's iOS checkout platform — the highest-stakes flow in a high-volume e-commerce app serving 5–6 million daily active users, inside a 120+ iOS engineer organization. I owned architecture evolution, modularization, and long-term maintainability of a large, inner-sourced codebase, not a greenfield. Before that I migrated the Sam's Club app from Objective-C to Swift with uninterrupted service for roughly 2 million daily users. Supporting a growing user base on an architecture you inherit and have to keep healthy is most of what I've done for the last decade.
+
+On the technical requirements, they line up directly:
+
+- Swift and SwiftUI — my primary stack. I ship all new work in SwiftUI on Swift 6.2 — daily on CLEAR's flagship iOS app, and end-to-end on the FirefighterSpot build (below).
+- Multithreading — I'm currently leading the migration of CLEAR's production iOS app to Swift 6.2 structured concurrency: async/await, actors, Sendable, and strict concurrency checking, phased across a live codebase. Concurrency correctness on a shipping app is current, hands-on work for me, not a textbook topic.
+- CI/CD and Fastlane — I maintain and extend the Fastlane CI/CD configuration on CLEAR's flagship app, tweaking lanes as the team's build-automation needs evolve.
+- SOLID principles — defining and enforcing iOS engineering standards across architecture, code quality, performance, security, and testing for a 120+ engineer organization is, in practice, the work of holding a codebase to single-responsibility and dependency-inversion discipline at scale. I architect to those principles and review others' code against them.
+- Git strategies — standard across every engagement; I've run trunk-based and feature-branch workflows on large multi-team codebases and small single-maintainer repos alike.
+
+On inception to traction, and on speed. Your "various products from inception to decent traction" is the through-line of my independent work — over 20 shipped iOS apps from idea to App Store across healthcare, retail, public safety, and aviation events. A recent independent engagement is the sharpest example: for FirefighterSpot, an iOS incident-management app for volunteer fire departments, I took a non-technical client's requirements all the way to a shipped version 1.0 — a local-first SwiftUI client that syncs across devices, backed by Supabase — owning client, backend, and rollout end-to-end. That pace comes partly from judgment about what ships now versus what needs time, and partly from agentic tooling — which is relevant to a company built on the AI-and-audio intersection. At Walmart I led the 2025 evaluation and rollout of Builder.io connecting the design library to Figma to generate iOS views, and trained 80+ engineers on it; I now use Claude Code and Codex across planning, implementation, and testing as accelerators for engineering judgment.
+
+On product thinking and customer obsession. On CLEAR, enhancing the traveler-facing user experience of the flagship app is my primary focus — feature and flow work driven by how the app should feel, not just whether it's correct — alongside architectural evaluation and mentoring the six-engineer iOS team. On McGraw-Hill's Sharpen study app I owned the onboarding, settings, and authentication features within a product-team cadence. I'm comfortable making product trade-offs with a designer in the room and defending them.
+
+A note on fit with your working model: a flat, fully distributed organization where leadership is earned through results is the environment I've deliberately moved toward. My most recent work is an independent end-to-end build and a senior role on a small iOS team at CLEAR — both remote, both with real ownership. I know when to engage and when to go heads down.
+
+I'd welcome a conversation, and I'm glad to share FirefighterSpot and the earlier consumer iOS apps as portfolio context. Thank you for considering the application.
+
+Regards,
+Douglas W. Sjoquist
+dwsjoquist@sunetos.com

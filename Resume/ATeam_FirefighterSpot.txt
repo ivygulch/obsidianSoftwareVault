@@ -1,0 +1,7 @@
+FirefighterSpot is an incident accountability and tracking app for volunteer fire departments — helping crews see who's on scene, their assignments, and their status in real time, where paper tags and radio check-ins fall short.
+
+Working from a non-technical client's vision, I designed and built the product end-to-end: a local-first iOS app (SwiftUI, Swift 6.2) that keeps working offline and syncs across devices, on a Supabase backend I built and operate. I turned requirements into clear specifications, shipped a working version 1.0, and iterated directly with the client and fire-department stakeholders.
+
+To move fast without cutting corners, I used modern LLM and agent harnesses — GitHub Speckit and Claude Code — across specification, implementation, and testing, with coverage in the Swift Testing framework.
+
+Idea to shipped v1.0, owned end-to-end by one engineer.

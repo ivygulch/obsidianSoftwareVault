@@ -11,7 +11,7 @@ industry: [E-Commerce, Retail, Mobile Applications]
 team_size: "120+ iOS engineers (org); checkout team within"
 team_context: "platform owner, checkout"
 scale: "high-volume e-commerce"
-tech: [Swift, Combine, MVVM, UIKit, SwiftUI, XCTest, XCUITest, GraphQL, Swift Package Manager, CI/CD, Microsoft Copilot, Visual Studio, Builder.io, Figma]
+tech: [Swift, Combine, MVVM, UIKit, SwiftUI, XCTest, XCUITest, GraphQL, Swift Package Manager, Microsoft Copilot, Visual Studio, Builder.io, Figma]
 practices: [Technical Leadership, Code Review, Mentorship, iOS Architecture, Modularization, Performance Optimization, Reliability Engineering, Release Management, Unit Testing, Integration Testing, UI Testing, Engineering Standards, AI-Assisted Development, Agentic Tooling Evaluation, Cross-Team Training]
 themes: [architecture, testing, mentorship, standards, platform-ownership, reactive, real-time, event-driven, scale, dau, api-design, release-management, agentic-tooling, ai-development, training, builder-io, design-system-integration]
 deliverables: [checkout-platform, ios-engineering-standards, testing-discipline, interview-onboarding]
@@ -40,9 +40,11 @@ Principal Software Engineer with ownership over iOS technical strategy for check
 - Established automated testing discipline (unit, integration, UI) with XCTest and XCUITest; raised coverage to ~85% with a measurable drop in post-release defects. #testing #metrics
 - Maintained 99.9%+ crash-free sessions; instrumented ~90% of core checkout flows. #reliability #metrics #instrumentation
 - Defined and enforced iOS engineering standards across architecture, performance, security, and testing for the full 120+ iOS engineer organization. #standards #leadership
+- At the request of the engineering accessibility team, taught sessions across the entire iOS engineering organization on the reasoning behind accessibility and iOS implementation techniques for building accessible apps. #accessibility #training #mentorship #standards #inclusive-design
 - Collaborated with backend teams on GraphQL schema design and mobile-optimized APIs for checkout and payments. #graphql #api-design #backend-collaboration
-- Owned CI/CD and release readiness; led multi-team delivery on a large inner-sourced codebase with frequent production releases. #ci-cd #release-management
-- Mentored 12+ engineers; built standardized iOS interview and onboarding materials. #mentorship #hiring #onboarding
+- Led multi-team delivery and release readiness on a large inner-sourced codebase with frequent production releases. #release-management
+- Mentored 12+ engineers and built standardized iOS onboarding materials. #mentorship #onboarding
+- Served as an iOS interview bar-raiser: developed standardized interview materials and interviewed dozens of prospective engineers each year. #hiring #bar-raiser #interviewing
 - Drove personal experimentation with AI development tooling across iOS work from late 2024 through February 2026 — beginning with Microsoft Copilot and Visual Studio, evaluating various Xcode plugins (most deficient for iOS-specific workflows), and expanding to design-integrated tooling as options matured. #agentic-tooling #ai-development #experimentation #microsoft-copilot
 - Led deep evaluation, training, and integration of Builder.io during 2025 — connecting Walmart's design library with Figma to generate and update iOS views. Engineering management subsequently mandated Builder.io for all new iOS view work and as an option for updating existing views; adoption was actively growing across the 120+ iOS engineer organization at time of departure. #builder-io #figma #design-system-integration #ai-development #view-generation #training #adoption-mandate
 - Participated in Walmart engineering working groups evaluating AI development tools for adoption across the 120+ iOS engineer organization — contributed evaluation criteria, hands-on usage assessments, and integration recommendations. #agentic-tooling #working-groups #evaluation #cross-team-leadership

@@ -42,7 +42,9 @@ Swift, iOS SDK, AWS (data lake), analytics SDKs, push notification services, ema
 
 ## Private Notes
 
-_Not for any resume._
+_Cleared for résumé and profile use (confirmed 2026-06-08); previously marked "not for any resume."_
+
+_Describe Sharpen as a "mobile study app." A "TikTok-style / short-video" characterization is unverified against this engagement record — don't use it unless confirmed._
 
 ## Related
 
