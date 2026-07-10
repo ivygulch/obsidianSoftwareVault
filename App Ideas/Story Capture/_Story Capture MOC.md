@@ -11,4 +11,4 @@ Apps for helping people record memories, life stories, and lessons to pass on. I
 - **Family & intergenerational** — shared family archives, grandparent↔grandchild prompts, recipe stories, reminiscence
 
 ## Ideas
-_None yet._
+- [[Passalong/Passalong|Passalong]] — grandparent↔grandchild story exchange with never-lose-a-word capture, family-owned data, optional faith prompt packs (working name)
