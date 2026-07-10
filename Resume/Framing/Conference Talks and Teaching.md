@@ -14,7 +14,7 @@ updated: 2026-04-23
 
 ### Conference Talks & Teaching
 
-- Sessions on automated testing (TDD, BDD, mocks), iOS architecture, and specialized techniques at 360iDev, CocoaConf, and local iOS meetups (CocoaHeads Columbus / Cincinnati / Cleveland / Indianapolis).
+- Sessions on automated testing (TDD, BDD, mocks), iOS architecture, in-app subscriptions (RevenueCat), and specialized techniques at 360iDev, CocoaConf, and local iOS meetups (CocoaHeads Columbus / Cincinnati / Cleveland / Indianapolis).
 - Co-organizer of Cincinnati CocoaDev.
 - Led accessibility and automated-testing training across Walmart's iOS engineering organization.
 
@@ -29,6 +29,7 @@ updated: 2026-04-23
 | 2013 | CocoaConf (DC, Dallas, Columbus) | Multiple technical and project-management sessions |
 | 2014 | CocoaConf (Columbus) | Brainstorming Creative Uses of iOS 8 Extensions |
 | 2014 | D2Cincinnati Digital Marketing Conference | Building a Stronger Customer Experience on Apple's Latest |
+| 2019 | Cincinnati CocoaHeads | Implementing iOS Subscriptions Without Losing Your Mind — real-world auto-renewable subscriptions with RevenueCat (live TherexRx implementation) |
 
 Plus regular presenter at CocoaHeads meetups across Columbus, Cincinnati, Cleveland, and Indianapolis.
 

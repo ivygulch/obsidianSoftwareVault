@@ -5,7 +5,7 @@ Ideas that have graduated from [[_App Ideas MOC|App Ideas]] into active work. Ea
 The vault holds planning and thinking. Code lives in Xcode projects (accessible via the xcode mcp server).
 
 ## Active Projects
-_(none yet)_
+- [[_Flighty App Routy Demo MOC|Flighty App Routy Demo]] — outreach package to land a meeting with Flighty's founder using the Routy flight-viz app
 
 ## Shelved
 _(none yet)_

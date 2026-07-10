@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "011b208cfefaf4b1",
+        "id": "ac076967343b4efa",
         "type": "tabs",
         "children": [
           {
-            "id": "6e2087c6fda623e1",
+            "id": "706274de876fb048",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "App Platform/Newsletter/_Newsletter MOC.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "_Newsletter MOC"
+              "title": "New tab"
             }
           }
         ]
@@ -182,6 +178,18 @@
   },
   "active": "86115139f3f8b8e1",
   "lastOpenFiles": [
+    "Resume/Generated/2026-06-30 1736 Twitch.md",
+    "Resume/Archive/Resume2026_06_26.pdf",
+    "Resume/Archive/~$sume2026_06_26.docx",
+    "Resume/Archive/Resume2026_06_26.docx",
+    "Resume/Generated/2026-06-26 1303 Pinterest.md",
+    "Resume/coverletters/QandA_RevenueCat_16Jun2026.txt",
+    "Research/Competitors/Expense Capture Apps — Landscape.md",
+    "Templates/Projects/Flighty App Routy Demo/Technical Readiness Plan.md",
+    "Templates/Projects/Flighty App Routy Demo/ChatGPT recommendations.md",
+    "Templates/Projects/Flighty App Routy Demo/Brief.md",
+    "Templates/Projects/Flighty App Routy Demo/_Flighty App Routy Demo MOC.md",
+    "App Platform/Newsletter/_Newsletter MOC.md",
     "Resume/Generated/2026-06-10 1513 Zillow.md.tmp.43869.c9cdb86911ac",
     "Resume/Archive/Resume2026_06_10.pdf",
     "Resume/Archive/~$sume2026_06_10.docx",
@@ -194,31 +202,19 @@
     "Resume/Generated/2026-04-26 2118 eBay.md",
     "Resume/Archive/~$sume2026_04_27.docx",
     "Resume/Archive/Resume2026_04_27.pdf",
-    "Resume/Archive/Resume2026_04_27.docx",
-    "Resume/Archive/~$mplate.docx",
-    "Resume/Archive/Template.docx",
     "Resume/Generated/_Generated MOC.md",
     "Resume/Generated/2026-04-23 2042 Zillow.md",
     "Resume/Generated/2026-04-23 2036 Hungryroot.md",
     "Resume/_Resume MOC.md",
-    "Resume/Generated",
     "Untitled.canvas",
     "Resume/Philosophy.md",
     "Resume/Archive/resume.md",
     "Resume/Framing/Pillar - Agentic Tooling.md",
     "Resume/Framing/Summary - iOS.md",
-    "Resume/Archive/resumeAug2002.txt",
     "Resume/Framing/Summary - Senior Staff iOS.md",
     "Resume/Career Preferences.md",
     "Resume/Framing/Earlier Career Summary.md",
     "Resume/Framing/Conference Talks and Teaching.md",
-    "Resume/Framing/_Framing MOC.md",
-    "Resume/Engagements/Walmart - Checkout Platform 2021-2026.md",
-    "Resume/Education.md",
-    "Resume/Framing/Pillar - Cross-Industry Delivery.md",
-    "Resume/Framing/Pillar - iOS Architecture Modern Stack.md",
-    "Resume/Framing/Summary - Principal iOS.md",
-    "Resume/Engagements/Walmart - Contractor iOS 2020-2021.md",
     "Resume/portfolio/walmart.webp",
     "Resume/portfolio/walmart.png",
     "Resume/portfolio/therexrx.webp",

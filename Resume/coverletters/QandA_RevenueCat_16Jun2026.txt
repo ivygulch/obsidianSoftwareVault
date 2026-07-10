@@ -1,0 +1,33 @@
+>> Why do you want to work at RevenueCat?
+
+I've implemented RevenueCat in a couple of client projects over the years (late 2018 and again in 2023) and really appreciate how good the design and approach is.
+
+I regularly listen to Sub Club and Launched podcasts, and met several from the team at Deep Dish Swift in Chicago this year, and I get the clear impression that RevenueCat would be a great place to work where I could make a solid contribution.
+
+>> What is an example of a non-computer system you've hacked to your advantage?
+
+I am a tinkerer at heart, whether in the garage, the wood shop, or around the house and yard. I am currently building a multi-level deck. I started with plans from an architect and engineer (for safety) but have been adjusting various components as I go. Each tweak reveals new challenges and opportunities, such as adding a spiral staircase from the upper level to the walkout patio underneath, and turning the mid-level portion of the deck into an island of sorts by building a custom stream from top of the slope down to a small pond at the level of the basement patio. 
+
+>> What task or activity do you think AI will make much easier or better for you by next year? Why can’t it do that well today?
+
+I have been building vaults with Obsidian recently, for my client work, my personal iOS projects, as well as some fiction writing projects. I have captured a lot of my existing work and selected older projects into those folders, and with the advances in AI and agent abilities, by next year, I envision AI helping synthesize any current ideas with past work and suggest ideas and combinations that I might not otherwise have discovered.
+
+>> Tell us about an agent coding session you are particularly proud of.Explain how you helped the LLM build initial context, how you decided on the implementation plan, and how you validated what was generated/changed.
+
+In January, I met a captain at a volunteer fire department in Long Island looking to develop an incident management app. It was a fixed price contract with a budget that normally I would have passed on. I took the contract as on opportunity to find out for myself how much something like claude or codex could help.
+
+Claude helped me develop clarifying questions and options as we negotiated the scope of the work, then helped break the work down into milestones that provided clear boundaries on the work that the client (not a technical person) understood. 
+
+I primarily used Claude Code and GitHub SpecKit to incrementally build out the app, adjusting as needed. It was also very helpful interpreting feedback from the client, whether written by him or transcribed by me from phone calls.
+
+In the end, the client received a working version of an incident management app suitable for planning and training that he was very pleased with. In addition, the tools allowed me to get much more done in a limited time, while still being very proud and confident in the resulting codebase. I was very satisfied with the amount of personal time I invested even with the lower project budget.
+
+(I'd be happy to share a TestFlight link or a copy of the repo, my client would be fine with that)
+
+>> What has been your best experience integrating an SDK (not RevenueCat) and why?
+
+I used Supabase for the FirefighterSpot application to provide a shared datastore for the multi-user portion of the app. The API was clean, and the SDK did not have abstractions that leaked out or required complicated integrations into the app. 
+
+>> What has been your worst experience integrating an SDK (not RevenueCat) and why?
+
+I don't have a specific SDK in mind, but over the years any SDK that requires multiple steps of configurations, has components that you are forced to use outside of the narrow confines of the API make things difficult. My primary method of integration is to wrap external dependencies behind an app-specific protocol that hides implementation details from the rest of the app -- any SDK that breaks that pattern hurts.

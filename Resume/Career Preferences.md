@@ -1,6 +1,6 @@
 ---
 type: career-preferences
-updated: 2026-04-23
+updated: 2026-06-18
 ---
 
 # Career Preferences
@@ -12,11 +12,12 @@ Strategic targeting guidance for resume variants, cover letters, and outbound re
 **Title-agnostic.** Staff, Senior, Principal, or any other label — the title doesn't decide. I've never been title-oriented. What matters is the work content, not the hierarchy position.
 
 **Core work wanted**:
-- High-level iOS engineering — architecture, mobile design, platform direction, hands-on senior-level IC work.
-- Collaboration with adjacent teams — backend, design, product, QA — at integration boundaries.
+- iOS engineering is the center of gravity — architecture, mobile design, platform direction, hands-on senior-level IC work on the client.
+- Supporting backend work is welcome — owning the services, APIs, and data the mobile product depends on, especially at integration boundaries. Full-stack roles where iOS leads and the backend serves it are a good fit.
+- Collaboration with adjacent teams — design, product, QA.
 
 **Out of scope by preference**:
-- Deep implementation work on non-iOS platforms. Happy to collaborate at the interface level, but don't want to be weighted toward Android development, backend implementation, web work, etc. as primary role scope.
+- Being weighted primarily toward non-iOS *client* development — Android, web/front-end frameworks, etc. Happy to collaborate at the interface level, but iOS should remain the primary client platform. (Backend work in support of the iOS product is in scope — see above.)
 
 **Salary**: must be reasonable. No documented floor; evaluate per opportunity.
 
