@@ -1,0 +1,13 @@
+Dear Thumbtack Growth Engineering team,
+
+The line in your posting about balancing "places we can be scrappy to test ideas quickly vs places we need to take more care" describes the two modes I've alternated between for the past decade — and earlier this year I ran both at once. From February to May I took an iOS incident-management app for volunteer fire departments from a non-technical client's requirements to a shipped v1.0, solo, spec-first, owning the SwiftUI client and the Supabase backend end-to-end. During the same period I was the Principal engineer who had owned Walmart's iOS checkout platform — the app's final conversion step — where the standard was ~85% automated test coverage, 99.9%+ crash-free sessions, and instrumentation across ~90% of core flows, because a misstep there costs real revenue at millions-of-users scale. Knowing which of those postures a given change deserves is, as far as I can tell, the actual job you're describing.
+
+CAGE's specific ground — login, auth, onboarding, and understanding users early in their journey — is work I've shipped recently. On McGraw-Hill's Sharpen study app I delivered the onboarding, authentication, and settings features, worked on the RevenueCat-based subscription paywall and purchase/restore flows including free-trial eligibility handling, and integrated five analytics tools so the product team could see what users actually did. That's the same shape as your team's mandate: fundamentals done right, plus measurement to learn from.
+
+Your cross-functional expectations match how I've worked at every scale. At Walmart I collaborated with backend teams on GraphQL schema design for mobile-optimized checkout APIs, led multi-team release readiness on a frequently-deployed inner-sourced codebase, mentored 12+ engineers, and communicated status and risk to stakeholders as a matter of course — checkout is where everyone's projects converge, so proactively raising blockers was survival, not process.
+
+On "explore new frameworks and discuss when (or when not) to use them": I evaluated AI-assisted Xcode plugins at Walmart and recommended against them as deficient for iOS workflows, then helped evaluate and integrate Builder.io connecting our design library with Figma — which engineering management adopted as the standard for new iOS view work — and trained 80+ engineers on it. Today I use Claude Code and Codex daily and mentor a six-engineer iOS team at CLEAR on the same judgment: these tools accelerate engineering decisions, they don't replace them.
+
+I'd welcome a conversation about where CAGE is heading and what the first two quarters of this role look like. Thank you for considering my application.
+
+Douglas Sjoquist
