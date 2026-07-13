@@ -34,8 +34,11 @@ Space (root, no FKs)
 │   └── Note (sessionID FK; authorPersonID plain UUID; atOffset;
 │              kind: follow-up | clarification | special | edit-note;
 │              storyID plain UUID once resolvable)          ← live notes, roadmap
-└── Question (spaceID FK; askedOf as optional plain UUID → Person)
+└── Question (spaceID FK; askedOf as optional plain UUID → Person;
+    │          prepNotes text — brief-note-level preparation)
     ├── QuestionAsker (questionID FK; askerPersonID plain UUID → Person)   ← many askers per question
+    ├── QuestionMedia (questionID FK; media BLOB *or* url TEXT; caption;
+    │                  addedBy plain UUID)   ← prep material: photos/videos on-device or linked
     └── Story (questionID FK; sessionID plain UUID; startOffset in session;
         │      duration, transcript text w/ timed segments)
         ├── StoryTeller (storyID FK; tellerPersonID plain UUID → Person)   ← many tellers per story
