@@ -66,6 +66,8 @@ Competitive matrix for the **creative writer dictating long-form prose during ph
 
 **Strategic read**: the competitive niche is thin, which is encouraging. But the niche may be thin because the audience is small — the audience-size risk already named under Why It Might Not. Empty niches are moats only when there's a viable audience inside them; research before leaving `seed` should focus on whether enough outdoor-active dictating writers exist to support a paid app, not just whether competitors do.
 
+**Standing criterion (2026-07-13): dictation itself is not a product.** Apple commoditizes speech-to-text a little more every OS release (SpeechAnalyzer in iOS 26; major systemwide dictation accuracy gains and conversational Voice Control in iOS 27 — see [[../../../Research/Tech/iOS 27 Features Relevant to App Ideas]]). If this idea's core value ever reduces to "it transcribes while you walk," kill it. The only defensible core is the layer above dictation: the session model — hands-free section marking and traversal, in-session editorial decisions (tag/delete/annotate while fresh), and voice access to outline and reference material mid-draft. Every scoping decision should protect that layer and treat transcription as a platform-provided commodity underneath it.
+
 ## Why It Could Work
 
 - Real, repeated personal pain — the proof that the problem exists is the workflow this is built to fix.
