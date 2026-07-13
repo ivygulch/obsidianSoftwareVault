@@ -29,12 +29,22 @@ Space (root, no FKs)
 │            a Person may have no device/account, e.g. the v1 storyteller;
 │            kinship/role is NOT a column — roles are per-story)
 ├── Entitlement (spaceID FK = PRIMARY KEY; activeThrough)   ← one-to-at-most-one pattern
+├── Session (spaceID FK; startedAt — the canonical session clock;
+│   │         location/label; all timing below is session-relative)
+│   └── Note (sessionID FK; authorPersonID plain UUID; atOffset;
+│              kind: follow-up | clarification | special | edit-note;
+│              storyID plain UUID once resolvable)          ← live notes, roadmap
 └── Question (spaceID FK; askedOf as optional plain UUID → Person)
     ├── QuestionAsker (questionID FK; askerPersonID plain UUID → Person)   ← many askers per question
-    └── Story (questionID FK; duration, transcript text)
+    └── Story (questionID FK; sessionID plain UUID; startOffset in session;
+        │      duration, transcript text w/ timed segments)
         ├── StoryTeller (storyID FK; tellerPersonID plain UUID → Person)   ← many tellers per story
         └── StoryAudio (storyID FK = PRIMARY KEY; audio BLOB) ← asset table pattern
+             (roadmap: becomes Recording rows — multiple per story for
+              multi-device capture; deviceLabel + alignment offset)
 ```
+
+_(Tree-rule decision made explicit with the Session addition: Story cannot hold FKs to both Question and Session — the **Question link is the structural FK** (the ask→answer chain drives sharing traversal and the notification loop) and `sessionID` is a plain UUID. Session hangs off Space directly, carrying the canonical clock; Notes hang off Session. This is the third application of the same pattern: one real FK up the tree, everything else plain-UUID.)_
 
 _(Sketch updated 2026-07-13, twice. First: `Person` replaces `Member` per the association-agnostic + elder-no-device decisions — account-holding members and device-less storytellers are one table; roles are per-story, never a person type. Second: **multiple tellers per story and multiple askers per question** via `StoryTeller` / `QuestionAsker` child tables. This is the general recipe for many-to-many under the single-FK tree rule: the child row's one real FK points up the tree (so it shares/syncs), and the Person side is a plain-UUID reference (app-enforced integrity). Bonus over a JSON-array column: each association is its own row, so two kids adding themselves as askers from different devices **merge naturally instead of last-write-wins clobbering an array** — a real sync-correctness win, not just style.)_
 
