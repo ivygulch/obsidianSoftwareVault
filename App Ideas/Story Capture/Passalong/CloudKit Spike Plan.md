@@ -33,6 +33,7 @@ One custom zone = one family space. Records: `Space` (root/metadata), `Entitleme
 ### Stage 1 — Sync-layer decision (0.5 day)
 Read SQLiteData SyncEngine's sharing API against the model above. Questions: Can a share cover the whole space (zone-wide or root-hierarchy) rather than per-record? Do `CKAsset`-scale blobs ride it? Can a non-owner write records (kid asks a question) into the shared space? What iOS floor does it impose?
 **Output:** Arm A or Arm B, with reasons. No pass/fail — this is a fork, not a gate. Note the stakes beyond plumbing: Arm B's SQLite-as-source-of-truth posture is also the Android-later hedge (see the guardrails section in [[Passalong]]) — if Arm A wins, the spike write-up must say how CK types stay quarantined anyway.
+**→ DONE 2026-07-13: Arm B selected.** See [[CloudKit Spike Results]] Stage 1 — includes the single-FK tree schema constraint, automatic BLOB→CKAsset confirmation, and the no-per-record-ACL finding that amends Stage 5.
 
 ### Stage 2 — Shared space + audio round-trip (1 day) → scope (a)
 Organizer creates space, shares to Elder, both devices exchange: Elder records audio answers at realistic sizes — 1 min (~1 MB), 10 min (~10 MB), 45 min (~45 MB AAC) — Organizer receives; Kid (or Organizer) sends questions the other direction. Measure upload/download times on Wi-Fi and on LTE (or Link Conditioner "3G" profile). Test mid-transfer interruptions: airplane mode during upload, app kill during download.
@@ -50,8 +51,8 @@ After Stage 2's assets exist: on both devices check Settings → Apple ID → iC
 **CONSTRAINT finding if:** billing model differs from expectation — that rewrites onboarding copy and possibly the whole storage story.
 
 ### Stage 5 — Entitlement propagation (0.5 day) → scope (d)
-Organizer flips `Entitlement.activeThrough`; measure time-to-visible on Elder's device via (i) silent push (database subscription / sync-engine notification) and (ii) foreground fetch. Also verify a participant **cannot** modify the entitlement record (permissions: owner-writable, participant-readable).
-**PASS:** foreground fetch reflects the change in seconds; push arrives typically <1 min; participants can't self-entitle by editing the record.
+Organizer flips `Entitlement.activeThrough`; measure time-to-visible on Elder's device via (i) silent push (database subscription / sync-engine notification) and (ii) foreground fetch. ~~Also verify a participant cannot modify the entitlement record~~ **Amended per Stage 1 finding:** CloudKit share permissions are per-participant for the whole share — no per-record ACL exists, so a readWrite participant *can* technically edit the entitlement row. Accepted (same threat model as receipt spoofing: a family hacking its own pass). The stage instead documents the write model honestly and confirms app-level gating ignores participant-written entitlement changes where feasible.
+**PASS:** foreground fetch reflects the change in seconds; push arrives typically <1 min; the accepted write-model is documented in the results.
 **Design note to confirm in writing:** feature gating uses last-known-value with a grace window, so propagation latency can never lock a grandmother out mid-recording.
 
 ### Stage 6 — No-Apple-device fallback (0.5 day, research not code) → scope (e)

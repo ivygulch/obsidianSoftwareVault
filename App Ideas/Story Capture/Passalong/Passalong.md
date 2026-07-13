@@ -10,7 +10,9 @@ updated: 2026-07-10
 
 _Working name — replace when the real branding lands._
 
-**One-liner:** A family story exchange where grandparents and grandchildren send each other questions and answer in their own voice — built so a recording is never lost and the family owns every word forever.
+**One-liner:** A visit companion for families — grandchildren bring questions, grandparents tell stories, and the recording happens *together, in person* — built so a recording is never lost and the family owns every word forever.
+
+**Product intent (2026-07-13):** the driving goal is to **facilitate and encourage in-person visits** — the app deepens time spent together; it does not substitute for it. Remote-only async exchange must be *possible* long-range, but it is not the v1 driver. Every v1 scoping decision reads against "does this make the visit better?"
 
 **Target user:** Multi-generation families spread across the country. The *user* spans ages (grandparent recording, grandkid asking); the *buyer* is the adult child in the middle who fears the stories will die with the storyteller.
 
@@ -30,13 +32,15 @@ Low infrastructure, real content burden. CloudKit means no servers to run and no
 
 **Kill criteria:**
 1. **CloudKit sharing spike fails** — if the shared-zone model can't pass the spike scope below, and the fallback requires running my own backend, the no-server privacy moat collapses; re-evaluate before writing feature code. Spike must verify: (a) shared-zone `CKAsset` audio at realistic sizes syncing to all participants; (b) invite/accept flow across different Apple IDs in different Apple Family groups, tolerable for a non-technical elder; (c) storage accounting — confirm assets in the shared zone count against the *zone owner's* iCloud quota and measure real consumption per story; (d) an entitlement record written by the owner propagating to participants promptly enough to gate features; (e) behavior when a participant has no Apple device — what a web/read-only fallback would require.
-2. **Beta families don't finish** — recruit ≥5 families (mine plus four not related to me); if fewer than half complete a 10-story exchange within 6 weeks, the homework problem has beaten the design and the mechanic isn't retention-proof.
+2. **Beta families don't finish** — recruit ≥5 families (mine plus four not related to me); if fewer than half capture 10 stories within 6 weeks — **measured primarily as in-person visit sessions, with queued-question prep counted as engagement, not completion** — the homework problem has beaten the design and the mechanic isn't retention-proof. (Reframed 2026-07-13 for the in-person product intent; a family that only exchanges remotely is not v1 validation.)
 3. **Incumbent ships the same thing** — if StoryWorth or Remento launches a native iOS app with credible capture reliability before my v1, the whitespace is gone; compete only if the bidirectional exchange still isn't theirs.
 4. **Gift season flops** — if the first holiday season after launch converts poorly (family-plan sales fail to cover the year's costs, i.e. low hundreds of units), the gift thesis is wrong and the idea goes to Shelved with data attached.
 
 ## Concept
 
-Two roles, one loop. A family space holds members across generations. Anyone can send a question ("Grandpa, what's the dumbest thing you did in college?"); the recipient answers in voice (or video later), in one tap, guided one question at a time — never a questionnaire. Answers become a growing, listenable family archive; stories can also flow unprompted ("I want to tell you about my brother").
+Two roles, one loop, centered on the visit. A family space holds members across generations. Between visits, grandkids (and parents) **queue questions** ("Grandpa, what's the dumbest thing you did in college?"). During the visit, the app becomes the **recording session**: grandkid asks in person, grandparent answers aloud, one question at a time — a campfire activity, not a questionnaire, and never a phone held between two people (design for the device set down, not held up). Afterwards, the answers are a growing, listenable family archive synced to everyone; stories can also flow unprompted ("I want to tell you about my brother").
+
+**Remote mode (long-range, not v1): a live family session, not async exchange.** The preferred remote shape mirrors the visit — something like a FaceTime call where multiple family members are in the *same discussion session*, asking and responding to questions live. Not Capsle-style async ping-pong; solo async answering of a queued question remains only as a minimal fallback. Candidate architecture that keeps the no-server model: **SharePlay / Group Activities** choreographs the session over FaceTime (everyone sees the current question, whose turn it is), while **each device records its own speaker's audio locally** at full quality and the clips sync into the family space via CloudKit afterwards — FaceTime carries the call, CloudKit carries the archive, no Passalong servers. Unverified; needs its own spike when remote mode approaches (SharePlay cannot record FaceTime AV streams — the local-capture-per-device design is the workaround, and its recording-consent UX needs deliberate design).
 
 - **Capture engine first.** Recording writes to disk continuously; an interruption (call, alarm, crash, dead battery) costs seconds, not the session. Retake a clip, resume a story, edit the transcript's names. This is the engineering center of gravity and the marketing headline.
 - **Prompts as editorial product.** Age-banded question packs (asking-up and telling-down), seasonal packs, and optional faith packs — testimony, blessings, letters-for-later, "what I believe and why." Prompt craft is a writer's job; that's an unfair advantage, not a cost.
@@ -117,6 +121,7 @@ _Full teardown: [[../../../Research/Competitors/Family Story & Legacy Capture Ap
 - I am the target user twice over: grandfather of seven (ages 1–16) and the adult child who lost a brother with too little recorded. Beta family included.
 - Faith prompt packs open a confirmed-empty niche with a distribution channel (churches, Bible study networks) I personally have.
 - The two strongest channels are both insider ground: church networks (board member, adult-class teacher) and the homeschool world (homeschooled four kids through high school — co-ops, conferences, unit studies). Early marketing runs on standing, not ad spend.
+- The in-person positioning is uncontested: every surveyed incumbent is remote/async-first (StoryWorth email prompts, Remento web recording, Capsle/withyou send-a-question). "The app you open when you're together" competes with no one directly, and StoryCorps' co-located interview — the one mechanic with a decade of proof — is exactly this shape. It also strengthens the channels that were already strongest: reunions, holidays, homeschool visits to grandparents, church gatherings are all in-person moments.
 
 ## Why It Might Not
 
@@ -124,7 +129,9 @@ _Full teardown: [[../../../Research/Competitors/Family Story & Legacy Capture Ap
 - StoryWorth/Remento can enter any time with brand, email lists, and book fulfillment already built. The whitespace is structural only until it isn't.
 - CloudKit sharing across a mixed-device extended family is unproven for this use (kill criterion #1); the privacy moat depends on it.
 - Elder-side UX is unforgiving; one bad first session with a 78-year-old ends the family's use. Capsle's obscurity may mean the market is smaller than its reviews suggest.
-- Two-sided prompting needs kids to actually ask — if engagement has to be parent-puppeteered, the "exchange" collapses into StoryWorth-with-extra-steps.
+- Two-sided prompting needs kids to actually ask — if engagement has to be parent-puppeteered, the "exchange" collapses into StoryWorth-with-extra-steps. (Softened but not removed by the in-person reframe: a grandkid asking across the kitchen table with a prompt in hand is far more natural than asking through an app — but someone still has to open the app during the visit.)
+- App-mediated presence can backfire: a phone in the middle of a visit reads as intrusion, especially to this grandparent generation. The design must make the device recede (set down and recording, not held up and operated), and the beta must watch for "the app made the visit worse" as a failure mode no metric will catch on its own.
+- Visit frequency bounds usage: a visit-centered app for a family that gathers three times a year has three usage moments — the queued-questions ritual between visits has to carry engagement, or the app is remembered as fondly and rarely as a board game in the closet.
 
 ## Open Questions
 
@@ -134,6 +141,7 @@ _Full teardown: [[../../../Research/Competitors/Family Story & Legacy Capture Ap
 - Non-Apple relatives: web playback page? Android member as second-class listener? Where's the line before the no-server model breaks?
 - Organizational packs: will churches actually buy and distribute passes (test with 2–3 partner churches via manual invoicing before building redemption), and does app-side code redemption for org-purchased passes clear App Review guideline 3.1.1?
 - What does the 6-week/10-story beta actually measure — completion, or delight? Define the instrument before recruiting families.
+- Remote live sessions (post-v1): does SharePlay/Group Activities support the session choreography we need, and does per-device local recording during a FaceTime call hold up technically and socially (consent, who's-recording indicators, elder comfort on camera)? Separate spike before remote mode is scheduled.
 
 ## Related
 
