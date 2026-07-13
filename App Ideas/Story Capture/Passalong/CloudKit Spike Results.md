@@ -25,12 +25,18 @@ Sketch that satisfies the tree rule:
 
 ```
 Space (root, no FKs)
-├── Member (spaceID FK; display name, role)
+├── Person (spaceID FK; display name, photo; optional accountUserID —
+│            a Person may have no device/account, e.g. the v1 storyteller;
+│            kinship/role is NOT a column — roles are per-story)
 ├── Entitlement (spaceID FK = PRIMARY KEY; activeThrough)   ← one-to-at-most-one pattern
-└── Question (spaceID FK; askedBy/askedOf as plain UUIDs)
+└── Question (spaceID FK; askedOf as optional plain UUID → Person)
+    ├── QuestionAsker (questionID FK; askerPersonID plain UUID → Person)   ← many askers per question
     └── Story (questionID FK; duration, transcript text)
+        ├── StoryTeller (storyID FK; tellerPersonID plain UUID → Person)   ← many tellers per story
         └── StoryAudio (storyID FK = PRIMARY KEY; audio BLOB) ← asset table pattern
 ```
+
+_(Sketch updated 2026-07-13, twice. First: `Person` replaces `Member` per the association-agnostic + elder-no-device decisions — account-holding members and device-less storytellers are one table; roles are per-story, never a person type. Second: **multiple tellers per story and multiple askers per question** via `StoryTeller` / `QuestionAsker` child tables. This is the general recipe for many-to-many under the single-FK tree rule: the child row's one real FK points up the tree (so it shares/syncs), and the Person side is a plain-UUID reference (app-enforced integrity). Bonus over a JSON-array column: each association is its own row, so two kids adding themselves as askers from different devices **merge naturally instead of last-write-wins clobbering an array** — a real sync-correctness win, not just style.)_
 
 **Do audio-scale blobs ride it? YES — first-party answer.** From the library docs, verbatim: *"The library packages all BLOB columns in a table into CKAssets and seamlessly decodes CKAssets back into your tables."* Docs explicitly recommend the separate-asset-table pattern (`StoryAudio` above). CKAsset limits are effectively unbounded for our sizes. Stage 2 still must verify real-device behavior at 45-minute sizes with interruptions — the mechanism exists; the reliability numbers don't yet.
 

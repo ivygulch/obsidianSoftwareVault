@@ -41,6 +41,7 @@ Organizer creates space, shares to Elder, both devices exchange: Elder records a
 **FAIL:** silent asset loss, unrecoverable partial syncs, or zone/share limits that cap a realistic family archive.
 
 ### Stage 3 — Invite/accept across Apple IDs (0.5 day) → scope (b)
+**Amended 2026-07-13 (elder-no-device scope decision):** v1 invitees are adult family members in other households, not elders — run the test unchanged (the second-Apple-ID/different-family-group requirement stands), but read results against a "busy parent" bar; elder-tolerable acceptance is a remote-mode requirement, so a marginal result here no longer gates v1.
 Organizer invites Elder via share link in Messages (`ShareLink`/`CKShareTransferRepresentation`, or SQLiteData's equivalent; note `UICloudSharingController` deprecation status). Elder's device: tap link → app opens → space visible. Count every tap and decision from message-received to first-question-visible. Then revoke access and re-invite; remove a participant; test acceptance when the app is NOT yet installed (what does the link do?).
 **PASS:** ≤3 comprehensible steps post-install for a non-technical elder; revoke/re-invite works; the not-installed path is at least explainable ("install first, then tap again").
 **FAIL:** flows that require the elder to understand iCloud, or acceptance dead-ends.
