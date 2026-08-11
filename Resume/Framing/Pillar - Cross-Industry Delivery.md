@@ -28,7 +28,7 @@ updated: 2026-04-23
 | Engagement | Industry | Team context | Role |
 |---|---|---|---|
 | Volunteer fire dept. incident app (FirefighterSpot), 2026– | Public safety / nonprofit | Solo | Architect + implementer |
-| CLEAR, 2026– | Identity / travel | 6-engineer team | Senior subcontractor, mentor |
+| CLEAR, 2026 | Identity / travel | 6-engineer team | Senior subcontractor |
 | Walmart checkout, 2021–2026 | E-commerce | 120+ iOS engineers | Principal, platform owner |
 | McGraw-Hill *Sharpen*, 2022–2023 (concurrent) | EdTech | Product team | Core iOS + data engineer |
 | Walmart-branded app (ground-up rewrite), 2020–2021 | E-commerce | Small initial team | Senior contractor |

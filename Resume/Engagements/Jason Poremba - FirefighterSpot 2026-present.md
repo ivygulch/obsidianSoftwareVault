@@ -11,7 +11,7 @@ industry: [Public Safety, Nonprofit, Mobile Applications]
 team_size: "solo"
 team_context: "sole engineer with individual client"
 scale: "initial requirements to shipped v1.0"
-tech: [Swift, SwiftUI, Swift Concurrency, Local-First, Data Synchronization, Supabase, Swift Testing, GitHub Speckit, Claude Code]
+tech: [Swift, SwiftUI, Swift Concurrency, Local-First, Data Synchronization, Supabase, Swift Testing, GitHub Spec Kit, Claude Code]
 practices: [iOS Architecture, Local-First Architecture, Spec-First Development, Agentic Development, Backend Integration]
 themes: [public-safety, agentic-tooling, solo, spec-first, local-first]
 deliverables: [firefighterspot-ios-app, firefighterspot-supabase-backend]
@@ -24,22 +24,22 @@ updated: 2026-06-08
 
 ## Context
 
-Independent engagement on FirefighterSpot, an iOS incident-management and coordination app for volunteer fire departments. Personally funded by the client (Jason Poremba) — distinct from his architecture firm's work. Contracted via Upwork. Took the app from initial customer requirements to a shipped version 1.0 (February–May 2026): a local-first SwiftUI client that synchronizes across devices, backed by Supabase. Built spec-first, with GitHub Speckit generating specifications and Claude Code assisting implementation.
+Independent engagement on FirefighterSpot, an iOS incident-management and coordination app for volunteer fire departments. Personally funded by the client (Jason Poremba) — distinct from his architecture firm's work. Contracted via Upwork. Took the app from initial customer requirements to a shipped version 1.0 (February–May 2026): a local-first SwiftUI client that synchronizes across devices, backed by Supabase. Built spec-first, with GitHub Spec Kit generating specifications and Claude Code assisting implementation.
 
 ## Role
 
-Lead iOS engineer and architect, sole engineer on the engagement. Translated non-technical customer requirements into formal specifications, designed and implemented a local-first SwiftUI client with cross-device synchronization, built and operated the Supabase backend, validated with Swift Testing, and iterated on-platform with the client and volunteer-fire-department stakeholders.
+Lead iOS engineer and architect, sole engineer on the engagement. Translated non-technical customer requirements into formal specifications, designed and implemented a local-first SwiftUI client with cross-device synchronization, built and operated the Supabase backend, validated the iOS client with Swift Testing, and iterated with the client and volunteer-fire-department stakeholders.
 
 ## Achievements
 
 - Delivered a working iOS incident-management prototype for volunteer fire departments from initial customer requirements, owning client, backend, and rollout end-to-end. #ios #end-to-end #public-safety #rollout
-- Translated non-technical customer requirements into formal specifications, then implemented a local-first SwiftUI client on Swift 6.2 concurrency that synchronizes across devices. #spec-first #swiftui #swift-concurrency #local-first #sync #architecture
-- Built and operate a Supabase backend; validated with the Swift Testing framework and iterated on-platform with stakeholders. #supabase #swift-testing #backend #stakeholder-engagement
-- Built spec-first using GitHub Speckit for specification generation and Claude Code for implementation, applying agentic tooling across the lifecycle. #agentic-tooling #agentic-development #spec-first #claude-code
+- Translated non-technical customer requirements into formal specifications, then implemented a local-first SwiftUI client using Swift 6.2 concurrency that synchronizes across devices. #spec-first #swiftui #swift-concurrency #local-first #sync #architecture
+- Built and operated a Supabase backend; validated the iOS client with the Swift Testing framework and iterated with stakeholders. #supabase #swift-testing #backend #stakeholder-engagement
+- Built spec-first using GitHub Spec Kit for specification generation and Claude Code for implementation, applying agentic tooling across the lifecycle. #agentic-tooling #agentic-development #spec-first #claude-code
 
 ## Tech Stack
 
-Swift 6.2, SwiftUI (local-first client with cross-device sync), Swift Concurrency, Supabase backend, Swift Testing, GitHub Speckit, Claude Code.
+Swift 6.2, SwiftUI (local-first client with cross-device sync), Swift Concurrency, Supabase backend, Swift Testing, GitHub Spec Kit, Claude Code.
 
 ## Private Notes
 

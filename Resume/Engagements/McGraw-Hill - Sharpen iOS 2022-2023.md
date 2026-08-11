@@ -32,9 +32,9 @@ Core iOS developer and data engineer on the Sharpen product team — delivered u
 
 ## Achievements
 
-- Contributed to the iOS in-app subscription experience ("Sharpen Plus") on RevenueCat (purchases-ios) as part of the product team — Offerings and pricing configured server-side and fetched at runtime (no hard-coded product IDs), with a single "Premium" entitlement gating premium features. #revenuecat #in-app-subscriptions #storekit #monetization #ios
+- Contributed to the iOS in-app subscription experience ("Sharpen Plus") using RevenueCat (purchases-ios) as part of the product team — Offerings and pricing configured server-side and fetched at runtime (no hard-coded product IDs), with a single "Premium" entitlement gating premium features. #revenuecat #in-app-subscriptions #storekit #monetization #ios
 - Worked on paywall and purchase/restore flows over StoreKit via RevenueCat, including free-trial / introductory-offer eligibility handling and generic subscription-period and price-per-month presentation across recurring durations. #paywall #storekit #free-trial #in-app-subscriptions
-- Helped tie subscriptions to the user's McGraw-Hill account (app user ID = account URN, not device) and sync entitlement state to the McGraw-Hill backend after purchase/restore with retry. #entitlements #backend-sync #revenuecat
+- Helped tie subscriptions to the user's McGraw-Hill account (app user ID = account URN, not device) and sync entitlement state to the McGraw-Hill backend after purchase/restore with retry handling. #entitlements #backend-sync #revenuecat
 - Delivered settings, onboarding, and authentication features for the Sharpen iOS app. #features #onboarding #authentication
 - Integrated five analytics tools into the Sharpen iOS app. #analytics #integration
 - Built seven internal tools including email/SMS automation, AWS data lake, and push notifications. #internal-tools #aws #data-engineering #push-notifications

@@ -120,6 +120,25 @@ The duplication of casing is deliberate. ATS output expects `"Swift"`; Dataview 
 
 **Keep Summary short** (3-4 sentences). It's the first thing any reader sees; it needs to work on its own.
 
+**Copy style** (from hand edits to the 2026-08-08 Eleos and CVS docx files; apply to all future resume output):
+
+- Prefer plain connectors: "from solo POCs *to* core-team work," not "*through*."
+- Write org scale as a noun phrase, not a stacked compound adjective: "Walmart's iOS organization of 120+ engineers," not "Walmart's 120+ engineer iOS organization."
+- Prefer "incrementally" over "step by step."
+- Name the object of validation explicitly when a bullet spans client and backend: "validated *the iOS client* with the Swift Testing framework," so the backend isn't implied to be Swift-tested.
+- Lead tool bullets with the tool's role in the work: "Used GitHub Spec Kit to drive spec-first development and Claude Code for implementation," not "Built spec-first using GitHub Spec Kit for specification generation."
+- Soften the App Store ratings figure — don't cite the exact count (it drifts and reads as overreach). Preferred phrasing: "rated 4.8 stars on the App Store from millions of ratings."
+- The Skills "AI-Assisted Development" line lists only current, load-bearing tools (Claude Code, Codex, GitHub Spec Kit, plus practices). Legacy or peripheral tools — Builder.io, Figma, Microsoft Copilot — must never appear in Skills: listing them there is misleading, implying working proficiency rather than evaluation/integration exposure. They may appear in engagement bullets where the surrounding context makes the actual role clear (e.g., "assisted the platform team evaluating and integrating Builder.io").
+- Drop "structured" when the concurrency enumeration follows: "Swift 6.2 concurrency — async/await, actors, Sendable, and strict concurrency checking." Standalone "structured-concurrency migration" (no enumeration) is fine.
+- "Analyzed" (not "Researched") for codebase-investigation bullets.
+- Attach technology with "using," not "on": "a SwiftUI client *using* Swift 6.2 concurrency."
+- Drop "on-platform" — "iterated with stakeholders."
+- Preferred ratings-bullet lead: "Key contributor to checkout UI development in the Walmart iOS app."
+- Analytics bullet scope reads "for checkout features," not "for every feature I led."
+- Micro-tightenings: "bar-raiser for dozens of prospective engineers" (no gerund), "with retry handling," "Equally effective *at* translating," "a large user base" (drop redundant "consumer"). The using-not-on rule extends to SDKs/platforms: "subscription experience *using* RevenueCat and StoreKit."
+- Cover letters: when CLEAR and the fire-department app appear in the same paragraph, mark the latter as "a separate, solo app" so it doesn't read as CLEAR work (from the sent Square letter, 2026-08-09).
+- Current preferred summary opening (differs from `Framing/Summary - iOS.md`, which still says "2M+ DAU" / "120+ iOS engineer organization"): "…shipping production iOS from solo POCs to core-team work on apps serving 5M+ daily active users within Walmart's iOS organization of 120+ engineers." Reconcile the framing file deliberately when ready.
+
 ## Iteration process
 
 This vault was built iteratively through user-approved batches rather than a single migration. The pattern that worked:

@@ -17,7 +17,7 @@ themes: [architecture, testing, mentorship, standards, platform-ownership, react
 deliverables: [checkout-platform, ios-engineering-standards, testing-discipline, interview-onboarding]
 status: past
 created: 2026-04-22
-updated: 2026-06-04
+updated: 2026-07-23
 ---
 
 # Walmart - Checkout Platform 2021-2026
@@ -34,11 +34,12 @@ Principal Software Engineer with ownership over iOS technical strategy for check
 
 - Owned iOS technical strategy for checkout: architecture evolution, modularization, long-term platform maintainability. #architecture #platform-ownership
 - Responsible for the checkout flow in Walmart's flagship iOS app, serving 5–6 million daily active users. #scale #checkout #platform-ownership #dau
+- Key contributor to checkout UI development in the Walmart iOS app — rated 4.8 stars on the App Store across 18 million ratings. #ui #checkout #consumer-quality #app-store-rating
 - Architected unidirectional, reactive iOS systems in Swift and Combine with MVVM-style patterns. #architecture #reactive
 - Architected and scaled reactive iOS systems using Swift, Combine, and GraphQL for high-traffic checkout flows serving millions of users. #architecture #reactive #combine #graphql #scale
 - Drove real-time performance and reliability initiatives handling traffic spikes and event-driven interactions. #reliability #performance #real-time #event-driven
 - Rolled out all new checkout features behind feature flags; more than half launched as A/B experiments measuring customer and business impact before full rollout. #experimentation #ab-testing #feature-flags #data-driven #rollout
-- Owned analytics and telemetry for every feature led — built in instrumentation, updated team dashboards for org-wide visibility, and monitored behavior through production rollout, per the standard responsibility of every Walmart feature lead. #analytics #telemetry #instrumentation #dashboards #monitoring #rollout #data-driven
+- Owned analytics and telemetry for checkout features — built in instrumentation, updated team dashboards for org-wide visibility, and monitored behavior through production rollout, per the standard responsibility of every Walmart feature lead. #analytics #telemetry #instrumentation #dashboards #monitoring #rollout #data-driven
 - Established automated testing discipline (unit, integration, UI) with XCTest and XCUITest; raised coverage to ~85% with a measurable drop in post-release defects. #testing #metrics
 - Maintained 99.9%+ crash-free sessions; instrumented ~90% of core checkout flows. #reliability #metrics #instrumentation
 - Defined and enforced iOS engineering standards across architecture, performance, security, and testing for the full 120+ iOS engineer organization. #standards #leadership
@@ -67,6 +68,8 @@ _UI framework context: primary UI was UIKit (Swift + Combine + MVVM). SwiftUI wa
 _Scale figures: checkout flow cited at 5–6 million daily active users; "high-traffic / millions of users" and the real-time / traffic-spike / event-driven framing added 2026-06-04. Confirm the exact DAU number before a target resume leans on it._
 
 _Feature-flag / A/B bullet added 2026-07-11 from Doug's direct recollection (prompted by the Thumbtack Customer Growth JD): all new checkout features rolled out behind feature flags, over half of which were used in A/B tests. "More than half" is his stated proportion — don't sharpen it to a specific percentage._
+
+_App Store rating + checkout UI bullet added 2026-07-23 from Doug's direct statement (prompted by the Office Hours "apps users genuinely love" JD): the Walmart iOS app holds a 4.8-star App Store rating across 18 million ratings, and Doug was a key part of UI development for the checkout component. The rating is public App Store data and drifts over time — spot-check the current figure before reusing on future targets._
 
 _Analytics/telemetry-ownership bullet added 2026-07-11, same source: every Walmart engineer who led a feature (small or large) was responsible for building in analytics and telemetry, updating dashboards for team-wide visibility, and monitoring behavior on rollout. This was an org-wide norm Doug practiced, not a distinction unique to him — keep the "per the standard responsibility" qualifier so the bullet stays honest._
 

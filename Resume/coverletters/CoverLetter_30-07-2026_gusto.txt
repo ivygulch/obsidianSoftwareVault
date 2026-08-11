@@ -1,0 +1,16 @@
+Dear Gusto hiring team,
+
+I'm applying for the Senior Staff Software Engineer, iOS Platform role. What I bring is a combination Gusto is unlikely to see often: five years of technical leadership across a 120-engineer iOS organization, paired with a demonstrated record of helping move an org of that size onto AI-assisted development workflows.
+
+As a Principal Software Engineer leading Walmart's iOS checkout platform from 2021 to 2026, I helped define shared architecture and engineering standards — performance, security, accessibility, and testing — across a large inner-sourced codebase, partnered with backend teams on the GraphQL APIs behind checkout and payments, and coordinated release readiness across teams. The results held under volume: automated test coverage for checkout rose to roughly 85 percent while crash-free sessions stayed above 99.9. Teams were able to focus on their specific requirements without interfering with each other.
+
+I've also led AI adoption rather than just used it. At Walmart I helped evaluate AI development tooling, introduced Builder.io for generating iOS views from our Figma design system, and trained 80 engineers on that workflow. Today Claude Code and Codex are part of my daily practice — codebase research, architectural planning, implementation, and test development. Most recently I used a specification-first workflow to take a nonprofit product from raw requirements to a shipped v1.0 solo: specs, SwiftUI client, backend, and rollout.
+
+That range — from rebuilding Walmart's iOS app from the ground up in 2020 with the initial team, to shipping an entire product alone — is the range a platform team serves every day. Along the way I've mentored a dozen engineers, built onboarding materials, participated in hiring, and spoken at 360iDev and CocoaConf.
+
+Gusto's software carries the payroll and benefits that small businesses actually run on — the kind of product where the reliability and release discipline I've spent five years building are the whole game. I'm based in Ohio and would be seeking an approved remote arrangement; I'd welcome the chance to discuss how my platform experience and AI-workflow leadership could contribute to Gusto's iOS foundation.
+
+Sincerely,
+
+Doug Sjoquist
+dwsjoquist@sunetos.com

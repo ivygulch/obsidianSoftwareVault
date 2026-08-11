@@ -27,9 +27,9 @@ Strategic targeting guidance for resume variants, cover letters, and outbound re
 
 **Avoiding**: hourly staff-augmentation roles — time-and-materials with no scope commitment.
 
-**Current contract engagements** (for reference):
-- [[CLEAR - Senior iOS Subcontract 2026-present]] — subcontractor via Stride. Scope-defined architectural evaluation and mentorship.
-- [[Jason Poremba - FirefighterSpot 2026-present]] — fixed-scope Upwork build.
+**Recent contract engagements** (for reference; both concluded):
+- [[CLEAR - Senior iOS Subcontract 2026-present]] — subcontractor via Stride, February–August 2026. Scope-defined architectural evaluation and agentic-tooling enablement.
+- [[Jason Poremba - FirefighterSpot 2026-present]] — fixed-scope Upwork build, February–May 2026.
 
 ## Resume framing
 
