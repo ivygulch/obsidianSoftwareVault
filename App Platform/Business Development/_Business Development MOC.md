@@ -6,3 +6,6 @@ Ideas that span the portfolio rather than a single app: revenue models, partners
 - [[Revenue Models/_Revenue Models MOC|Revenue Models]]
 - [[Partnerships/_Partnerships MOC|Partnerships]]
 - [[Market Research/_Market Research MOC|Market Research]]
+
+## Reference
+- [[Ivy Gulch LLC]] — canonical corporate-entity record (current entity, contacts, predecessors)
