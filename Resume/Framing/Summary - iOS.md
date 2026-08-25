@@ -12,7 +12,7 @@ updated: 2026-06-18
 
 ## Narrative
 
-iOS engineer with fifteen-plus years of mobile design and architecture — shipping production iOS from solo POCs through core-team work on apps with 2M+ DAU inside a 120+ iOS engineer organization at Walmart. Fluent in modern Swift 6.2 concurrency, SwiftUI, Swift Testing, and AI-native delivery using Claude Code, Codex, and GitHub Spec Kit across the full lifecycle. Equally effective at translating a non-technical customer's requirements into working software, evaluating a mature codebase to recommend architectural direction, and extending into the backend services and APIs an iOS product depends on. Most recent role at Walmart was Principal Software Engineer on the iOS checkout platform (2021-2026).
+iOS engineer with fifteen-plus years of mobile design and architecture — shipping production iOS from solo POCs through core-team work on apps with 2M+ DAU inside a 120+ iOS engineer organization at Walmart. Fluent in modern Swift 6.2 concurrency, SwiftUI, Swift Testing, and AI-native delivery using Claude Code, Codex, and GitHub Spec Kit across the full lifecycle. Equally effective at translating a non-technical customer's requirements into working software, evaluating a mature codebase to recommend architectural direction, and extending into the backend services and APIs an iOS product depends on. Most recent full-time role at Walmart was Principal Software Engineer on the iOS checkout platform (2021-2026).
 
 ## Notes
 

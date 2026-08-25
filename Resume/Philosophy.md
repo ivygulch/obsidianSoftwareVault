@@ -1,6 +1,6 @@
 ---
 type: reference
-updated: 2026-04-23
+updated: 2026-08-25
 ---
 
 # Philosophy
@@ -46,7 +46,7 @@ Editorial policies (sourcing discipline, company About scope, Summary length) ar
 - **ATS resume**: reverse-chronological, keyword-dense, no tables. Pulls Summary + reverse-chron Experience from `Engagements/` + Skills consolidated from frontmatter + Education. Ignores most of `Framing/`.
 - **Focused resume**: pillar-forward. Pulls Summary + Pillars + Conference Talks + Earlier Career from `Framing/`, alongside curated engagement bullets selected by pillar tags.
 
-**Title-agnostic summary.** Role content matters, titles don't. The Summary never leads with a level qualifier (not "Principal iOS engineer" or "Senior iOS engineer" at the opening). Level or contract-structure preferences — if they exist — are negotiated in cover letters and recruiter conversations per `Career Preferences.md`, not in summary framing.
+**Title-agnostic summary.** Role content matters, titles don't. The Summary framing file never leads with a level qualifier (not "Principal iOS engineer" or "Senior iOS engineer" at the opening). Level or contract-structure preferences — if they exist — are negotiated in cover letters and recruiter conversations per `Career Preferences.md`, not in summary framing. Exception (2026-08-12): on a generated ATS resume, the summary opener may mirror the target JD's stated level — e.g., "Principal-level iOS engineer" for a Principal or Senior Principal posting. The framing file itself stays title-agnostic; the level lead is applied per target at generation time, only when the JD is explicitly leveled.
 
 **Group small clients; extract significant ones.** Independent clients with short single-deliverable engagements live in grouped files (`Independent iOS Clients 2010-2014.md`, `Independent Java Consulting 2002-2012.md`). Promote to standalone engagement files when an engagement has multi-year duration, distinct client identity, or specific target-resume relevance.
 
@@ -120,10 +120,25 @@ The duplication of casing is deliberate. ATS output expects `"Swift"`; Dataview 
 
 **Keep Summary short** (3-4 sentences). It's the first thing any reader sees; it needs to work on its own.
 
+**Reference resume (2026-08-25).** `Archive/Resume2026_08_25_superhuman.docx` — hand-edited by Doug after the Superhuman generation — is the reference ATS resume as is, superseding the 2026-08-22 Netflix docx. `Framing/Reference Resume.md` is its verbatim transcription. Future ATS output starts from the reference (section order, role order, bullet order, wording, Skills lines) and adapts per JD; it does not regenerate wholesale from engagement files. Where a rule below conflicts with the reference, the reference wins. Specifics the reference settles: the summary opening is "iOS engineer with 15+ years of mobile design and architecture. Shipped iOS applications ranging from solo POCs to large-scale applications serving 5M+ daily active users within Walmart's iOS organization of 120+ engineers."; the summary carries the AI-coding-tools sentence ("Fluent in AI coding tools (Claude Code, Codex, GitHub Spec Kit)…") in place of the earlier GraphQL/accessibility emphasis — reintroduce those keywords per JD when a target calls for them; the Education block is the single degree line with no "Computer Information Systems emphasis" line; the earlier-career block is "Independent Java / J2EE Architect & iOS Developer / Sunetos Inc | 1998 – 2014" with the iOS apps dated 2010–2014; Sam's Club and ASDA titles carry "(Contractor)"; McGraw-Hill is "iOS Developer & Data Engineer (concurrent with Walmart)"; the Walmart Principal bullet order is strategy → reactive systems → GraphQL collaboration → Builder.io → ratings → performance/reliability → accessibility teaching → testing discipline → feature flags → analytics → multi-team delivery → standards ("Defined and championed") → mentoring → AI working groups/training.
+
+**Copy style additions from the 2026-08-25 hand edits** (apply to all future resume output; the reference transcription is authoritative where a case isn't listed):
+
+- Summary verbs read as first-person-implied: "Partner with product management…" (not "Partners with"); "Fluent in AI coding tools" (not "Fluent with").
+- "feature flag rollouts" unhyphenated in summary prose; the Skills line stays "feature flags."
+- Restate the object after a semicolon: "; implemented *the migration* incrementally," not "; implemented incrementally."
+- Include natural articles: "Led *a* refactor of checkout to *a* unidirectional, reactive architecture"; "owning *the* client, backend, and rollout"; "adopted *the tooling* as the standard."
+- "added test coverage" (not "wrote new test coverage"); "maintained *a* 99.9%+ crash-free session *rate*."
+- The App Store rating rides in parentheses on the checkout-UI bullet: "…in the Walmart iOS app (rated 4.8 stars on the App Store from millions of ratings)."
+- Accessibility bullet tightened: "Taught sessions across the iOS engineering organization on accessibility principles and implementation techniques…" — drop "entire" and "the reasoning behind."
+- Drop engagement-emphasis asides like "(the primary focus of the engagement)."
+- Spell out "daily active users" in bullets (not "DAU").
+- Skills Leadership line says "interview bar-raiser" (noun), not "interview bar-raising."
+
 **Copy style** (from hand edits to the 2026-08-08 Eleos and CVS docx files; apply to all future resume output):
 
-- Prefer plain connectors: "from solo POCs *to* core-team work," not "*through*."
-- Write org scale as a noun phrase, not a stacked compound adjective: "Walmart's iOS organization of 120+ engineers," not "Walmart's 120+ engineer iOS organization."
+- Prefer plain connectors: "from solo POCs *to* core-team work," not "*through*." (The 2026-08-22 reference summary uses "ranging from solo POCs to large-scale applications"; the no-"through" rule still holds.)
+- Org scale: either form is fine — "Walmart's iOS organization of 120+ engineers" or "Walmart's 120+ engineer iOS organization" (noun-phrase preference dropped 2026-08-12).
 - Prefer "incrementally" over "step by step."
 - Name the object of validation explicitly when a bullet spans client and backend: "validated *the iOS client* with the Swift Testing framework," so the backend isn't implied to be Swift-tested.
 - Lead tool bullets with the tool's role in the work: "Used GitHub Spec Kit to drive spec-first development and Claude Code for implementation," not "Built spec-first using GitHub Spec Kit for specification generation."
@@ -137,7 +152,15 @@ The duplication of casing is deliberate. ATS output expects `"Swift"`; Dataview 
 - Analytics bullet scope reads "for checkout features," not "for every feature I led."
 - Micro-tightenings: "bar-raiser for dozens of prospective engineers" (no gerund), "with retry handling," "Equally effective *at* translating," "a large user base" (drop redundant "consumer"). The using-not-on rule extends to SDKs/platforms: "subscription experience *using* RevenueCat and StoreKit."
 - Cover letters: when CLEAR and the fire-department app appear in the same paragraph, mark the latter as "a separate, solo app" so it doesn't read as CLEAR work (from the sent Square letter, 2026-08-09).
-- Current preferred summary opening (differs from `Framing/Summary - iOS.md`, which still says "2M+ DAU" / "120+ iOS engineer organization"): "…shipping production iOS from solo POCs to core-team work on apps serving 5M+ daily active users within Walmart's iOS organization of 120+ engineers." Reconcile the framing file deliberately when ready.
+- Current preferred summary is the 2026-08-22 reference summary (see `Framing/Reference Resume.md`). `Framing/Summary - iOS.md` still carries the older "2M+ DAU" / "120+ iOS engineer organization" phrasing and the focused-resume voice; reconcile the framing file deliberately when ready.
+
+**ATS docx style** (from hand edits to the 2026-08-12 Home Depot docx, superseded where noted by the 2026-08-22 reference; apply to ATS resume output, markdown and docx):
+
+- Pipe separators on metadata lines: contact line as "email  |  phone  |  linkedin" (bare linkedin.com/in/… URL, no https://); title on its own line above "Company  |  Month Year – Month Year"; education collapsed to one line, "B.A. Business Administration  |  Cedarville College  |  June 1982", with no emphasis line beneath (the "Computer Information Systems emphasis" line was dropped in the 2026-08-22 reference).
+- Keyword-dense summary in short sentences. May open with a level qualifier mirroring the JD (see Title-agnostic summary exception). Name the load-bearing keywords explicitly (e.g., Combine, GraphQL, modular architecture) rather than folding them into prose. Closing sentence "Most recent full-time role: <title>, <area>, <company> (years)." — rule wording set 2026-08-22; the 2026-08-22 reference summary omits the sentence, so include it only when the target's level framing calls for it.
+- Tighter bullets: prefer parentheses over em-dash appositive clauses ("(architecture evolution, modularization, long-term maintainability)"); cut trailing qualifier phrases that restate context ("before full rollout," "during the refactor"); "each year" → "annually"; "approximately" → "~"; "over 20" → "20+".
+- Verb choices: "Launched" for feature-flag rollouts; "Created and executed" for migration plans that were both planned and implemented; "Collaborated with" for team enablement.
+- Skills category names use ampersands: "Languages & Frameworks," "Platform & Architecture," "Delivery & DevOps," "Analytics & Monitoring," "Backend & Data," "AI-Assisted Development," "Testing," "Leadership."
 
 ## Iteration process
 

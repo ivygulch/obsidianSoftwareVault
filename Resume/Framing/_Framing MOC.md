@@ -1,7 +1,7 @@
 ---
 type: moc
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-08-22
 ---
 
 # Framing MOC
@@ -22,6 +22,7 @@ SORT framing_kind ASC
 ## Two resume outputs — framing role differs
 
 **ATS resume (reverse-chronological, keyword-dense):**
+- Start from [[Reference Resume]] (verbatim transcription of the 2026-08-22 hand-edited docx) and adapt per JD. The bullets below describe the original source-of-truth derivation; the reference now carries the settled wording and ordering.
 - Emit Summary (narrative only, from `Summary - iOS.md`).
 - Reverse-chronological Experience block pulled from `Engagements/` with `status != archive` (plus selected archive entries if relevant).
 - Skills block consolidated from engagement `tech` + `practices` frontmatter.

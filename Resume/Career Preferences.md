@@ -1,6 +1,6 @@
 ---
 type: career-preferences
-updated: 2026-06-18
+updated: 2026-08-12
 ---
 
 # Career Preferences
@@ -33,7 +33,7 @@ Strategic targeting guidance for resume variants, cover letters, and outbound re
 
 ## Resume framing
 
-One iOS-focused summary variant (`Framing/Summary - iOS.md`) covers all targets. It deliberately avoids level-positioning at the opening — focus is on iOS experience and mobile design/architecture depth. The Principal Software Engineer title at Walmart is stated as a fact in the Experience block and referenced in the summary's closing sentence.
+One iOS-focused summary variant (`Framing/Summary - iOS.md`) covers all targets. It deliberately avoids level-positioning at the opening — focus is on iOS experience and mobile design/architecture depth. The Principal Software Engineer title at Walmart is stated as a fact in the Experience block and referenced in the summary's closing sentence. Exception (2026-08-12): on generated ATS resumes, the summary opener may mirror the target JD's stated level (e.g., "Principal-level iOS engineer" for a Principal posting); the framing file itself stays title-agnostic.
 
 Level preferences surface in cover letters, outbound messages, and recruiter conversations, not in the summary framing. For principal targets, the Principal-at-Walmart fact carries the credential without the summary needing to lead with it.
 
