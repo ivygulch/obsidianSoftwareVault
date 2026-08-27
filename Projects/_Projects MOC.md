@@ -7,6 +7,7 @@ The vault holds planning and thinking. Code lives in Xcode projects (accessible 
 ## Active Projects
 - [[_Flighty App Routy Demo MOC|Flighty App Routy Demo]] — outreach package to land a meeting with Flighty's founder using the Routy flight-viz app
 - [[_Skyjo MOC|Skyjo]] — official licensed SKYJO app; licensing outreach to Magilano in progress, working prototype built
+- [[_Volunteer Fire Department Coordinator MOC|Volunteer Fire Department Coordinator]] — department-funded replacement for an old PC-only scheduling system (Jason Poremba); pre-built options first, then custom-build decision
 
 ## Shelved
 _(none yet)_
