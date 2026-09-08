@@ -3,7 +3,7 @@ type: research
 confidence: verified
 tags: [licensed-ip, board-games, puzzle-brands, games, step-0]
 created: 2026-08-05
-updated: 2026-08-08
+updated: 2026-09-08
 ---
 
 # Licensed IP Game Adaptations — Landscape
@@ -48,6 +48,42 @@ Method note: BGG's XML API began requiring authentication in 2026 and its HTML i
 | Codenames (CGE) | Party mega-hit | CGE in-house app, $4.99, 4.74★ | Covered — confirms the in-house pattern for strong publishers |
 
 Pattern confirmed: the **Asmodee purge** orphaned demand for several mass-market titles (Azul, Splendor) but locked the rights behind the worst counterparty; the *actionable* gaps are titles owned by publishers below the in-house threshold — **Skyjo/Magilano is the archetype** (huge fanbase, tiny owner, zero digital, clones proving willingness to play). Unchecked candidates for a second pass: Cascadia, Kingdomino, Concordia, Great Western Trail, Quacks of Quedlenburg, Hive, Lost Cities, NSV titles (Qwixx, The Game).
+
+## Lane 1 — Second pass (2026-09-08)
+
+Run on the assumption Skyjo/Magilano may be unavailable. Probed the unchecked candidates most matching the Skyjo profile (small owner + big casual audience): Qwixx, The Game, Kingdomino, The Mind. Store data via appstore MCP (iOS US + DE, Android US).
+
+| Game (owner) | iOS status | Read |
+|---|---|---|
+| **Qwixx** (NSV) | **No official app** — US, DE, or Android. Playable tier essentially empty: branded clone "Qwixx Game & Card" (RXRGaming) at 1.9★/9 US ratings (2.0★ Android); "Four Twelve" (108 ratings, 4.8★) is a deliberately de-branded *scoresheet companion* for table play with real dice — not a full adaptation with bots/online — and stale since Oct 2023. Scoresheet swarm on both platforms (8+ iOS, 6+ Android, none over ~110 ratings) | **Standout of the second pass.** Keyword traffic 9.93/10, difficulty 5.56 (appstore MCP heuristic — not Apple's official index). Higher-traffic term than "skyjo" (9.64) with an *emptier* supply side |
+| **The Game** (NSV) | Nothing findable — the title is unsearchable | Disqualified as a standalone target regardless of gap: brand-search capture, the core value of a license, cannot exist for this name. Only viable as a bundle add-on to a Qwixx deal |
+| **Kingdomino** (Blue Orange) | **Gap closed**: "Kingdomino Deluxe" (Meeple Corp) is the official adaptation — released 2025-06, $2.99, 4.84★/203 ratings, actively updated (2026-08) | Cross off |
+| **The Mind** (NSV) | Official-ish app exists: BrettspielWelt's "The Mind," $2.99, **2.5★** | "Bad incumbent" tier — and a double signal about NSV: they *do* license digital rights, and the bar set by their existing licensee is very low |
+
+**Counterparty — NSV (Nürnberger-Spielkarten-Verlag GmbH):** Nuremberg/Erlangen; founded 1989 out of F.X. Schmid, heritage back to a 1948 playing-card factory. A real family-scale company — larger than Magilano, far below the in-house-digital threshold. Owns three of the biggest modern casual titles (Qwixx, The Game, The Mind), so one relationship covers multiple gaps. The BrettspielWelt license on The Mind is precedent that they answer licensing conversations; whether Qwixx digital rights are committed anywhere is unverified — first question of any outreach.
+
+**Honest weaknesses vs. the Skyjo case:**
+
+1. **No demand receipt.** Skyjo's lead clone (3,167 US ratings) was proof people want to *play the game on phones*. Qwixx's gap is empty — the 9.93 traffic heuristic is opaque, and the scoresheet swarm proves engaged physical players reach for their phones *at the table*, not necessarily that they want a full digital adaptation. The demand case rests on physical sales stature + search heuristic + analogy, not on a clone's receipts.
+2. **No review-mining ammunition.** With no serious playable incumbent, there is no complaint stack to quote back as the outreach proof section (Four Twelve's 108 ratings yielded 4 usable text reviews). The pitch must lean on the empty-shelf argument and The Mind's 2.5★ incumbent instead.
+3. Counterparty is a company, not a founder-with-his-name-on-the-box — the personal brand-protection lever is weaker, though SdJ-nominated Qwixx is still their flagship.
+
+**Second-pass gate read:** Qwixx/NSV is the next-best avenue if Skyjo stalls — same shape (huge casual title, small German owner, empty digital shelf, scoresheet swarm as the tell), with a multi-title bundle upside Skyjo never had, at the cost of a demand case built on inference rather than clone receipts. The Crew (Kosmos) remains the researched fallback where the *gap* is strongest but the counterparty is corporate. Still unchecked from the first-pass list: Cascadia, Concordia, Great Western Trail, Quacks of Quedlinburg, Hive, Lost Cities.
+
+**Second-pass sources:** appstore MCP `search_app` ("qwixx" ios us/de + android us; "kingdomino" ios us; "the game nsv card" ios us; "the mind card game" ios us), `get_keyword_scores` ("qwixx", "kingdomino" ios us), `get_app_details` (1369327891 Four Twelve, 1520145931 Qwixx Game & Card, 6468810215 Kingdomino Deluxe), `analyze_reviews` (1369327891, 50 requested / 4 usable). NSV company profile: [Wikipedia](https://en.wikipedia.org/wiki/N%C3%BCrnberger-Spielkarten-Verlag), [nsv.de](https://www.nsv.de/en/), [SAZ publisher listing](https://www.spieleautorenzunft.de/publisher-details.html?member=10692). All 2026-09-08.
+
+### Remaining first-pass candidates (checked 2026-09-08)
+
+| Game (owner) | iOS status | Read |
+|---|---|---|
+| Cascadia (Flatout/AEG) | **Covered**: "Cascadia Digital" by Dire Wolf, $9.99, 4.93★ | Cross off |
+| Hive (Gen42) | **Covered**: "Hive® Game" (GiantStep, free, 4.45★) — the ® indicates a licensed adaptation, recent | Cross off; incumbent mediocre but living |
+| Concordia (PD-Verlag) | Official app exists but resented: Acram Digital's "Concordia: Digital Edition," $5.99, **3.51★** | Bad-incumbent tier. PD-Verlag itself fits the small-owner profile perfectly, but the rights are encumbered by a living licensee — a replace/renew conversation, not an empty shelf. Watchlist, not target |
+| Great Western Trail (eggertspiele/Plan B → Asmodee family) | No board-game app in results at all | Gap real but triple-disqualified: search term buried under hiking apps (no brand-search capture), heavy hobbyist complexity, Asmodee-adjacent rights |
+| Quacks of Quedlinburg (Schmidt Spiele) | **No official app, no clones** — search returns only unrelated duck games | Open gap, but Schmidt Spiele is a large publisher (Kosmos-tier counterparty), and zero store presence for the term cuts the demand evidence both ways. Same bucket as The Crew: strong gap, corporate counterparty |
+| Lost Cities (Kosmos) | The well-known TheCodingMonkeys adaptation is **gone from the US store** (verified via two searches — only scorekeeper companions remain) | Newly orphaned demand + companion swarm, the classic staleness-wedge signature — but Kosmos rights. Evidence for the wedge thesis; The Crew remains the better Kosmos conversation opener |
+
+**Post-pass standing:** nothing displaces Qwixx/NSV as #2 behind Skyjo. Every open gap in this batch (Quacks, GWT, delisted Lost Cities) sits behind a big-publisher counterparty; every small-owner title is covered (Cascadia, Hive) or encumbered (Concordia). Full Lane 1 ranking: 1. Skyjo/Magilano, 2. Qwixx/NSV (+The Game/The Mind bundle angle), 3. The Crew/Kosmos (strongest gap, corporate counterparty; Lost Cities delisting strengthens the Kosmos conversation), watchlist: Concordia (if Acram's license lapses).
 
 ## Public-domain IP variant (assessed 2026-08-05)
 
