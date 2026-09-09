@@ -2,7 +2,7 @@
 type: note
 status: draft
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-09-09
 tags: [outreach, licensing, skyjo, magilano]
 ---
 
@@ -43,7 +43,7 @@ dwsjoquist@ivygulch.com
 
 ## Representative outreach draft — v3 (2026-08-11)
 
-The English source for the colleague's initial approach lives in its own note: [[sample intro]]. He generates his own version (including his own German) from it. Replies should flow to the colleague with Doug cc'd.
+The English source for the colleague's initial approach lives in its own note: [[Draft 1]]. He generates his own version (including his own German) from it. Replies should flow to the colleague with Doug cc'd.
 
 ## Evidence backing (for reference, not for sending)
 
@@ -88,6 +88,14 @@ Sequencing decision (2026-08-08): contact the colleague **before** sending the M
 >
 > Best,
 > Doug
+
+## Postal letter — pre-print checklist (moved from [[Postal Letter Draft 1]], 2026-09-09)
+
+- **Before printing**: confirm the screenshots show no SKYJO name, artwork, or official color bands — this decides whether the enclosures help or hurt.
+- **Recording** (https://www.ivygulch.com/skyjodemo.html): unlisted video, 60–90 seconds, gameplay only, no music or voiceover. QR code printed below the prototype paragraph, replacing the `<<QR CODE>>` placeholder.
+- **Enclosures**: 2–3 printed screenshots + QR only. The family photo was dropped from the final letter (2026-09-09); if reinstated, the letter must reference it.
+- **Sending**: USPS First-Class International, stamped, hand-addressed; no courier, no registered mail. Update the letter's date if mailing slips past the week of 09 September.
+- **Follow-up**: two weeks after mailing, a two-line email to info@magilano.com — "I mailed you a letter on [date]; happy to send it digitally if easier."
 
 ## Related
 

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SKYJO Prototype Demonstration</title>
+<style>
+  :root {
+    --paper: #fbfaf8;
+    --ink: #24221f;
+    --muted: #6d6862;
+    --line: #e5e1da;
+    --accent: #3d5a80;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 3.5rem;
+  }
+  header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
+    font-weight: normal;
+  }
+  .prepared {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  p { margin: 0 0 1rem; }
+  h2 {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 2.25rem 0 0.75rem;
+  }
+  video {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: #000;
+  }
+  .caption {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82rem;
+    color: var(--muted);
+    text-align: center;
+    margin: 0.6rem auto 0;
+    max-width: 24rem;
+  }
+  .shots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+  }
+  @media (min-width: 540px) {
+    .shots { grid-template-columns: repeat(3, 1fr); }
+  }
+  .shots figure { margin: 0; }
+  .shots img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    display: block;
+  }
+  .shots figcaption {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 0.35rem;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>A working SKYJO prototype</h1>
+    <p class="prepared">Prepared for Magilano &middot; Douglas Sjoquist, Ivy Gulch LLC</p>
+  </header>
+
+  <p>To be sure I wasn't writing to you about something I only imagined I could build, I built a working version of the game first. It plays the rules correctly, and the computer opponents play a genuinely competitive game &mdash; that part took real work, and I'm pleased with how well it plays.</p>
+
+  <p>The prototype is deliberately plain: none of SKYJO's artwork or colors, generic cards, simple screens. It is a private technical proof, nothing more, and it stays that way unless you say otherwise.</p>
+
+  <h2>A complete game</h2>
+  <video controls playsinline preload="metadata" poster="poster.jpg">
+    <source src="skyjodemo.mp4" type="video/mp4">
+    Your browser cannot play this video.
+  </video>
+  <p class="caption">A full game against three computer opponents, played start to finish (about two minutes).</p>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <figure>
+      <img src="SKYJODemo_opponentSelection.png" alt="Opponent selection screen with a difficulty picker" loading="lazy">
+      <figcaption>Choosing opponents by difficulty</figcaption>
+    </figure>
+    <figure>
+      <img src="SKYJODemo_customOpponentSelection.png" alt="Custom opponent selection screen" loading="lazy">
+      <figcaption>Custom opponent selection</figcaption>
+    </figure>
+    <figure>
+      <img src="SKYJODemo_game1.png" alt="Start of a game, flipping the first two cards" loading="lazy">
+      <figcaption>Start of a game</figcaption>
+    </figure>
+    <figure>
+      <img src="SKYJODemo_game2.png" alt="Gameplay in progress" loading="lazy">
+      <figcaption>Mid-game</figcaption>
+    </figure>
+    <figure>
+      <img src="SKYJODemo_game3.png" alt="Gameplay in progress" loading="lazy">
+      <figcaption>Mid-game</figcaption>
+    </figure>
+    <figure>
+      <img src="SKYJODemo_game4.png" alt="Late-stage gameplay" loading="lazy">
+      <figcaption>Late in a game</figcaption>
+    </figure>
+  </div>
+
+  <h2>Why</h2>
+  <p>SKYJO brings people together without electronics and lets conversation flow naturally between the generations at the table. The long-term goal for a mobile version is to allow that same interaction between family members who cannot be in the same room &mdash; beginning with a single-player version that captures the gameplay in an engaging and fun way.</p>
+
+  <footer>
+    Douglas Sjoquist &middot; Ivy Gulch LLC<br>
+    <a href="mailto:dwsjoquist@ivygulch.com">dwsjoquist@ivygulch.com</a> &middot; +1&nbsp;937&nbsp;725&nbsp;8126<br>
+    This page is unlisted and intended for Magilano.
+  </footer>
+
+</div>
+</body>
+</html>
