@@ -23,6 +23,7 @@ Official licensed SKYJO mobile app — licensing the digital rights from Magilan
 
 ## Cross-vault references
 
+- [[Mobile Card Games — Landscape]] — cross-tier mobile card game research (market, reviews, UI/UX + polish, other areas), 2026-09-10 — feeds Design fidelity list and UI Explorations
 - [[Licensed IP Game Adaptations — Landscape]] — the research that surfaced Skyjo (licensing-model health check, Lane 1 gap query, keyword/SERP snapshot, review mining) — lives in Research/Competitors because it covers more than this project
 - [[Ivy Gulch LLC]] — the licensing entity
 
