@@ -9,4 +9,4 @@ Games, activities, and small utility apps themed to any of the other areas. This
 - **Themed utilities** — timers, trackers, calculators, reference tools scoped to a specific activity or hobby
 
 ## Ideas
-_None yet._
+- [[Card Game Construction Kit]] — prebuilt folk games + custom decks/rules + trainable bots, all shareable (seed, 2026-09-09)

@@ -4,9 +4,12 @@ Official licensed SKYJO mobile app — licensing the digital rights from Magilan
 
 ## Project pages
 
-- [[Projects/Skyjo/Brief|Brief]] — canonical project overview
+- [[Projects/Skyjo/Investigation/Brief|Brief]] — canonical project overview
 - [[Projects/Skyjo/Design|Design]] — product decisions (modes, monetization, languages, fidelity)
-- [[Projects/Skyjo/Research|Research]] — market evidence index + corrections log
+- [[Projects/Skyjo/UI Explorations|UI Explorations]] — interaction/experience exploration (IP-agnostic; survives the project if the license doesn't happen)
+- [[Apple Design Guidance]] — App Store asset best practices + HIG sections for the UX/UI work
+- [[App Comps]] — official-app comps for Skyjo-vibe card games (Play Nine, Mattel163 tier, premium tier, absences)
+- [[Research|Research]] — market evidence index + corrections log
 - [[Projects/Skyjo/Development Log|Development Log]] — prototype build record
 - [[Projects/Skyjo/Marketing|Marketing]] — launch, featuring, localization
 - [[Projects/Skyjo/Notes|Notes]] — miscellany
@@ -15,7 +18,7 @@ Official licensed SKYJO mobile app — licensing the digital rights from Magilan
 
 - [[SKYJO Partner Brief]] — executive summary for the German-speaking-partner conversation
 - [[Magilano Outreach]] — outreach drafts (v2 first-person; v3 representative), sequencing decisions, counterparty section
-- [[sample intro]] — English source for the colleague's initial approach to Herr Bernhardt
+- [[Draft 1]] — English source for the colleague's initial approach to Herr Bernhardt
 - [[Alexander Bernhardt]] — profile of SKYJO's designer / Magilano principal
 
 ## Cross-vault references
@@ -25,4 +28,4 @@ Official licensed SKYJO mobile app — licensing the digital rights from Magilan
 
 ## Code
 
-- Prototype repo: `~/ivygulch/ios/projects/tca/Demo1` (aka `/d/ivgp/tca/Demo1`) — SkyjoEngine + GameFeature + SkyjoTraining; see [[Projects/Skyjo/Development Log|Development Log]]
+- Prototype repo: `~/ivygulch/ios/projects/tca/SkyjoDemo` (aka `/d/ivgp/tca/SkyjoDemo`; renamed from `Demo1` 2026-08-13) — SkyjoEngine + GameFeature + SkyjoTraining; see [[Projects/Skyjo/Development Log|Development Log]]
