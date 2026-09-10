@@ -18,6 +18,7 @@ Pillar notes (full detail, tables, quotes, sources):
 - [[Mobile Card Games — Other Areas|Other Areas]] — monetization, retention, AI fairness, multiplayer infra, localization, IP, platform features (incl. tvOS presence), session design
 - [[Mobile Card Games — Unlicensed Games|Unlicensed Games]] — traditional/public-domain and original-IP games that need no licensor, US and regional storefronts, ranked by size
 - [[Mobile Card Games — UX Praise|UX Praise]] — which games have UI/UX praised for a specific interaction (user quotes, critics, awards), and which draw UI criticism
+- [[Mobile Card Games — Feature Priorities|Feature Priorities]] — 20 features that stand out, ranked in five tiers by evidence weight, each with pillar pointers
 
 ## Summary
 
