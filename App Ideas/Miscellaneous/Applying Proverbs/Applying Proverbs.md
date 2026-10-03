@@ -77,4 +77,5 @@ The fuller scan in [[Proverbs & Situational Scripture Apps — Landscape]] (2026
 - [[Proverbs & Situational Scripture Apps — Landscape]] — competitor scan
 - [[Text Version Comparison]] — KJV beside BSB on four passages, and an assessment of modernizing the KJV by rule
 - [[Public-Domain Proverbs Commentaries]] — which commentaries are usable as-is (Henry, Clarke, JFB, Keil & Delitzsch, Wesley, TSK via SWORD modules), which need cleanup, and which are off the table
+- [[UX Pattern Research]] — interaction patterns from 33 life-advice, devotional, quote, and card-draw apps: situation capture, card draws, daily delivery, tags and links, collections, layered reference, AI answer presentation
 - [[Indie App Opportunity Scan — 2026-10-02]] — the scan whose Reference-chart findings are cited above

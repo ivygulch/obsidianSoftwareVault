@@ -49,7 +49,7 @@ Every idea captured so far for [[Applying Proverbs]], grouped by layer. Nothing 
 ## UX and UI
 
 - Open to a variety of styles; no direction chosen.
-- Reference points: the card deck's icon-per-trait back; the vault's [[Mobile Card Games — UI & Polish]] note for flash-card feel if cards are used.
+- Reference points: [[UX Pattern Research]] (patterns by interaction, with screenshots); the card deck's icon-per-trait back; the vault's [[Mobile Card Games — UI & Polish]] note for flash-card feel if cards are used.
 
 ## From the card deck
 
