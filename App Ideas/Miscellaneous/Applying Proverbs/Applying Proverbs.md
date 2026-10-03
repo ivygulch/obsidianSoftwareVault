@@ -62,7 +62,7 @@ The fuller scan in [[Proverbs & Situational Scripture Apps — Landscape]] (2026
 
 ## Open Questions
 
-- Which text version, under what license, and does the license allow sending verses to an AI model?
+- Which text version, under what license, and does the license allow sending verses to an AI model? License-free candidates compared in [[Text Version Comparison]].
 - Unit of categorization: verse, or sayings that span verses, or both?
 - Fixed categories with user tags, or a single open tagging system with curated starter tags?
 - On-device model or hosted model for the AI tier, and what does the tier add beyond a chat assistant?
@@ -75,4 +75,5 @@ The fuller scan in [[Proverbs & Situational Scripture Apps — Landscape]] (2026
 - [[Wisdom Deck Reference]] — the physical deck
 - [[Bible Text Licensing & APIs]] — version licensing research: no major copyrighted translation allows a complete book without a negotiated license; BSB (CC0), WEB, and KJV can ship whole
 - [[Proverbs & Situational Scripture Apps — Landscape]] — competitor scan
+- [[Text Version Comparison]] — KJV beside BSB on four passages, and an assessment of modernizing the KJV by rule
 - [[Indie App Opportunity Scan — 2026-10-02]] — the scan whose Reference-chart findings are cited above
