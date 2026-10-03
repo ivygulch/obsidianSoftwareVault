@@ -76,4 +76,5 @@ The fuller scan in [[Proverbs & Situational Scripture Apps — Landscape]] (2026
 - [[Bible Text Licensing & APIs]] — version licensing research: no major copyrighted translation allows a complete book without a negotiated license; BSB (CC0), WEB, and KJV can ship whole
 - [[Proverbs & Situational Scripture Apps — Landscape]] — competitor scan
 - [[Text Version Comparison]] — KJV beside BSB on four passages, and an assessment of modernizing the KJV by rule
+- [[Public-Domain Proverbs Commentaries]] — which commentaries are usable as-is (Henry, Clarke, JFB, Keil & Delitzsch, Wesley, TSK via SWORD modules), which need cleanup, and which are off the table
 - [[Indie App Opportunity Scan — 2026-10-02]] — the scan whose Reference-chart findings are cited above
