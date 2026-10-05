@@ -66,10 +66,11 @@ The fuller scan in [[Proverbs & Situational Scripture Apps — Landscape]] (2026
 - Unit of categorization: verse, or sayings that span verses, or both?
 - Fixed categories with user tags, or a single open tagging system with curated starter tags?
 - On-device model or hosted model for the AI tier, and what does the tier add beyond a chat assistant?
-- Which of the backlog items belong in V1?
+- Which of the backlog items belong in V1? A proposed cut is in [[Exploration Plan]].
 
 ## Related
 
+- [[Exploration Plan]] — seven phases from text path to decision gate, with kill criteria, a V1 candidate, and a long-range vision (proposed 2026-10-04)
 - [[Idea Backlog]] — every idea so far, grouped
 - [[Categorization Scheme]] — draft category types and starter taxonomy
 - [[Wisdom Deck Reference]] — the physical deck
