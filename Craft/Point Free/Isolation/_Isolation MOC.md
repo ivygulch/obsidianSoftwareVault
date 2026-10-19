@@ -21,3 +21,8 @@ Deep exploration of Swift isolation: from legacy locking through actors, region-
 | [[367 - Sending Values]] | Isolation: Sending Values | 2026-05-25 | 24 min |
 | [[368 - Sending Closures]] | Isolation: Sending Closures | 2026-06-01 | 22 min |
 | [[369 - MainActor Default]] | Isolation: MainActor Default | 2026-06-15 | 14 min |
+
+## Synthesis
+
+- [[Isolation Principles]] — key principles distilled from the series, with episode references
+- [[Isolation vs Other Architectures]] — where the series agrees with and departs from Apple, Massicotte, and Clean Architecture / SwiftData guidance
