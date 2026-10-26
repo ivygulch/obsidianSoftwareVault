@@ -18,9 +18,9 @@ An official, licensed mobile adaptation of SKYJO for iOS and Android: premium qu
 
 ## Current state (2026-08-11)
 
-- Research + evidence + prototype all produced Aug 5–10, 2026 (see [[Projects/Skyjo/Research|Research]] and [[Projects/Skyjo/Development Log|Development Log]]).
+- Research + evidence + prototype all produced Aug 5–10, 2026 (see [[Research|Research]] and [[Projects/Skyjo/Development Log|Development Log]]).
 - Partner conversation in progress: German-speaking colleague (northern Italy, works in Switzerland) to act as Doug's representative and send the Magilano outreach in German; individual rev-share through [[Ivy Gulch LLC]], no entity of his own. See [[SKYJO Partner Brief]].
-- **Gate: the rights question.** Nobody has asked Magilano yet. The outreach ([[sample intro]]) is the next external step; everything downstream is contingent on the answer.
+- **Gate: the rights question.** Nobody has asked Magilano yet. The outreach ([[Draft 1]]) is the next external step; everything downstream is contingent on the answer.
 
 ## Success criteria
 

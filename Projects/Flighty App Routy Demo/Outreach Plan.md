@@ -6,7 +6,7 @@ updated: 2026-06-14
 
 # Outreach Plan
 
-The strategy, drafts, and decisions for reaching Ryan Jones. Context in [[Company & Founder Research]]; goal in [[Brief]].
+The strategy, drafts, and decisions for reaching Ryan Jones. Context in [[Company & Founder Research]]; goal in [[Projects/Flighty App Routy Demo/Brief]].
 
 ## Core thesis
 The bottleneck is **not** the code — Routy is build-complete and mirrors Flighty's exact stack end-to-end (SwiftUI/TCA + Kotlin/Postgres + AeroAPI, deployed on Fly.io). That stack-match + end-to-end ownership is a stronger signal than any single visualization. The job is to package it tightly and frame it correctly.

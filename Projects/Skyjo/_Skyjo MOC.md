@@ -7,6 +7,7 @@ Official licensed SKYJO mobile app — licensing the digital rights from Magilan
 - [[Projects/Skyjo/Investigation/Brief|Brief]] — canonical project overview
 - [[Projects/Skyjo/Design|Design]] — product decisions (modes, monetization, languages, fidelity)
 - [[Projects/Skyjo/UI Explorations|UI Explorations]] — interaction/experience exploration (IP-agnostic; survives the project if the license doesn't happen)
+- [[Projects/Skyjo/Game Flow Research and Plan|Game Flow Research and Plan]] — comparable-game reviews, observable turns, motion/sound/pacing proposals, and staged implementation plan (2026-09-16)
 - [[Apple Design Guidance]] — App Store asset best practices + HIG sections for the UX/UI work
 - [[App Comps]] — official-app comps for Skyjo-vibe card games (Play Nine, Mattel163 tier, premium tier, absences)
 - [[Research|Research]] — market evidence index + corrections log

@@ -85,6 +85,37 @@ Run on the assumption Skyjo/Magilano may be unavailable. Probed the unchecked ca
 
 **Post-pass standing:** nothing displaces Qwixx/NSV as #2 behind Skyjo. Every open gap in this batch (Quacks, GWT, delisted Lost Cities) sits behind a big-publisher counterparty; every small-owner title is covered (Cascadia, Hive) or encumbered (Concordia). Full Lane 1 ranking: 1. Skyjo/Magilano, 2. Qwixx/NSV (+The Game/The Mind bundle angle), 3. The Crew/Kosmos (strongest gap, corporate counterparty; Lost Cities delisting strengthens the Kosmos conversation), watchlist: Concordia (if Acram's license lapses).
 
+## Adjacent lane — traditional/regional card games, first probe (2026-09-08)
+
+Dutch Blitz was the archetype candidate for extending the pattern beyond hobby games (family-owned company, cult following, decades of physical sales). Probe result: **gap closed — and the way it closed is the lesson.**
+
+- Official app: "Dutch Blitz - Card Game" by **Dutch Blitz Acquisition Corp** — released 2024-11, 2,307 US ratings at 4.65★, actively updated (2026-09-01), free + subscriptions, iOS and Android, privacy policy on dutchblitz.com (first-party, brand-owner-run).
+- Keyword "dutch blitz": traffic 7.41/10, difficulty 7.19 (appstore MCP heuristic) — real demand, occupied by the owner.
+- Remaining field: one scorer app and one tiny 4.0★ indie (BetterBlitz). No wedge.
+
+**Lane lesson:** the developer name is the tell — the family company was acquired, and the new owner shipped in-house digital within months. Acquirers see the same empty-shelf value this research does; **the window on archetype targets closes when the IP changes hands.** Corollary for future probes in any lane: check for recent ownership changes early ("Acquisition Corp" in a developer field = window closed), and weight still-founder-held IP (Skyjo/Magilano, Qwixx/NSV) more heavily — they are rarer than they look.
+
+Sources: appstore MCP `search_app` ("dutch blitz" ios us + android us), `get_keyword_scores` ("dutch blitz" ios us), `get_app_details` (6496204756). 2026-09-08.
+
+## Adjacent lane — book brands, first probe: Choose Your Own Adventure (2026-09-08)
+
+Chooseco LLC (Vermont; the Montgomery family) owns the CHOOSE YOUR OWN ADVENTURE trademark and the book library. Store probe of "choose your own adventure" (iOS US):
+
+- **No official CYOA app.** The entire SERP is *generic* interactive-fiction platforms — Choice of Games, Hosted Games, Tin Man, Delight Games, AI Dungeon, Episode-tier romance apps — none carrying the brand.
+- Keyword: traffic 6.94/10, difficulty **8.5/10** (appstore MCP heuristic) — moderate demand, heavily competed by entrenched free platforms averaging 350K+ installs.
+
+**Read — fits half the pattern:**
+
+- *Counterparty half fits beautifully*: small family owner below the in-house threshold, a proven licensor (Z-Man board game, Amazon Alexa skill), and famously aggressive trademark enforcement (the Netflix/Bandersnatch suit) — the mark has litigated, real value.
+- *Search-capture half fails*: unlike "skyjo," the phrase functions as a **category term** in consumers' minds and in the store. Ranking for it means outranking funded platforms, and a license doesn't clear the shelf — the "gap" is *no official CYOA app*, not *no way to play this kind of thing*. The Sherlock Holmes lesson from the PD section applies: a name whose search term is occupied delivers a weak acquisition advantage.
+- *Different deal shape*: the license worth having includes the copyrighted book library, not just the mark over an unownable mechanic — a content-platform business (reader app, per-book IAP or subscription, ongoing royalties) rather than a ship-once game adaptation. Different economics; leans on the writing leg.
+- *Demand receipts weak by this research's standard*: no branded clone with ratings proving mobile demand; nostalgia is real but unmeasured in store data.
+- Litigious owner cuts both ways: license value is real, but the negotiation posture differs sharply from a founder letter to Magilano. Check encumbrances (their Alexa/digital experiments) early.
+
+**Standing:** watchlist below Qwixx — the counterparty is right, the store-side thesis is materially weaker than either Skyjo or Qwixx. Would need validation from book-sales/nostalgia data rather than store receipts, and an app concept that survives the crowded-category test.
+
+Sources: appstore MCP `search_app` + `get_keyword_scores` ("choose your own adventure" ios us), 2026-09-08. Chooseco background from general knowledge — verify current ownership/licensing posture before any outreach.
+
 ## Public-domain IP variant (assessed 2026-08-05)
 
 PD inverts the licensing trade: zero royalty and zero counterparty risk, but **zero exclusivity — the IP provides no moat**, and the brand-search advantage that justifies licensing only exists for terms not already occupied.

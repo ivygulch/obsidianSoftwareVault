@@ -11,7 +11,7 @@ Navigation hub for the Flighty outreach project: using the Routy flight-visualiz
 Code lives at `/d/ivg/flighty-routes` (backend: `/backend`, iOS: `/RoutyApp`). This folder holds the planning and outreach strategy only.
 
 ## Pages
-- [[Brief]] — goal, context, current state, success criteria
+- [[Projects/Flighty App Routy Demo/Brief]] — goal, context, current state, success criteria
 - [[Company & Founder Research]] — Flighty, Ryan Jones, the job description, what they already ship
 - [[Outreach Plan]] — channel strategy, email + landing-page drafts, demo decisions, path forward
 - [[ChatGPT recommendations]] — consolidated review, feature priority, outreach package, app assessment, and next steps

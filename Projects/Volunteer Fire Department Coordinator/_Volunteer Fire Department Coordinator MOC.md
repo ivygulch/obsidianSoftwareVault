@@ -12,6 +12,7 @@ Department-funded scheduling/coordination system for Jason Poremba's volunteer f
 
 - [[Notes]] — client updates and Doug's approach
 - [[Discovery Questions]] — open questions for Jason / the chief
+- [[Chief Interview Questions]] — first-level questions for the chief, each opening second-level scope-narrowing questions
 - [[Existing Solutions]] — pre-built (no-custom-app) options and fit table
 
 ## Related

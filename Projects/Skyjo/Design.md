@@ -1,6 +1,6 @@
 ---
 created: 2026-08-11
-updated: 2026-08-11
+updated: 2026-08-14
 ---
 
 # Skyjo — Design
@@ -27,7 +27,11 @@ Product decisions to date, largely derived from the clone review mining (what pl
 
 ## Monetization
 
-- Free-to-try, one-time unlock (~$4.99–6.99). No ads, ever.
+Opening position, not a settled decision — nothing has been heard from Magilano yet, and licensor input will shape this. Fixed vs. open (clarified 2026-08-14):
+
+- **Fixed: no advertising, ever.**
+- **Fixed: whatever is purchased must remain fully playable and enjoyable on its own** — IAP can never be required for the purchased game to stay good.
+- Open: one-time unlock (~$4.99–6.99, free-to-try) is the working model, but IAP is potentially on the table when used well.
 - Official expansions (SKYJO Action) as IAP — Handelabra model.
 - House-rule variations as a feature (licensor-approved officialness the clones can't copy).
 

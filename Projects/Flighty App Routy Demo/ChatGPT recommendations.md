@@ -379,7 +379,7 @@ Local code/docs referenced:
 
 ## Related notes
 
-- [[Brief]]
+- [[Projects/Flighty App Routy Demo/Brief]]
 - [[Company & Founder Research]]
 - [[Outreach Plan]]
 - [[_Flighty App Routy Demo MOC]]
