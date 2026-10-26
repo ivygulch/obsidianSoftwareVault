@@ -1,0 +1,19 @@
+To the Ondo Finance mobile team,
+
+Your posting says financial software asks a lot of its interface: people need to understand what they own, what an action will do, and whether it succeeded. That is a description of checkout. As Principal Software Engineer on Walmart's checkout platform, I was responsible for the checkout flow in the flagship iOS app, which more than five million people use each day — the screen where a customer commits money and has to know, right away and correctly, whether it went through. For five years I owned its technical direction: architecture evolution, modularization, and the long-term maintainability of a system other teams built on.
+
+On transactions, errors, and interrupted flows: the numbers I was accountable for were a 99.9%+ crash-free session rate with roughly 90% of core checkout flows instrumented, held through traffic spikes and event-driven checkout interactions. Every new feature launched behind a feature flag, most as A/B experiments that measured customer and business impact, and I owned the analytics that judged them — instrumentation, dashboards, and monitoring through production rollout. The failure cases a customer should never have to think about are found in that telemetry, and fixing what it pointed at was a standing part of the job.
+
+On app-facing contracts, authentication, and account state: I collaborated with backend teams on the GraphQL schema and mobile-optimized APIs for checkout and payments. At McGraw-Hill's Sharpen I delivered the authentication and onboarding features and helped tie subscriptions to the user's account rather than the device, syncing entitlement state to the backend after purchase and restore with retry handling. My most recent contract was at CLEAR, the identity-verification company, where I planned and executed a phased migration of the production iOS app to Swift 6.2 concurrency alongside a six-engineer team, used SwiftUI for new feature work, and maintained the Fastlane release automation.
+
+On architecture, asynchronous work, state, and persistence: the Walmart platform was unidirectional, reactive design in Swift and Combine on UIKit, modularized with Swift Package Manager. For a volunteer fire department, in a separate solo project, I built a local-first SwiftUI client with Swift 6.2 concurrency that synchronizes across devices against a Supabase backend I built and operated end to end, from a non-technical customer's requirements to a shipped 1.0.
+
+On security, accessibility, and quality: I defined the iOS engineering standards for architecture, performance, security, and testing that a 120+ engineer organization built against across three apps, taught accessibility sessions across that organization, and raised test coverage to about 85% through an automated testing discipline that produced a measurable drop in post-release defects. Design review and pull-request review were daily work; I mentored more than a dozen engineers and served as an interview bar-raiser.
+
+Two things to be direct about. First, I have not worked on financial products, trading, digital assets, or wallets. Payments inside a retail checkout is the nearest work I have done, and it is not the same thing: I have not built key management, transaction signing, or anything onchain, and I would be learning that domain from your team. Second, the posting is a Senior role and my last title was Principal. Titles have never decided for me; owning features from early product discussion through release on a small team is the work I want to do.
+
+The posting is fully remote, and I am a remote candidate in the US.
+
+I would welcome a conversation about the account and transaction flows on your roadmap and where the iOS architecture needs to go to carry them.
+
+Doug Sjoquist

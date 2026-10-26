@@ -1,0 +1,17 @@
+To the SDK team at RevenueCat,
+
+I was an early user of RevenueCat. I implemented auto-renewable subscriptions with it on TherexRx, a physical-therapy app I developed in 2018-2019 for a client from rough designs to a finished app for their clients. After taking it through App Store review, I gave a talk on the experience at Cincinnati CocoaHeads in February 2019, when the product was about a year old. I came back to it at McGraw-Hill in 2022 as one of the iOS engineers building Sharpen's subscription experience on purchases for ios: runtime-fetched offerings, a single entitlement gating premium features, paywall and purchase/restore flows with trial-eligibility handling, and entitlement state synced to the backend. The developer experience this role owns is one I have lived inside as a customer, and I would like to work on it from the other side.
+
+For most of the last six years my work has been code other engineers build on. As Principal Software Engineer on the iOS checkout team at Walmart, I owned the shared checkout architecture that a 120+ engineer organization consumed across multiple apps, where a breaking change was everyone's breaking change. The codebase was structured into platform and feature modules shared across apps for multiple markets. I helped establish the iOS engineering standards for architecture, performance, and testing, raised checkout test coverage to about 85%, and held a 99.9%+ crash-free session rate on the weekly production releases. 
+
+Before that I was part of the team tasked with rewriting the flagship iOS and Android apps from first principles; within two years we had replaced both apps and much of the supporting systems. Earlier still, as an independent developer, I built the reusable pieces other developers depended on: a configurable conference-app framework reused across four annual aviation events, a quiz framework embedded in training apps, and a test-bank framework that a client's in-house developers adopted as their integration model.
+
+This year at CLEAR I led the migration of the production app to modern Swift concurrency, did new feature work in SwiftUI with Swift Testing coverage, and assisted the team with integrating AI usage into their workflow. For a volunteer fire department, in a separate solo project, I used Claude Code and Codex to take an incident-management concept from an idea to a working app the department was using in a couple of months, with a Supabase backend I built and operated. On the backend bonus more broadly: I stood up an AWS data lake and internal tooling at McGraw-Hill, worked with backend teams on GraphQL schema design at Walmart, and spent more than a decade before iOS as a Java architect. Python would be new; backend work would not.
+
+iOS is where my depth is, and it is where I would want my primary work. I have not shipped Android or hybrid SDK code. At Walmart I read the Android and web codebases regularly to keep checkout aligned across platforms, and I am glad to contribute to the other SDKs when the work calls for it.
+
+I met several of the team at Deep Dish Swift in Chicago this past March and have followed the Sub Club and Launched podcasts, so I have a fair picture of how the company works. I work from Ohio.
+
+I would welcome a conversation about where the iOS SDK is headed and which parts of the developer experience the team wants to improve first.
+
+Doug Sjoquist

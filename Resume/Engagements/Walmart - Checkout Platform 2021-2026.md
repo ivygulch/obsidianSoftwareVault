@@ -11,13 +11,13 @@ industry: [E-Commerce, Retail, Mobile Applications]
 team_size: "120+ iOS engineers (org); checkout team within"
 team_context: "platform owner, checkout"
 scale: "high-volume e-commerce"
-tech: [Swift, Combine, MVVM, UIKit, SwiftUI, XCTest, XCUITest, GraphQL, Swift Package Manager, Microsoft Copilot, Visual Studio, Builder.io, Figma]
-practices: [Technical Leadership, Code Review, Mentorship, iOS Architecture, Modularization, Performance Optimization, Reliability Engineering, Release Management, Unit Testing, Integration Testing, UI Testing, Engineering Standards, AI-Assisted Development, Agentic Tooling Evaluation, Cross-Team Training]
-themes: [architecture, testing, mentorship, standards, platform-ownership, reactive, real-time, event-driven, scale, dau, api-design, release-management, agentic-tooling, ai-development, training, builder-io, design-system-integration]
+tech: [Swift, Combine, MVVM, UIKit, SwiftUI, XCTest, XCUITest, GraphQL, Swift Package Manager, Firebase, Kotlin, Microsoft Copilot, Visual Studio, Builder.io, Figma]
+practices: [Technical Leadership, Code Review, Mentorship, iOS Architecture, Modularization, Performance Optimization, Reliability Engineering, Release Management, Unit Testing, Integration Testing, UI Testing, Engineering Standards, AI-Assisted Development, Agentic Tooling Evaluation, Cross-Team Training, Sprint Planning, Technical Estimation, Velocity Tracking, Distributed Team Collaboration, Customer Issue Troubleshooting, Clean Architecture Principles]
+themes: [architecture, testing, mentorship, standards, platform-ownership, reactive, real-time, event-driven, scale, dau, api-design, release-management, agentic-tooling, ai-development, training, builder-io, design-system-integration, sprint-planning, distributed-teams, india, cross-platform, firebase, troubleshooting]
 deliverables: [checkout-platform, ios-engineering-standards, testing-discipline, interview-onboarding]
 status: past
 created: 2026-04-22
-updated: 2026-07-23
+updated: 2026-10-20
 ---
 
 # Walmart - Checkout Platform 2021-2026
@@ -33,6 +33,8 @@ Principal Software Engineer with ownership over iOS technical strategy for check
 ## Achievements
 
 - Owned iOS technical strategy for checkout: architecture evolution, modularization, long-term platform maintainability. #architecture #platform-ownership
+- Worked with product and design early to shape feature ideas, took them through architectural review for integration with the broader system, and led implementation. #product-sense #design-collaboration #architecture-review #feature-delivery #collaboration
+- Developed within a codebase structured as platform and feature modules shared across apps for multiple markets. #architecture #modularization #shared-modules #multi-market
 - Responsible for the checkout flow in Walmart's flagship iOS app, serving 5–6 million daily active users. #scale #checkout #platform-ownership #dau
 - Key contributor to checkout UI development in the Walmart iOS app — rated 4.8 stars on the App Store across 18 million ratings. #ui #checkout #consumer-quality #app-store-rating
 - Architected unidirectional, reactive iOS systems in Swift and Combine with MVVM-style patterns. #architecture #reactive
@@ -46,18 +48,33 @@ Principal Software Engineer with ownership over iOS technical strategy for check
 - At the request of the engineering accessibility team, taught sessions across the entire iOS engineering organization on the reasoning behind accessibility and iOS implementation techniques for building accessible apps. #accessibility #training #mentorship #standards #inclusive-design
 - Collaborated with backend teams on GraphQL schema design and mobile-optimized APIs for checkout and payments. #graphql #api-design #backend-collaboration
 - Led multi-team delivery and release readiness on a large inner-sourced codebase with frequent production releases. #release-management
+- Collaborated regularly with Walmart's search and discovery teams through the inner-sourcing model, working on features that spanned multiple app modules. #inner-source #cross-team #search-collaboration #collaboration
+- Regularly compared the Android (Kotlin) and web codebases with the iOS checkout implementation, resolving differences with the other platform leads so all three stayed aligned on shared GraphQL contracts and feature specifications, without making changes to the other codebases. #multi-platform #cross-platform-alignment #shared-code #android #kotlin #web #collaboration
+- Drove sprint planning, technical estimation, and velocity tracking for the checkout team. #sprint-planning #estimation #velocity #process #leadership
+- Collaborated daily with engineering, product, and QA teams across US and India time zones. #distributed-teams #india #collaboration #cross-functional
+- Used Firebase tooling to troubleshoot and understand customer-reported issues in the Walmart iOS app. #firebase #troubleshooting #customer-issues #monitoring
 - Mentored 12+ engineers and built standardized iOS onboarding materials. #mentorship #onboarding
 - Served as an iOS interview bar-raiser: developed standardized interview materials and interviewed dozens of prospective engineers each year. #hiring #bar-raiser #interviewing
 - Drove personal experimentation with AI development tooling across iOS work from late 2024 through February 2026 — beginning with Microsoft Copilot and Visual Studio, evaluating various Xcode plugins (most deficient for iOS-specific workflows), and expanding to design-integrated tooling as options matured. #agentic-tooling #ai-development #experimentation #microsoft-copilot
 - Assisted the platform team during 2025 in evaluating and integrating Builder.io — connecting Walmart's design library with Figma to generate and update iOS views. Engineering management subsequently adopted Builder.io as the standard for new iOS view work and as an option for updating existing views; adoption was actively growing across the 120+ iOS engineer organization at time of departure. #builder-io #figma #design-system-integration #ai-development #view-generation #training #adoption-mandate
 - Participated in Walmart engineering working groups evaluating AI development tools for adoption across the 120+ iOS engineer organization — contributed evaluation criteria, hands-on usage assessments, and integration recommendations. #agentic-tooling #working-groups #evaluation #cross-team-leadership
-- Trained 80+ iOS engineers on AI-assisted development workflows through live sessions, with additional engineers onboarded via session recordings; folded selected tools into day-to-day iOS development processes. #training #mentorship #process-integration #agentic-tooling #scale-80
+- Trained 80+ iOS engineers on using Builder.io for AI-assisted iOS view development through live sessions, with additional engineers onboarded via session recordings; folded selected tools into day-to-day iOS development processes. #training #mentorship #process-integration #agentic-tooling #builder-io #scale-80
 
 ## Tech Stack
 
 Swift, Combine, MVVM, XCTest, XCUITest, Swift Package Manager, GraphQL, inner-source monorepo patterns, CI/CD pipelines.
 
 ## Private Notes
+
+_Five facts added 2026-10-20 from Doug's statement during the First Due generation ("Firebase, Kotlin, shared code, sprint details, US/India are all walmart"): the Kotlin qualifier on the codebase-exploration bullet, the parallel iOS/Android delivery bullet, the sprint planning / estimation / velocity bullet, the US/India time-zone bullet, and the Firebase troubleshooting bullet. Specifics are NOT yet captured: which Firebase products (Crashlytics? Analytics? Remote Config?), "shared code" settled 2026-10-20 by Doug's docx edit: shared GraphQL contracts and feature specifications kept aligned across iOS, Android, and web by comparing codebases and resolving differences with the other platform leads, not shared modules or KMP, and not delivering Android features (the earlier "delivered checkout features to iOS and Android in parallel" bullet was replaced for overclaiming), and whether sprint planning was owned or shared with an EM. Sharpen these before a bullet claims more than it does now. Kotlin is in `tech` for ATS match on the reading/alignment basis only; Doug did not write Android code (see the contractor engagement's note)._
+
+_Clean Architecture (per Doug, 2026-10-20): not a term used at Walmart, but the principles describe the checkout module structure; "Clean Architecture principles" may ride on a Skills line, the bare name should not._
+
+_Training-session correction (per Doug, 2026-10-15, while editing the Airbnb letter): the live sessions for 80+ engineers were on using Builder.io, not on AI-assisted workflows in general. Earlier resumes and letters (through the 2026-10-07 AEO docx) say "AI-assisted development workflows"; use the Builder.io wording going forward._
+
+_Product/design-shaping and shared-modules bullets added 2026-10-16 from Doug's hand-edited Thumbtack and Airbnb cover letters: "I worked with product and design early to shape ideas, took them through architectural review for integration with the broader system, and led implementation" and "The codebase was structured into platform and feature modules that were shared across apps for multiple markets." Both are his direct statements; no metrics attached._
+
+_Bazel (per Doug's Airbnb letter, 2026-10-15): Walmart was moving toward Bazel during his last few months, but he did not use Bazel in production. Citable as "exposure" only; do not list Bazel in Skills._
 
 _AI tooling arc at Walmart: early efforts (late 2024) centered on Microsoft Copilot + Visual Studio. Various Xcode plugins were tested and found deficient for iOS-specific workflows. During 2025 the focus shifted to deep evaluation, training, and integration of Builder.io — connecting Walmart's design library with Figma to generate and update iOS views. Claude Code and Codex were not yet available during the Walmart tenure; that work (FirefighterSpot and CLEAR) is 2026-onward and tracked on those engagements._
 
@@ -72,6 +89,8 @@ _Feature-flag / A/B bullet added 2026-07-11 from Doug's direct recollection (pro
 _App Store rating + checkout UI bullet added 2026-07-23 from Doug's direct statement (prompted by the Office Hours "apps users genuinely love" JD): the Walmart iOS app holds a 4.8-star App Store rating across 18 million ratings, and Doug was a key part of UI development for the checkout component. The rating is public App Store data and drifts over time — spot-check the current figure before reusing on future targets._
 
 _Analytics/telemetry-ownership bullet added 2026-07-11, same source: every Walmart engineer who led a feature (small or large) was responsible for building in analytics and telemetry, updating dashboards for team-wide visibility, and monitoring behavior on rollout. This was an org-wide norm Doug practiced, not a distinction unique to him — keep the "per the standard responsibility" qualifier so the bullet stays honest._
+
+_Search-team collaboration and Android/web codebase-exploration bullets added 2026-09-12 from Doug's hand edits to the Pinterest Sr. Staff cover letter (`coverletters/CoverLetter_2026-09-12_pinterest.txt`). Both are his direct statements; scope is "worked with" and "explored for alignment," not "led" or "changed" — keep those verbs. No metrics attached._
 
 ## Related
 

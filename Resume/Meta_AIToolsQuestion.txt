@@ -1,0 +1,9 @@
+I use Claude Code and Codex daily, across the full lifecycle rather than just code completion.
+
+For research and planning: at CLEAR this year I used both tools to analyze the flagship iOS codebase — surfacing architectural patterns, technical debt, and improvement opportunities — and to assist the research and drafting of architectural proposals and PRDs.
+
+For specification and implementation: for a volunteer fire department's incident-management app, I drove spec-first development with GitHub Spec Kit, translating a non-technical customer's requirements into formal specifications, then used Claude Code for implementation of a local-first SwiftUI client with a Supabase backend, from initial requirements to a shipped 1.0.
+
+At organizational scale: at Walmart I sat on the engineering working groups that evaluated AI development tools for a 120+ engineer iOS organization, contributing evaluation criteria and hands-on usage assessments. I helped the platform team evaluate and integrate Builder.io — connecting Walmart's design library and Figma to generated iOS views — which engineering management adopted as the standard for new iOS view work. I trained more than eighty engineers on the workflows that cleared the bar, with more onboarded through session recordings. That evaluation work also meant rejecting tools: most of the Xcode plugins we assessed were deficient for iOS-specific workflows.
+
+The through-line: I treat these tools as accelerators for engineering judgment, not substitutes for it.

@@ -1,6 +1,6 @@
 ---
 type: career-preferences
-updated: 2026-08-12
+updated: 2026-10-16
 ---
 
 # Career Preferences
@@ -20,6 +20,10 @@ Strategic targeting guidance for resume variants, cover letters, and outbound re
 - Being weighted primarily toward non-iOS *client* development — Android, web/front-end frameworks, etc. Happy to collaborate at the interface level, but iOS should remain the primary client platform. (Backend work in support of the iOS product is in scope — see above.)
 
 **Salary**: must be reasonable. No documented floor; evaluate per opportunity.
+
+## Location and hybrid roles
+
+Based in Ohio. Not within commuting distance of the San Francisco / Palo Alto offices that hybrid postings typically name, and relocation is not on the table. Open to periodic visits for a hybrid role. Cover-letter wording (from the 2026-09-12 Pinterest letter): "I am not within commuting distance, but am open to periodic visits." Raise the question in the letter when a posting is tagged Remote but carries an in-office requirement, and ask that it be settled before either side invests further.
 
 ## Contract structure
 

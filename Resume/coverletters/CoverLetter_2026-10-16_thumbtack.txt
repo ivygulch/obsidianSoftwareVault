@@ -1,0 +1,13 @@
+To the Partnerships team at Thumbtack,
+
+I like the idea of a startup within a startup — enough freedom to explore new experiences and architectures, paired with regular accountability to the larger organization. At Walmart I was part of a small team tasked with replacing the flagship iOS and Android apps. We had room to evaluate architecture and feature approaches while still shipping against clear milestones; within two years we fully replaced both apps and much of the supporting systems. That mix of autonomy and delivery is what draws me to the Partnerships team.
+
+As a Principal Software Engineer on the iOS checkout team at Walmart, I worked with product and design early to shape ideas, took them through architectural review for integration with the broader system, and led implementation. I’m comfortable translating requirements into technical decisions, weighing UX and platform tradeoffs, and owning features through release and iteration on consumer-facing mobile apps. At CLEAR I led the migration to modern Swift concurrency and assisted their team with integrating AI usage into their workflow.
+
+Since late 2024 I’ve used LLM tooling to accelerate delivery. At Walmart I participated in a working group evaluating AI tools for broader use. More recently I used Claude Code and Codex to take a volunteer fire department’s incident-management concept from an idea to a working app usable by the department in a couple of months. I’m interested in applying that kind of leverage to GenAI integration and new partner experiences on the customer and pro apps.
+
+I’ve been a homeowner for decades and am currently building a custom multi-level deck. Before starting, I worked with a licensed architect, researched options with professionals, and decided which parts I could handle myself versus where I needed help — the core decision Thumbtack helps people make. I’ve hired independent contractors for portions of remodeling work, so I have a practical sense of both sides of that marketplace.
+
+The posting lists compensation only for Ontario and British Columbia and does not state a work location. I live in Ohio in the US so if the role is open only to candidates in Canada, I’d rather we both know that before investing further. Otherwise, I’d welcome a conversation about which partner integrations and new experiences the team wants to land first.
+
+Doug Sjoquist

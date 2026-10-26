@@ -11,13 +11,13 @@ industry: [Identity Verification, Travel, Airline Travel, Biometrics, Mobile App
 team_size: "6-engineer iOS team"
 team_context: "senior subcontractor"
 scale: "flagship consumer app"
-tech: [Swift, Swift 6.2, SwiftUI, Swift Testing, Structured Concurrency, async/await, actors, iOS, Fastlane, Claude Code, Codex]
-practices: [iOS Architecture, Structured Concurrency Migration, Swift 6 Migration, Architecture Modernization, User Experience, Codebase Evaluation, Codebase Research, Agentic Tooling Rollout, AI-Assisted Code Development, AI-Assisted Testing, CI/CD, Build Automation]
+tech: [Swift, Swift 6.2, SwiftUI, Swift Testing, Structured Concurrency, async/await, actors, iOS, Fastlane, GitHub Actions, Claude Code, Codex]
+practices: [iOS Architecture, Structured Concurrency Migration, Swift 6 Migration, Architecture Modernization, User Experience, Codebase Evaluation, Codebase Research, Agentic Tooling Rollout, AI-Assisted Code Development, AI-Assisted Testing, CI/CD, Build Automation, Clean Architecture Principles]
 themes: [architecture, concurrency, migration, modernization, user-experience, agentic-tooling, codebase-research, ci-cd, build-automation, travel]
 deliverables: [concurrency-migration-plan, architectural-recommendations, agentic-tooling-enablement, ios-ux-enhancements]
 status: past
 created: 2026-04-22
-updated: 2026-08-08
+updated: 2026-10-20
 ---
 
 # CLEAR - Senior iOS Subcontract 2026-present
@@ -40,15 +40,21 @@ Senior iOS subcontractor whose primary focus was enhancing the user experience o
 - Implemented the structured-concurrency migration incrementally across the production codebase. #concurrency #swift6 #migration #ios #modernization
 - Applied Claude Code and Codex to day-to-day code assistance and test development across the flagship iOS app, using the same patterns carried over from other iOS client work. #code-assistance #testing #agentic-tooling
 - Used SwiftUI for all recent and new-feature work on the flagship iOS app, aligned with the team's modernization direction; wrote new test coverage with the Swift Testing framework. #swiftui #swift-testing #modernization
-- Maintained and extended the team's Fastlane CI/CD configuration for the flagship iOS app, updating lanes as build-automation needs evolved. #fastlane #ci-cd #build-automation
+- Maintained and extended the team's Fastlane and GitHub Actions CI/CD configuration for the flagship iOS app, updating lanes and workflows as build-automation needs evolved. #fastlane #github-actions #ci-cd #build-automation
 - Worked with a six-engineer iOS team on development practices, modern Swift usage, and integrating agentic tooling (Claude Code, Codex) into their day-to-day workflow. #collaboration #modern-swift #agentic-tooling
 - Applied agentic tools across planning, specification, implementation, testing, verification, and deployment as accelerators for engineering judgment. #agentic-tooling #process
 
 ## Tech Stack
 
-Swift, Swift 6.2 (structured concurrency — async/await, actors, `Sendable`), SwiftUI, iOS SDK, Fastlane (CI/CD), Claude Code, Codex, CLEAR internal tooling.
+Swift, Swift 6.2 (structured concurrency — async/await, actors, `Sendable`), SwiftUI, iOS SDK, Fastlane and GitHub Actions (CI/CD), Claude Code, Codex, CLEAR internal tooling.
 
 ## Private Notes
+
+_GitHub Actions (per Doug, 2026-10-20, during the First Due generation): the CI/CD work here covered GitHub Actions as well as Fastlane. Scope of the Actions work is not captured; the bullet says "maintained and extended." Also per Doug: Clean Architecture is not a term used at CLEAR or Walmart, but its principles (layered modules, protocol boundaries, dependency inversion) describe the architecture work on both; "Clean Architecture principles" may ride on a Skills line, "Clean Architecture" by name should not._
+
+_Ruby (per Doug, 2026-10-15): the Fastlane lane work here was minor Ruby edits; he has used Ruby in the past but not seriously in several years. "Ruby" may ride on a Skills line when a JD asks for it, with that caveat in the letter._
+
+_Concurrency-migration detail Doug offered then cut from the 2026-10-16 Thumbtack letter: the migration replaced callback- and Combine-heavy patterns with async/await and structured concurrency so the app could handle concurrent work more safely and with less boilerplate. Usable in a letter when the JD cares about the why; the completion caveat below still applies._
 
 _Verb calibration (per Doug, 2026-08-09): the engagement began with the expectation of substantial mentoring, but the team was executing well and mentoring never became a major component — use "worked with" / "collaboration," not "mentored," in all output. Already-sent materials (through the 2026-08-09 Square application) predate this correction._
 
