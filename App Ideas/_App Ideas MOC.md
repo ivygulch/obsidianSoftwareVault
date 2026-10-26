@@ -9,6 +9,7 @@ Brainstorming space for app concepts, organized by area. No development work —
 - [[Collectibles/_Collectibles MOC|Collectibles]] — badges, stamps, patches, pins; physical-to-digital collections
 - [[Games Activities & Utilities/_Games Activities & Utilities MOC|Games, Activities & Utilities]] — themed to any other area
 - [[Miscellaneous/_Miscellaneous MOC|Miscellaneous]] — adjacent ideas and anything not yet categorized
+- `Archive/` — former project folders moved out of active work (FirefighterSpot v1.1, Flighty App Routy Demo, Volunteer Fire Department Coordinator)
 
 ## Conventions
 - One page per concept; use the [[App Idea]] template.

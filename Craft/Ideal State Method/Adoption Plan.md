@@ -18,7 +18,7 @@ Bring the [[Craft/Ideal State Method/Method|method]] into the active projects on
 
 ## Phase 1 — Pilot on FirefighterSpot v1.1
 
-Why this one: it is live, scoped small (single org, sign-in, App Store release), and the [[Projects/FirefighterSpot v1.1/Spec Q&A|Spec Q&A]] already holds the raw material. Its questions Q25 to Q27 (continue Spec Kit, who drives, where the spec lives) are answered by adopting this method.
+Why this one: it is live, scoped small (single org, sign-in, App Store release), and the [[App Ideas/Archive/FirefighterSpot v1.1/Spec Q&A|Spec Q&A]] already holds the raw material. Its questions Q25 to Q27 (continue Spec Kit, who drives, where the spec lives) are answered by adopting this method.
 
 Steps:
 
