@@ -1,0 +1,60 @@
+I want a high-level exploration plan for the app idea "Applying Proverbs". Read the idea folder first and build on it;
+  do not redo research that is already filed.
+
+  READ FIRST
+  - App Ideas/Miscellaneous/Applying Proverbs/Applying Proverbs.md — the idea note (status: seed) with the three
+  questions still open
+  - Idea Backlog.md — every feature idea so far, grouped by layer; nothing is scoped or ranked yet
+  - Categorization Scheme.md — draft passage unit, seven category types, keywords, links, tags, context groups
+  - Text Version Comparison.md — KJV beside BSB, and the KJV-modernization assessment
+  - Public-Domain Proverbs Commentaries.md — which commentaries are usable as-is, which need cleanup, which are off the
+  table
+  - UX Pattern Research.md — interaction patterns from 33 apps with review evidence and screenshots
+  - Wisdom Deck Reference.md — the physical card deck that seeded the "characteristics" axis
+  - Research/Tech/Bible Text Licensing & APIs.md — ESV and the other major translations need a negotiated license for a
+  complete book; BSB, WEB, and KJV do not
+  - Research/Competitors/Proverbs & Situational Scripture Apps — Landscape.md — no app categorizes Proverbs on more than
+  one axis; AI Bible chat owns the situation job at $3–7 a week
+  - Research/Trends/Indie iOS Market Calibration 2026.md — conversion, pricing, and renewal figures for solo apps
+
+  WHAT I WANT
+  A plan for turning this seed into a decision: a long-range product vision and a V1 scope I can commit to, or a
+  reasoned shelving. The plan is for me to execute over the coming weeks; it is not the product spec itself. I build iOS
+  apps myself in Swift and SwiftUI; the plan should not assume a team.
+
+  CONSTRAINTS AND POSITIONS ALREADY TAKEN
+  - Core feature free. A low-cost subscription for the AI situation-matching tier is the working revenue idea; nothing
+  else is decided.
+  - Preferred text is the ESV, but the licensing note shows that needs a negotiated license, so the plan must carry both
+  paths: a licensed ESV, and a license-free text (BSB first, modernized KJV as the alternative) until that is resolved.
+  - The categorization is the product. Its quality depends on a careful pass over all 915 verses by someone who knows
+  the book. The plan has to say how that pass gets done, checked, and stored so that a later text-version change costs
+  only the keyword layer.
+  - Judge the idea as a portfolio member: modest recurring revenue at low upkeep is a win. Do not argue for or against
+  anything on schedule or timing grounds.
+  - Do not weight toward my personal background or faith as a tiebreaker; evaluate on market and buildability.
+
+  THE DECISIONS THE PLAN MUST FORCE
+  1. Text version and license path, including whether to approach Crossway at all and what to ask them.
+  2. Unit of categorization and the final category types, with a sample categorization of two full chapters (one from
+  the sayings, one from the discourses) to test the scheme before committing to the whole book.
+  3. Whether categorization ships as fixed data or can grow, and where it lives (bundled JSON or SQLite; schema sketch).
+  4. What the AI tier does that a free chat assistant does not, and whether it runs on-device (Foundation Models) or
+  hosted; include a way to test that claim cheaply before building it.
+  5. Which delivery surfaces are V1 (search and browse, flash cards, reminders, widgets, App Intents capture, context
+  groups, commentary layer) and which are later, with the reason for each cut.
+  6. Pricing and the free/paid line, using the calibration note's figures.
+  7. Kill criteria, stated as evidence I could actually collect in the next few weeks.
+
+  OUTPUT
+  - A phased plan, each phase with its goal, the questions it answers, the concrete activities, what it produces (a
+  note, a prototype, a data file, a decision), and what evidence would end the exploration early.
+  - A one-page V1 candidate and a one-page long-range vision, both clearly labeled as proposals for me to accept or
+  edit.
+  - A list of the research still missing, with the specific question each gap blocks.
+  - Write the plan to App Ideas/Miscellaneous/Applying Proverbs/Exploration Plan.md, link it from Applying Proverbs.md,
+  and update the idea note's status to exploring only if the plan itself justifies it. Do not hard-wrap prose. Do not
+  commit; I will review first.
+
+  Finish with a short message: the phases in one line each, the two or three decisions you think are hardest, and what
+  you could not determine from the vault.

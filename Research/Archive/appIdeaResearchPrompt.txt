@@ -1,0 +1,109 @@
+I want to find new app ideas that a solo indie iOS developer could build well and that have a market large enough to
+  matter. Run this as a research project and file the results in this vault.
+
+  KNOBS
+  - Candidates to surface in the wide scan: 50
+  - Candidates to screen: 12
+  - Deep dives: 5
+  - Platforms: iOS first; note Android demand where it changes the picture
+  - Excluded up front: anything whose core value is dictation or transcription; card games and licensed-IP game
+  adaptations (already researched)
+
+  WHAT IS DIFFERENT THIS TIME
+  Earlier idea research in this vault weighted ideas toward my own background. Do not do that here. Assume I can learn
+  any domain well enough to build for it. Do not use my experience, interests, or the personal-background memory as a
+  filter or a tiebreaker. The only two tests are: is there a viable market for an indie, and can one developer build and
+  maintain it at a quality that competes.
+
+  What "viable for an indie" means: my income is a portfolio of consulting, apps, and writing, so no single app has to
+  replace a salary. A small app with modest recurring revenue and low upkeep is a win. Judge each idea as a portfolio
+  member, and do not argue for or against an idea on schedule or timing grounds.
+
+  What "solo-buildable" means: one person can ship a version that is clearly better than the incumbents on the things
+  users complain about, and keep it running without a team. Treat these as strikes, and say which apply: a content
+  treadmill, a two-sided marketplace or network effect, heavy backend operations or support load, dependence on a
+  license or a partner's permission, hardware, regulated liability such as medical-device claims, and a core feature
+  Apple or a general AI assistant is likely to absorb.
+
+  BEFORE STARTING
+  Read the vault's existing research so you build on it and do not repeat it: every landscape note under
+  Research/Competitors, the App Ideas MOC and its area folders, and App Ideas/Shelved with the reasons each idea was
+  shelved. List in one short paragraph what is already covered and exclude those niches unless you have new evidence.
+
+  HOW TO RUN IT
+  A previous session died waiting on one very large response, so keep the main thread light. Fan the work out to
+  parallel subagents, one per source or per candidate. Each agent writes its full findings to a file in the scratchpad
+  directory and replies with a summary under 300 words. Keep individual tool outputs small: fetch reviews 50 at a time,
+  search results 5 to 10 at a time. Synthesize in the main thread from the files.
+
+  Phase 1, wide scan. Generate candidates from evidence, not brainstorming. Each candidate is one line plus the signal
+  that surfaced it. Sources, one agent each:
+  - App Store charts by category, paid and top grossing, especially the smaller categories (Reference, Utilities,
+  Productivity, Navigation, Weather, Business, Education, Sports, Food & Drink, Lifestyle, Music, Photo & Video,
+  Medical). The legacy iTunes RSS feeds with a genre id return these as JSON through curl.
+  - Stale incumbents: apps with large rating counts and no update in two or more years, or whose 100 most recent reviews
+  are majority one-star. The iTunes Search API returns rating count, release date, and last update date.
+  - Indie revenue disclosures: Indie Hackers, RevenueCat's State of Subscription Apps, r/iOSProgramming and
+  r/SideProject, build-in-public posts, the Sub Club podcast and similar talks on YouTube (use the transcript tool).
+  - Unmet-demand language: Reddit and forum threads of the form "is there an app that", "I would pay for", "why is there
+  no". Use web search restricted to those sites; Reddit pages often block direct fetch. The Hacker News Algolia API
+  works through plain fetch.
+  - New platform surface: frameworks and capabilities added in iOS 26 and iOS 27 that few shipped apps use yet. The
+  vault has notes on both under Research/Tech. For API facts, the cupertino MCP is the first choice; if it is not
+  connected, Apple's documentation JSON endpoint works through curl, while fetching the HTML documentation pages returns
+  only a title.
+  - Spending niches: hobbies, trades, and professions where people already pay for tools or equipment and the existing
+  apps are weak.
+
+  Phase 2, screen. Cut to the screening count using quick store checks only. For each survivor record: the top three
+  existing apps with publisher, model, price, rating, US rating count, and last update; whether paid or subscription
+  apps in the niche have meaningful rating counts; and which solo-buildability strikes apply. State why each rejected
+  candidate was cut in one line.
+
+  Phase 3, deep dive. One agent per finalist. Each produces:
+  - Market table for the top five to eight apps, US storefront, plus Germany, France, the UK, and Japan where the niche
+  is regional.
+  - Review mining with the appstore MCP: star distribution of the 100 most recent reviews beside the lifetime score, top
+  praise and complaint themes, verbatim quotes with star and date, and any place a reviewer names a price they would
+  pay.
+  - Search demand: keyword popularity and difficulty from the astro MCP if it is connected, otherwise the appstore MCP's
+  keyword tools. Say which was used.
+  - Monetization evidence: what the paying apps charge, how users react to that model, and a revenue range for a
+  competent entrant with the method shown and marked as an estimate.
+  - Build scope: the smallest version that beats incumbents on the top complaints, the frameworks it needs, and the
+  ongoing upkeep.
+  - Risks, including platform or AI absorption and any dependency on a third party.
+
+  Phase 4, synthesis. Rank the finalists on a scorecard with one row per idea and these columns: evidence of paying
+  demand, incumbent weakness, search demand against difficulty, solo build fit, upkeep, absorption risk, and reach (a
+  channel one person can actually use). Give each cell a short evidence phrase, not just a score.
+
+  RULES OF EVIDENCE
+  Mark every figure that was not directly fetched as an estimate or unverified. Do not turn a tool's opaque score into a
+  real-world claim. Rating count is a size proxy, not revenue. Lifetime ratings are inflated by rating prompts; the
+  recent review stream is the product's actual state. An empty niche can mean no demand, so look for demand evidence
+  outside the store before calling it an opening. Report negatives and gaps as plainly as findings.
+
+  OUTPUT
+  - One synthesis note at Research/Trends/Indie App Opportunity Scan — [date].md with the scorecard, the ranked
+  finalists, the rejected candidates with reasons, and the gaps.
+  - One landscape note per deep dive under Research/Competitors, following the existing landscape notes' format, linked
+  from the Competitors MOC.
+  - One seed note per finalist under App Ideas, in the fitting area folder, using the App Idea template with status:
+  seed, linked from that area's MOC.
+  - Use the Research Note template's confidence field. Do not hard-wrap prose.
+  - Do not commit. I will review first.
+
+  Finish with a short message: the ranked finalists in one line each, what you could not verify, and where the files
+  are.
+
+  Notes on what is baked in from this session:
+
+  - The fan-out pattern and the small-output rule are there because the first card-game session died on a single long
+    response. Agents writing to scratchpad files kept the later runs stable.
+  - Tool fallbacks are named because the astro, cupertino, and xcodebuildmcp servers failed to connect this session.
+    Start those before running if you want keyword popularity and Apple documentation lookups from their primary tools.
+  - The iTunes Search API, the legacy RSS chart feeds, Apple's documentation JSON endpoint, and the Hacker News Algolia 
+    API all worked here through plain curl or fetch, and none need a connector.
+  - The evidence rules come from what the card-game research turned up: lifetime scores hiding majority one-star recent
+    streams, users quoting their own price, and one publisher holding the top slot in five categories.
