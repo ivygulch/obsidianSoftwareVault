@@ -1,5 +1,7 @@
 # Proverbs
 
+Working app title: **Get Wisdom** (chosen 2026-10-26; see [[Name Testing]]). The vault project stays named Proverbs.
+
 Proverbs linked up like a wiki: a cloud of tags over the whole book, weighted links between passages, trails you can follow and keep. Promoted from [[Applying Proverbs]] on 2026-10-26; the Ideal State Artifact is the source of truth for the build.
 
 ## Project pages

@@ -17,7 +17,9 @@ Spec driven. Claude writes the code according to Doug's direction, with the ISA 
 | Question | Decision |
 |---|---|
 | Who drives | Claude implements, Doug directs |
-| Repo path and product name | TBD |
+| Product name | Working title **Get Wisdom** (Proverbs 4:7), chosen 2026-10-26; no exact match in the store as of that date; App Store Connect availability unconfirmed |
+| Repo | `GetWisdom`, decided 2026-10-26. Path follows the Skyjo prototype's location: `~/ivygulch/ios/projects/tca/GetWisdom` (confirm) |
+| Bundle ID | `com.ivygulch.GetWisdom` (inferred: Doug gave `GetWisdom`; the Skyjo prototype used the `com.sunetos` prefix, which belongs to the defunct entity and is not for new work; confirm the prefix) |
 | Architecture | TCA 2.0 |
 | Package layout | Thin app shell + SPM package + workspace (the usual layout) |
 | Separate data package for curated text and loader | Open; "yes" was given to the layout, the sub-question was not answered |
@@ -27,12 +29,43 @@ Spec driven. Claude writes the code according to Doug's direction, with the ISA 
 | Deployment targets | iPhone and iPad |
 | Testing | Swift Testing; ISC-named tests. Whether one test target per package and whether ISC tests sit in their own suite: "yes" given, read as one target per package with ISC tests in their own suite; confirm |
 
+## Data (2026-10-26)
+
+Decided with Android as a desired option not long after iOS, and with shared data between platforms as a later goal. Android with shared user data implies some kind of account or non-Apple sync backend later; that is an ISA-level change when it comes and is not decided here.
+
+### Curated layer: a plain SQLite file in the bundle, built by a script
+
+- One artifact, `curated.sqlite`, read-only in the bundle, stamped with a schema version and a data version. Both platforms read SQLite natively (iOS: SQLiteData or GRDB; Android: Room or SQLDelight), so the schema is identical on each side. FTS5 provides full-text search.
+- The layer is relational: passages in many tags, tags of several types, weighted links, curated groups holding passages, and version-specific tags with a version column (ISC-41, 43). JSON would make each platform reimplement the indexing and turn cloud and link queries into scans.
+- Source of truth is text files in a repo: one verse-aligned file per text version, plus the tag, link, and group assignments in Doug's authoring format (CSV, Markdown tables, or a small DSL; not yet chosen).
+- A build script produces the SQLite file and runs the data-level ISC tests (1 through 8, 41 through 43) against it before the app sees it.
+- A curated update ships a new file. ISC-33 and 34 become a migration of user rows against the new curated version.
+- If Android arrives through Kotlin Multiplatform, SQLDelight can own this schema on both platforms.
+
+### User layer: rows, not documents
+
+The ISA's "clouds are the documents of the app" is the user's mental model, not the storage model. User data is stored as rows in a plain SQLite schema the app owns (tilts the store choice to SQLiteData over SwiftData; SwiftData's on-disk schema is private to Apple's framework).
+
+- The data is a graph: tags on passages, overrides per passage, notes on passages, trails, and tags, passages in many groups, trails attached to groups. Rows keep those relations queryable ("every note on this passage across all clouds").
+- The weighted tag cloud, "which groups hold this passage," and session expiry (ISC-23) are aggregate queries.
+- Sync is per row. CloudKit records map to rows with timestamps; a later server does the same. Document sync means whole-document conflicts and last-writer-wins data loss between two devices.
+- Curated updates (ISC-33, 34) and the override filter (ISC-28) are row-level operations.
+- Portable types only: UUID ids, ISO dates, no Apple-specific value types. Sync metadata from day one: per-row id, modified timestamp, soft delete. The sync engine sits behind a Dependencies-style boundary so CloudKit can be replaced later; ISC-30 already forces most of this.
+
+Exception: the session tree is stored as a JSON column inside a sessions row, with denormalized columns for date and for the tags and passages touched (what the ISC-20 list needs). It is append-only, created on one device, and read whole.
+
+### The document structure is the export and import format
+
+One JSON document per cloud, with stable UUIDs so re-import deduplicates, and a format version. It is at once the sharing payload (ISC-38), the backup format, and the migration path to Android. Define it early; it is the one data contract that outlives the storage choice.
+
 ## Still open before the scaffold
 
-- Repo path and product name (sets bundle ID and App Store name check)
-- Dependencies: TCA 2.0 source (local TCA26 preview as Skyjo used, or a tagged release); SQLiteData or SwiftData for user data; Dependencies library
+- Confirm the repo path and the `com.ivygulch` bundle prefix
+- App Store Connect name check for "Get Wisdom"
+- Dependencies: TCA 2.0 source (local TCA26 preview as Skyjo used, or a tagged release); SQLiteData (favored by the Data section) or SwiftData for user data; Dependencies library
+- Authoring format for the curated layer (CSV, Markdown tables, or a DSL) and the build script's language
 - Minimum iOS version
-- Whether curated data gets its own package
+- Whether curated data and its loader get their own package (the Data section's build-then-test pipeline argues for it)
 
 ## Related
 

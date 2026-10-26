@@ -22,6 +22,8 @@ Where the test earns its cost: the split between Proverbs-forward names and scri
 
 ## Candidate names (2026-10-26)
 
+**Working title chosen 2026-10-26: Get Wisdom** (Proverbs 4:7, "Get wisdom, get understanding"). Store check the same day: no exact match; the neighborhood for the phrase is Wisdom Hunters, Stoic Widgets, Wisdom: Quotes & Mental Models, Taoist Wisdom, Calendar of Wisdom. It carries no "proverbs" keyword, so the subtitle should. Working title, not final; the testing order below still applies before release.
+
 Proverbs-forward: Proverbs Map, Proverbs Trails, Proverbs Threads, Proverbs Woven, Proverbs (bare; "Proverb" exists, "Proverbs++" holds the URL slug, confirm in App Store Connect).
 From the book: Fitly Spoken (25:11), In Season (15:23), Apples of Gold (25:11), Straight Paths (3:6), Get Wisdom (4:7).
 Hybrid: Proverbs in Season (keyword first, 15:23 phrase; no collision found 2026-10-26; "In Season" alone is owned by produce-calendar apps; the risk to test is whether cold viewers read "for the moment" or "time of year").
