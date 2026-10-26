@@ -5,4 +5,4 @@ Ideas that don't fit cleanly into the other areas yet. Includes adjacent categor
 ## Ideas
 - [[Vehicle Fuel & Service Log]] — fuel economy and maintenance log with working reminders and Fuelly import; ranked fourth in the 2026-10-02 indie scan (seed, 2026-10-02)
 - [[Bill Organizer]] — manual bill calendar with reminders and paid history, no bank login; ranked fifth (seed, 2026-10-02)
-- [[Applying Proverbs]] — find the proverbs that speak to a situation; categorized book, user tags and links, context groups, optional AI tier (seed, 2026-10-03). Folder holds [[Idea Backlog]], [[Categorization Scheme]], [[Wisdom Deck Reference]], [[Text Version Comparison]], [[Public-Domain Proverbs Commentaries]], [[UX Pattern Research]], [[Exploration Plan]]
+- [[Applying Proverbs]] — promoted 2026-10-26 to [[_Proverbs MOC|Projects/Proverbs]]; idea note and research moved with it

@@ -41,12 +41,10 @@ Set `Scope` to the version the Ideal State is describing unless the prose marks 
 Present candidates in batches of at most eight, in the grilling format:
 
 ```
-❓ **C1** - **ISC-<n> <short name>**: <criterion>. Level: <level>. Eval: <eval>.
-
-➡️ Keep as written.
+**C1 · ISC-<n> <short name>** — <criterion>. `<level>`: <eval>. ➡️ keep
 ```
 
-Word each so "yes" accepts. Offer `drop`, `merge with`, or `rewrite` as the alternatives. When the ISA already has ISCs, the first round is a diff: for each existing ISC, `keep`, `drop` (with reason), or `rewrite`; for each new candidate, `add`. Wait for answers before the next batch.
+One candidate per line, at most three lines each, no blank lines between candidates, so a batch fits on one screen. Word each so "yes" accepts. Offer `drop`, `merge with`, or `rewrite` as the alternatives. When the ISA already has ISCs, the first round is a diff: for each existing ISC, `keep`, `drop` (with reason), or `rewrite`; for each new candidate, `add`. Wait for answers before the next batch.
 
 If a candidate exposes an ambiguity in the Ideal State prose, ask about it as its own question, and when answered, record a Decisions entry. Never edit the Ideal State prose yourself to resolve it.
 

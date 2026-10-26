@@ -24,7 +24,7 @@ You are building the **Ideal State** and **Constraints** sections of a project's
 
 Map the intent as a design tree: each settled answer opens the questions that hang off it. Work in rounds. The frontier is every question whose prerequisites are already settled. Ask the whole frontier in one round, at most seven questions, and wait.
 
-Format each question exactly like this:
+Keep each question to three lines at most and put no blank lines between questions, so a round fits on one screen without scrolling. Format each question like this:
 
 ```
 ❓ **Q1** - **<question title>**: <question body, may include choices>
@@ -33,6 +33,8 @@ Format each question exactly like this:
 ```
 
 Word each question so "yes" accepts your recommendation. A question whose answer depends on another question still open in this round belongs to a later round.
+
+End every round with the line `**Your answers, by number. "yes" accepts the ➡️ line; anything else overrides it.**` and then stop. The ➡️ lines are proposals, never answers; nothing is written to the ISA until Doug replies.
 
 Areas the tree must cover before the frontier is empty:
 

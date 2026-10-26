@@ -1,9 +1,9 @@
 ---
 area: Miscellaneous
-status: seed
+status: promoted
 tags: [app-idea, proverbs, bible, wisdom, reference]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-26
 ---
 
 # Applying Proverbs
