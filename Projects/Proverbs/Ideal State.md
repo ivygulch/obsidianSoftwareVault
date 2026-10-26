@@ -24,7 +24,7 @@ Clouds are the one kind of document in the app. The default cloud is the whole b
 
 Groups come in two kinds, kept distinct. Curated groups ship with the book; I build them, along with the tags and categories, across the whole book before launch, and that curated layer is the product. Context groups are mine as a user: a person, an ongoing situation, a project, holding the passages, notes, and trails that belong to it. The first user the curated layer has to satisfy is me, in my own situations.
 
-The text is the ESV if Crossway's terms allow it, and otherwise the Berean Standard Bible or another freely available text. One possibility for later is a separate prebuilt cloud whose tags come from the original Hebrew words and phrases rather than from English categories.
+The text starts as a freely available version, the Berean Standard Bible or another. Licensing the ESV and other commercial translations is investigated once a working prototype exists, not before. Some tags are specific to a version, because translations and the underlying texts differ; such a tag belongs to its version and is not shown against another. One possibility for later is a separate prebuilt cloud whose tags come from the original Hebrew words and phrases rather than from English categories.
 
 My own marks sit on top of the curated layer without damaging it. I tag passages with my own tags. I write notes on passages, on trails, and on the predefined tags themselves. I can override the curated tagging of a specific passage, removing a tag from it or adding a different predefined tag to it, and a filter lets me switch my overrides off for a while to see the book as shipped. All of it follows me to another iPhone or an iPad through iCloud, and the app works in full when iCloud is unavailable. Everything in the finding experience works with no network: the text, the cloud, the links, the sessions and trails, my notes and groups.
 
@@ -50,9 +50,15 @@ A year on, I have a handful of named trails and context groups I return to, a cl
 - Superseded curated groups are archived, never deleted.
 - A curated update never alters or removes the user's tags, notes, or overrides.
 - Sharing hands over a copy; nothing shared stays linked to the sender.
+- A tag that depends on a translation is bound to that version and never shown against another.
 
 ## Decisions
 
+- 2026-10-26 — Some tags are version-specific, because translations and underlying texts differ; a version-specific tag belongs to its version and is not shown against another. Added to Constraints.
+- 2026-10-26 — Text order reversed: start with a freely available version (BSB or another); investigate ESV and other commercial licenses only after a working prototype. Replaces "the ESV if Crossway's terms allow it, and otherwise the BSB." Reason: the prototype should not wait on a licensing conversation.
+- 2026-10-26 — Context group defined: a cloud the user creates and names for something ongoing in their life (a person, a situation, a project); it holds the passages they put in it, their notes on it, and any trails they attach; opening it shows those passages and their tags as a map in the same cloud view; it differs from a curated group only in that the user made it and can edit it, and it may reference a curated group. Decided in `/isa-criteria` batch 4 (D1, ISC-22).
+- 2026-10-26 — Session boundaries are set by two internally configurable return thresholds. Returning under the first resumes in place silently; between the two, the app asks whether to resume; beyond both, a new session starts at the default cloud and the old one stays findable. Replaces "the next session starts again from the default cloud unless I gave the previous one a name." Reason: a short interruption should not throw away the current meander. Decided in `/isa-criteria` batch 3 (ISC-17).
+- 2026-10-26 — Unit of categorization is the passage: a contiguous span that may begin or end mid-verse, so a few verses are split between two adjacent passages. Reason: some verses are split awkwardly between sayings. Decided in `/isa-criteria` batch 2 (ISC-4).
 - 2026-10-26 — Promoted from `App Ideas/Miscellaneous/Applying Proverbs` to `Projects/Proverbs`; ISA created. The initial use case is following tags through the book's structure with the path kept as a backtrackable tree, rather than free-text situation search as in the idea note's one-liner. Decided in `/isa-discuss` round 1.
 
 ## Criteria

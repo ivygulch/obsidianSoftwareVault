@@ -14,6 +14,7 @@ Proverbs linked up like a wiki: a cloud of tags over the whole book, weighted li
 
 - [[UX Pattern Research]] — interaction patterns from 33 apps
 - [[Text Version Comparison]] — KJV beside BSB; KJV modernization assessment
+- [[ESV Licensing Guide]] — Crossway guidelines, API terms, when a formal license is needed, the one public fee data point; Grok summary 2026-10-26, unverified
 - [[Public-Domain Proverbs Commentaries]] — commentary sourcing and license status
 - [[Wisdom Deck Reference]] — the physical card deck
 - [[Bible Text Licensing & APIs]] — version licensing (in Research/Tech)
