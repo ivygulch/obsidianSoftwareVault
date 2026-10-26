@@ -20,3 +20,14 @@ FROM "Projects"
 WHERE file.name = "Brief"
 SORT updated DESC
 ```
+
+## Ideal State Artifacts (Dataview)
+
+Projects using the [[Craft/Ideal State Method/Method|Ideal State Method]]: criteria counts come from the ISA frontmatter, kept current by `/isa-criteria` and `/isa-check`.
+
+```dataview
+TABLE status, criteria_done, criteria_open, updated
+FROM "Projects"
+WHERE type = "isa"
+SORT updated DESC
+```

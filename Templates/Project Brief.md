@@ -23,6 +23,7 @@ updated: <% tp.date.now("YYYY-MM-DD") %>
 ## Risks
 
 ## Related
+- [[Ideal State]] — intent, constraints, decisions, criteria with evals (source of truth for the build)
 - [[Design]]
 - [[Research]]
 - [[Development Log]]

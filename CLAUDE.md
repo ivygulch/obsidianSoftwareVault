@@ -20,6 +20,8 @@ Projects/                        — Ideas promoted to active work
   <Project Name>/
     _<Project Name> MOC.md
     Brief.md, Design.md, Research.md, Development Log.md, Marketing.md, Notes.md
+    Ideal State.md               — ISA: intent, constraints, decisions, criteria with evals (source of truth for the build)
+    Evals/                       — per-date Eval Run notes from /isa-check
 
 App Platform/                    — Cross-project business + presence layer
   _App Platform MOC.md
@@ -40,6 +42,10 @@ App Platform/                    — Cross-project business + presence layer
   Analytics.md
   Pricing & Monetization.md
 
+Craft/                           — Skill development and study notes
+  Point Free/                    — pointfree.co episode notes
+  Ideal State Method/            — writing-first development method, adoption plan, article notes
+
 Research/                        — Cross-cutting research
   _Research MOC.md
   Tech/                          — frameworks, libraries, APIs worth evaluating
@@ -47,7 +53,7 @@ Research/                        — Cross-cutting research
   Trends/                        — market + technology trends
 
 Templates/                       — Templater templates
-  App Idea.md, Project Brief.md, Research Note.md, Competitor.md, Newsletter Issue.md
+  App Idea.md, Project Brief.md, Research Note.md, Competitor.md, Newsletter Issue.md, Ideal State Artifact.md, Eval Run.md
 ```
 
 ## Conventions
@@ -68,11 +74,19 @@ Templates/                       — Templater templates
 - The vault tracks planning and analysis; Xcode holds the code
 - `Brief.md` is the canonical project overview — other pages drill into specifics
 
+### Ideal State Artifacts
+- A project may carry `Ideal State.md` (the ISA): Ideal State prose, Constraints, a dated Decisions log, and Criteria (ISCs) each with its own eval. It is the source of truth for build intent; `Brief.md` stays the business overview.
+- When code and the ISA disagree, the ISA wins: fix the code, or change the ISA and log a dated Decision.
+- Skills: `/isa-discuss` builds the Ideal State and Constraints by interview; `/isa-criteria` derives ISCs with evals; `/isa-check` evaluates a build and writes `Projects/<Project>/Evals/<date> Eval Run.md`.
+- Method, adoption plan, and article notes: `Craft/Ideal State Method/`.
+
 ### Templates
 - Templates use `{{title}}` placeholder (Templater syntax)
 - `App Idea.md` — one-liner, target user, problem, differentiator, status frontmatter
 - `Project Brief.md` — concept, scope, out-of-scope, success criteria, risks
 - `Competitor.md` — includes Dataview "Mentioned In" backlink query
+- `Ideal State Artifact.md` — ISA: Ideal State, Constraints, Decisions, Criteria with eval levels
+- `Eval Run.md` — one check of a build against the ISA; results table, failures, gaps, proposed decisions
 
 ### Linking
 - Wikilinks (`[[Note Name]]`) for cross-referencing
