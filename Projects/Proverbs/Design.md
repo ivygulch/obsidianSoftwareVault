@@ -21,8 +21,8 @@ Spec driven. Claude writes the code according to Doug's direction, with the ISA 
 | Repo | `GetWisdom`, decided 2026-10-26. Path follows the Skyjo prototype's location: `~/ivygulch/ios/projects/tca/GetWisdom` (confirm) |
 | Bundle ID | `com.ivygulch.GetWisdom` (inferred: Doug gave `GetWisdom`; the Skyjo prototype used the `com.sunetos` prefix, which belongs to the defunct entity and is not for new work; confirm the prefix) |
 | Architecture | TCA 2.0 |
-| Package layout | Thin app shell + SPM package + workspace (the usual layout) |
-| Separate data package for curated text and loader | Open; "yes" was given to the layout, the sub-question was not answered |
+| App targets | Two, decided 2026-10-26: the primary user app (Get Wisdom) and a data builder app used to import new text versions, build the curated tag clouds, and produce the bundled data. The builder is internal, not an App Store product |
+| Package layout | Workspace with thin app shells and SPM packages. `GetWisdomData` holds the schema, the curated-data model, the loader, and the builder logic, and is consumed by both targets. `GetWisdomKit` (features, TCA) is consumed by the user app only. Settled by the two-target decision; the earlier open sub-question is closed |
 | Dependencies at scaffold time | TBD |
 | Minimum iOS version | TBD |
 | Developer team | Ivy Gulch LLC |
@@ -33,12 +33,12 @@ Spec driven. Claude writes the code according to Doug's direction, with the ISA 
 
 Decided with Android as a desired option not long after iOS, and with shared data between platforms as a later goal. Android with shared user data implies some kind of account or non-Apple sync backend later; that is an ISA-level change when it comes and is not decided here.
 
-### Curated layer: a plain SQLite file in the bundle, built by a script
+### Curated layer: a plain SQLite file in the bundle, produced by the data builder app
 
 - One artifact, `curated.sqlite`, read-only in the bundle, stamped with a schema version and a data version. Both platforms read SQLite natively (iOS: SQLiteData or GRDB; Android: Room or SQLDelight), so the schema is identical on each side. FTS5 provides full-text search.
 - The layer is relational: passages in many tags, tags of several types, weighted links, curated groups holding passages, and version-specific tags with a version column (ISC-41, 43). JSON would make each platform reimplement the indexing and turn cloud and link queries into scans.
 - Source of truth is text files in a repo: one verse-aligned file per text version, plus the tag, link, and group assignments in Doug's authoring format (CSV, Markdown tables, or a small DSL; not yet chosen).
-- A build script produces the SQLite file and runs the data-level ISC tests (1 through 8, 41 through 43) against it before the app sees it.
+- The data builder app produces the SQLite file, through builder logic that lives in `GetWisdomData` so it is testable without the app. The data-level ISC tests (1 through 8, 41 through 43) run against the produced file before the user app sees it.
 - A curated update ships a new file. ISC-33 and 34 become a migration of user rows against the new curated version.
 - If Android arrives through Kotlin Multiplatform, SQLDelight can own this schema on both platforms.
 
@@ -63,9 +63,10 @@ One JSON document per cloud, with stable UUIDs so re-import deduplicates, and a 
 - Confirm the repo path and the `com.ivygulch` bundle prefix
 - App Store Connect name check for "Get Wisdom"
 - Dependencies: TCA 2.0 source (local TCA26 preview as Skyjo used, or a tagged release); SQLiteData (favored by the Data section) or SwiftData for user data; Dependencies library
-- Authoring format for the curated layer (CSV, Markdown tables, or a DSL) and the build script's language
+- Authoring format for the curated layer (CSV, Markdown tables, a DSL, or the builder app's own UI) and whether the source of truth is files in the repo or the builder's own store
 - Minimum iOS version
-- Whether curated data and its loader get their own package (the Data section's build-then-test pipeline argues for it)
+- Data builder app platform: macOS (file access, authoring at a desk) or iPad (Pencil, tagging away from the desk), or both from one SwiftUI target
+- How the builder ingests a text version (file formats it accepts) and what its authoring surface for tags, links, and groups looks like
 
 ## Related
 
