@@ -2,7 +2,7 @@
 type: isa
 project: Proverbs
 status: building
-criteria_open: 40
+criteria_open: 43
 criteria_done: 0
 created: 2026-10-26
 updated: 2026-10-26
@@ -386,5 +386,29 @@ _**Status** values: `open` · `done` · `dropped`. **Scope** is optional: `v1`, 
 - **Scope:** later
 - **Eval level:** questions
 - **Eval:** Against the ISC-39 screenshots plus the passage screen. 1. Is any commentary visible without a tap? (no) 2. Does the finding path contain any interpretive text? (no)
+- **Status:** open
+- **Last checked:** —
+
+### ISC-41 — Version-specific tags stay with their version
+- **Criterion:** A tag bound to a version is absent from the cloud, passage views, tag lists, and situation suggestions whenever the active text is a different version.
+- **Scope:** v1
+- **Eval level:** assert
+- **Eval:** `ISC_41_versionTagHiddenForOtherVersion` (missing); fixture with a BSB-only tag, active text KJV, tag absent everywhere.
+- **Status:** open
+- **Last checked:** —
+
+### ISC-42 — Development text is freely licensed
+- **Criterion:** Until a commercial license is on file, the bundled text is a version whose license permits a complete book offline without negotiation (BSB, KJV, WEB, ASV). Which version the first App Store release ships is undecided and not tested here.
+- **Scope:** prototype
+- **Eval level:** assert
+- **Eval:** `ISC_42_bundledVersionIsFreelyLicensedOrLicensed` (missing); version id in the allowlist, or a license record present in bundle metadata naming the version.
+- **Status:** open
+- **Last checked:** —
+
+### ISC-43 — Version references are valid
+- **Criterion:** Every version-specific tag names a version that actually ships; none is orphaned.
+- **Scope:** v1
+- **Eval level:** assert
+- **Eval:** `ISC_43_versionTagsReferenceShippedVersions` (missing).
 - **Status:** open
 - **Last checked:** —
