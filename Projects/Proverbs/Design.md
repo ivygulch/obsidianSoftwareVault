@@ -21,7 +21,7 @@ Spec driven. Claude writes the code according to Doug's direction, with the ISA 
 | Repo | `GetWisdom`, decided 2026-10-26. Path follows the Skyjo prototype's location: `~/ivygulch/ios/projects/tca/GetWisdom` (confirm) |
 | Bundle ID | `com.ivygulch.GetWisdom` (inferred: Doug gave `GetWisdom`; the Skyjo prototype used the `com.sunetos` prefix, which belongs to the defunct entity and is not for new work; confirm the prefix) |
 | Architecture | TCA 2.0 |
-| App targets | Two, decided 2026-10-26: the primary user app (Get Wisdom) and a data builder app used to import new text versions, build the curated tag clouds, and produce the bundled data. The builder is internal, not an App Store product |
+| App targets | Two, decided 2026-10-26: the primary user app (Get Wisdom) and a data builder app used to import new text versions, build the curated tag clouds, and produce the bundled data. The builder is macOS only (decided 2026-10-26), internal, not an App Store product |
 | Package layout | Workspace with thin app shells and SPM packages. `GetWisdomData` holds the schema, the curated-data model, the loader, and the builder logic, and is consumed by both targets. `GetWisdomKit` (features, TCA) is consumed by the user app only. Settled by the two-target decision; the earlier open sub-question is closed |
 | Dependencies at scaffold time | TBD |
 | Minimum iOS version | TBD |
@@ -65,7 +65,6 @@ One JSON document per cloud, with stable UUIDs so re-import deduplicates, and a 
 - Dependencies: TCA 2.0 source (local TCA26 preview as Skyjo used, or a tagged release); SQLiteData (favored by the Data section) or SwiftData for user data; Dependencies library
 - Authoring format for the curated layer (CSV, Markdown tables, a DSL, or the builder app's own UI) and whether the source of truth is files in the repo or the builder's own store
 - Minimum iOS version
-- Data builder app platform: macOS (file access, authoring at a desk) or iPad (Pencil, tagging away from the desk), or both from one SwiftUI target
 - How the builder ingests a text version (file formats it accepts) and what its authoring surface for tags, links, and groups looks like
 
 ## Related
