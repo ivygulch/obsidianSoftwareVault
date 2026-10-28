@@ -65,7 +65,7 @@ One JSON document per cloud, with stable UUIDs so re-import deduplicates, and a 
 - App Store Connect name check for "Get Wisdom"
 - **TCA26 remote access.** On 2026-10-26 the GitHub URL returned "not found" from the API (signed in as dwsjoquist) and "Repository not found" on `git fetch` from the local clone's SSH remote. The local checkout `/d/ivgp/tca/TCA26` is on `main` at `25dd5e5` (2026-08-06) and is the only working copy. Check the Point-Free beta page for the repo's current location or re-accept the invitation; until then the scaffold can depend on the local checkout by path, as the Skyjo prototype does.
 - **Version alignment.** TCA26 and SQLiteData both depend on swift-dependencies (and SQLiteData on swift-structured-queries); confirm the resolved versions agree at scaffold time.
-- Translation text input format(s) the builder accepts (USFM, OSIS, API JSON, verse-per-line; TBD)
+- Translation text input format(s) the builder accepts (USFM, OSIS, API JSON, verse-per-line; TBD). Berean's files are described in [[BSB Download Formats]]
 - The builder's authoring surface for tags, links, groups, and passage boundaries, and how its store is kept durable and portable
 
 ## Related
