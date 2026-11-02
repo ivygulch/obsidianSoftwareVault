@@ -14,7 +14,7 @@ Two loops run at once. Intent and writing refine each other (talking it through 
 
 ## The artifact
 
-Each project carries `Projects/<Project>/Ideal State.md`, the Ideal State Artifact (ISA), created from [[Templates/Ideal State Artifact|the template]]. Four sections:
+Each project carries `Projects/<Project>/Ideal State.md`, the Ideal State Artifact (ISA), created from [[Templates/Ideal State Artifact|the template]]. A part of a project with its own users and its own build (an internal tool, a companion app) gets a second artifact, `Projects/<Project>/<Name> Ideal State.md`, addressed by the skills as `<Project>/<Name>`; its eval runs share the project's `Evals/` folder with the name in the filename. Four sections:
 
 1. **Ideal State.** Prose describing the project as if it already exists and works. Who is using it, in what moment, what they do, what happens. A few paragraphs at minimum. Built up by interview with `/isa-discuss`.
 2. **Constraints.** What must hold and what must not be built.

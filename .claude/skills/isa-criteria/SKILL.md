@@ -1,22 +1,26 @@
 ---
 name: isa-criteria
-description: Derive or refresh the Ideal State Criteria (ISCs) in a project's Ideal State Artifact from its Ideal State prose and Constraints. Each ISC is atomic, testable, and carries its own eval at the cheapest level that can fail (assert, check, questions, judge). Presents candidates for approval in grilling-style rounds, then writes them into Projects/<Project>/Ideal State.md and updates the counts. Re-run after the Ideal State changes; it diffs against existing ISCs.
+description: Derive or refresh the Ideal State Criteria (ISCs) in a project's Ideal State Artifact from its Ideal State prose and Constraints. Each ISC is atomic, testable, and carries its own eval at the cheapest level that can fail (assert, check, questions, judge). Presents candidates for approval in grilling-style rounds, then writes them into the resolved ISA (Projects/<Project>/Ideal State.md, or Projects/<Project>/<Name> Ideal State.md for `<Project>/<Name>`) and updates the counts. Re-run after the Ideal State changes; it diffs against existing ISCs.
 allowed-tools: Read Bash Grep Glob Write Edit Agent
 disable-model-invocation: true
-arguments: [project]
+arguments: [artifact]
 ---
 
 # ISA Criteria
 
 You are turning a project's Ideal State and Constraints into Ideal State Criteria with evals. Method in `Craft/Ideal State Method/Method.md`; read the eval-ladder table before starting.
 
-**Project:** $ARGUMENTS
+**Artifact:** $ARGUMENTS
+
+## Resolving the artifact
+
+The argument is `<Project>` or `<Project>/<Name>`. `<Project>` resolves to `Projects/<Project>/Ideal State.md`. `<Project>/<Name>` resolves to `Projects/<Project>/<Name> Ideal State.md`, a second artifact in the same project for a part with its own users and its own build (for example `Proverbs/Builder` → `Projects/Proverbs/Builder Ideal State.md`). Both forms share the project folder, its notes, and its `Evals/` folder; an Eval Run for a named artifact is written as `Evals/<date> <Name> Eval Run.md`. Below, "the ISA" means the resolved file.
 
 ## Preparation
 
-1. Read `Projects/<Project>/Ideal State.md` in full. If the Ideal State section is empty or a single paragraph, stop and say `/isa-discuss` has to run first.
+1. Read the ISA in full. If the Ideal State section is empty or a single paragraph, stop and say `/isa-discuss` has to run first.
 2. If the Development Log or MOC names a code repo, list its test targets and existing test names so `assert` evals can point at real tests or name missing ones precisely. Use `ls`, `find`, and `grep`; never run builds here.
-3. Read the most recent note in `Projects/<Project>/Evals/` if any, so statuses and known gaps are not lost.
+3. Read the most recent note in `Projects/<Project>/Evals/` for this artifact if any, so statuses and known gaps are not lost.
 
 ## Deriving candidates
 
@@ -58,7 +62,7 @@ If a candidate exposes an ambiguity in the Ideal State prose, ask about it as it
 
 ## Ending
 
-Print the final table: ISC id, short name, level, status. List the `(missing)` asserts as a block of work for the code repo. State that `/isa-check <Project>` is the next step once a build exists.
+Print the final table: ISC id, short name, level, status. List the `(missing)` asserts as a block of work for the code repo. State that `/isa-check <same argument>` is the next step once a build exists.
 
 ## Style
 

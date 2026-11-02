@@ -1,0 +1,87 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Length 5879 >>
+stream
+BT /F1 10 Tf
+1 0 0 1 58 721.60 Tm (To the mobile engineering team at Andium,) Tj
+1 0 0 1 58 702.20 Tm (An app that helps field crews resolve a methane event in real time has to keep working at a well site where) Tj
+1 0 0 1 58 689.80 Tm (connectivity is poor and the person holding the phone is busy. That is the kind of app I shipped most recently.) Tj
+1 0 0 1 58 677.40 Tm (Earlier this year I built an incident-command and personnel-accountability app for volunteer fire departments,) Tj
+1 0 0 1 58 665.00 Tm (from the first conversation with the customer to a shipped v1.0 release. It is offline-first: every action writes to) Tj
+1 0 0 1 58 652.60 Tm (local storage first, and a sync engine I built reconciles with the backend when connectivity returns, with a) Tj
+1 0 0 1 58 640.20 Tm (persisted upload queue, live updates over a realtime subscription, last-write-wins conflict resolution, and) Tj
+1 0 0 1 58 627.80 Tm (tombstones so deletions survive reconnect. The accountability timer survives backgrounding by computing) Tj
+1 0 0 1 58 615.40 Tm (deadlines from wall-clock time and firing a local notification when the phone is locked. I took the customer's) Tj
+1 0 0 1 58 603.00 Tm (non-technical requirements, turned them into formal specifications before writing code, and iterated with the) Tj
+1 0 0 1 58 590.60 Tm (customer as the app took shape. I would like to bring that comprehensive approach to Andium's iOS platform.) Tj
+1 0 0 1 58 571.20 Tm (I have been building native iOS apps since 2010, with more than 20 shipped to the App Store across) Tj
+1 0 0 1 58 558.80 Tm (healthcare, aviation events, training, and consumer domains before and alongside a decade at Walmart. As) Tj
+1 0 0 1 58 546.40 Tm (Principal Software Engineer on the iOS checkout team, I was responsible for the checkout flow in the flagship) Tj
+1 0 0 1 58 534.00 Tm (iOS app serving 5M+ daily active users and owned its shared architecture, which a 120+ engineer organization) Tj
+1 0 0 1 58 521.60 Tm (consumed across multiple apps. I helped establish the iOS engineering standards for architecture, performance,) Tj
+1 0 0 1 58 509.20 Tm (security, and testing, raised checkout test coverage to about 85% with XCTest and XCUITest across unit,) Tj
+1 0 0 1 58 496.80 Tm (integration, and UI tests, and held a 99.9%+ crash-free session rate on the weekly production releases. I drove) Tj
+1 0 0 1 58 484.40 Tm (sprint planning, estimation, and velocity tracking for the checkout team and worked daily with engineering,) Tj
+1 0 0 1 58 472.00 Tm (product, and QA across US and India time zones, so detailed estimates and delivering against them were a) Tj
+1 0 0 1 58 459.60 Tm (standing part of the job.) Tj
+1 0 0 1 58 440.20 Tm (On Swift, SwiftUI, UIKit, and concurrency: the Walmart platform was unidirectional, reactive design in Swift and) Tj
+1 0 0 1 58 427.80 Tm (Combine on UIKit, modularized with Swift Package Manager. At CLEAR this year I planned and executed a) Tj
+1 0 0 1 58 415.40 Tm (phased migration of the production iOS app to Swift 6 concurrency alongside a six-engineer team, did new) Tj
+1 0 0 1 58 403.00 Tm (feature work in SwiftUI with Swift Testing coverage, and maintained and extended the team's Fastlane and) Tj
+1 0 0 1 58 390.60 Tm (GitHub Actions CI/CD configuration. The fire-department app is SwiftUI with Swift 6 strict concurrency) Tj
+1 0 0 1 58 378.20 Tm (throughout, structured as 16 Swift packages, and covered by more than 400 Swift Testing tests plus an) Tj
+1 0 0 1 58 365.80 Tm (XCUITest flow.) Tj
+1 0 0 1 58 346.40 Tm (On REST APIs, Core Data, and the rest of your plus list: for a specialty-pharmacy patient app I built on Core) Tj
+1 0 0 1 58 334.00 Tm (Data against RESTful APIs and maintained it through multiple App Store releases, and for a physical-therapy) Tj
+1 0 0 1 58 321.60 Tm (prescription app I architected synchronization between the iOS client, a backend API, and a distributed data) Tj
+1 0 0 1 58 309.20 Tm (layer and took its auto-renewable subscriptions through App Store review. I migrated the Sam's Club) Tj
+1 0 0 1 58 296.80 Tm (Objective-C codebase to Swift without interrupting service for roughly two million daily users and rewrote) Tj
+1 0 0 1 58 284.40 Tm (ASDA's legacy Objective-C components in Swift. At McGraw-Hill, alongside iOS feature work, I built internal) Tj
+1 0 0 1 58 272.00 Tm (tools including an AWS data lake and push notifications for the mobile apps. At Walmart I taught accessibility) Tj
+1 0 0 1 58 259.60 Tm (sessions across the iOS organization, which is where Apple's interface guidelines get tested against a very) Tj
+1 0 0 1 58 247.20 Tm (large user base.) Tj
+1 0 0 1 58 227.80 Tm (Two gaps to be direct about. I have not used Core ML in a shipped app; I would be learning Core ML on the job.) Tj
+1 0 0 1 58 215.40 Tm (I have not worked in oil and gas. The closest I have come to an industrial operator is six years as architect and) Tj
+1 0 0 1 58 203.00 Tm (lead developer of a quality-management system for a platinum and palladium mining company, integrated with) Tj
+1 0 0 1 58 190.60 Tm (its JD Edwards ERP for shipment intake and assay tracking, so I know what it is like to build software that) Tj
+1 0 0 1 58 178.20 Tm (operations staff depend on, but I do not know flare stacks or compressors and would need your team to teach) Tj
+1 0 0 1 58 165.80 Tm (me the equipment.) Tj
+1 0 0 1 58 146.40 Tm (The posting is a Senior role and my last title was Principal. Titles have never decided for me; designing,) Tj
+1 0 0 1 58 134.00 Tm (shipping, and maintaining features on a small mobile team is the work I want. I work from Ohio and am set up) Tj
+1 0 0 1 58 121.60 Tm (for a fully remote role.) Tj
+1 0 0 1 58 102.20 Tm (I would welcome a conversation about what the Andium iOS app needs next and where field reliability sits on) Tj
+1 0 0 1 58 89.80 Tm (that list.) Tj
+1 0 0 1 58 70.40 Tm (Doug Sjoquist) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+6 0 obj
+<< /Title (CoverLetter_Andium_28Oct2026) /Author (Douglas Sjoquist) /Creator (txt2pdf) /CreationDate (D:20261028220304) >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000006043 00000 n 
+0000006169 00000 n 
+0000006226 00000 n 
+0000006275 00000 n 
+trailer
+<< /Size 7 /Root 5 0 R /Info 6 0 R >>
+startxref
+6413
+%%EOF

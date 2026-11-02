@@ -1,22 +1,26 @@
 ---
 name: isa-discuss
-description: Interview Doug in grilling-style rounds to build or extend a project's Ideal State Artifact (Projects/<Project>/Ideal State.md): the Ideal State prose, the Constraints, and dated Decisions. Use when starting an ISA, when the Ideal State is thin, or when a build showed the intent was unclear. Writes answers into the ISA as prose, never as a Q&A transcript.
+description: Interview Doug in grilling-style rounds to build or extend a project's Ideal State Artifact (Projects/<Project>/Ideal State.md, or Projects/<Project>/<Name> Ideal State.md for `<Project>/<Name>`): the Ideal State prose, the Constraints, and dated Decisions. Use when starting an ISA, when the Ideal State is thin, or when a build showed the intent was unclear. Writes answers into the ISA as prose, never as a Q&A transcript.
 allowed-tools: Read Bash Grep Glob Write Edit Agent
 disable-model-invocation: true
-arguments: [project]
+arguments: [artifact]
 ---
 
 # ISA Discuss
 
 You are building the **Ideal State** and **Constraints** sections of a project's Ideal State Artifact by interviewing Doug. The method is in `Craft/Ideal State Method/Method.md`; read it once before starting. The interview procedure is Matt Pocock's grilling pattern, pointed at project intent instead of a plan.
 
-**Project:** $ARGUMENTS
+**Artifact:** $ARGUMENTS
+
+## Resolving the artifact
+
+The argument is `<Project>` or `<Project>/<Name>`. `<Project>` resolves to `Projects/<Project>/Ideal State.md`. `<Project>/<Name>` resolves to `Projects/<Project>/<Name> Ideal State.md`, a second artifact in the same project for a part with its own users and its own build (for example `Proverbs/Builder` → `Projects/Proverbs/Builder Ideal State.md`). Both forms share the project folder, its notes, and its `Evals/` folder; an Eval Run for a named artifact is written as `Evals/<date> <Name> Eval Run.md`. Below, "the ISA" means the resolved file.
 
 ## Preparation (your job, not Doug's)
 
 1. Resolve the project folder: `Projects/<Project>/`. If the argument is ambiguous, list the candidates under `Projects/` and `App Ideas/` and ask once.
-2. If `Projects/<Project>/Ideal State.md` does not exist, create it from `Templates/Ideal State Artifact.md`, replacing `{{title}}` with the project name and the Templater date tags with today's date. Set `project:` in frontmatter.
-3. Read everything already written about the project before asking anything: `Brief.md`, `Design.md`, `Research.md`, `Notes.md`, `Development Log.md`, any `Spec Q&A.md`, the project MOC, and the originating App Idea page if one exists. If the Development Log names a code repo, skim its `README` and `CLAUDE.md`. Facts you can look up are never questions for Doug.
+2. If the ISA does not exist, create it from `Templates/Ideal State Artifact.md`, replacing `{{title}}` with the project name (or `<Project> <Name>` for a named artifact) and the Templater date tags with today's date. Set `project:` in frontmatter to the project name; for a named artifact also set `artifact: <Name>`.
+3. Read everything already written about the project before asking anything, including the project's other ISA when this is a named artifact: `Brief.md`, `Design.md`, `Research.md`, `Notes.md`, `Development Log.md`, any `Spec Q&A.md`, the project MOC, and the originating App Idea page if one exists. If the Development Log names a code repo, skim its `README` and `CLAUDE.md`. Facts you can look up are never questions for Doug.
 4. If the ISA already has Ideal State prose, read it and treat it as settled unless Doug reopens it.
 5. Before the first round, print a short list (ten lines at most) of what is already known and will not be asked about.
 
@@ -63,7 +67,7 @@ Do not touch the **Criteria** section. Do not derive criteria here.
 The session is done when the frontier is empty. Then:
 
 1. Print what changed in the ISA this session, ten lines at most.
-2. State that `/isa-criteria <Project>` is the next step. Do not run it.
+2. State that `/isa-criteria <same argument>` is the next step. Do not run it.
 3. If the ISA status was `drafting` and the Ideal State now has at least three paragraphs, leave status as `drafting`; `/isa-criteria` moves it to `building`.
 
 ## Style

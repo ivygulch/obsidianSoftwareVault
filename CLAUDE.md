@@ -78,6 +78,7 @@ Templates/                       — Templater templates
 - A project may carry `Ideal State.md` (the ISA): Ideal State prose, Constraints, a dated Decisions log, and Criteria (ISCs) each with its own eval. It is the source of truth for build intent; `Brief.md` stays the business overview.
 - When code and the ISA disagree, the ISA wins: fix the code, or change the ISA and log a dated Decision.
 - Skills: `/isa-discuss` builds the Ideal State and Constraints by interview; `/isa-criteria` derives ISCs with evals; `/isa-check` evaluates a build and writes `Projects/<Project>/Evals/<date> Eval Run.md`.
+- A project may carry a second ISA for a part with its own users and build, named `<Name> Ideal State.md` (e.g. `Builder Ideal State.md`); the skills take `<Project>/<Name>` and write its eval runs as `Evals/<date> <Name> Eval Run.md`.
 - Method, adoption plan, and article notes: `Craft/Ideal State Method/`.
 
 ### Templates
