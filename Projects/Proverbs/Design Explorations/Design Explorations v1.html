@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Wisdom — Design Explorations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<style>
+:root{--page:#E9E7E1;--ink:#1C1B19;--muted:#5A5750;--rule:#D3D0C8;--card:#F5F4F0}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--page);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1480px;margin:0 auto;padding:0 24px}
+header.top{padding:72px 0 40px;border-bottom:1px solid var(--rule)}
+header.top .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+header.top h1{font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:clamp(34px,5vw,56px);line-height:1.05;margin:0 0 18px}
+header.top p{max-width:680px;font-size:17px;line-height:1.55;color:var(--muted);margin:0 0 24px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{text-decoration:none;color:var(--ink);font-size:14px;font-weight:500;padding:10px 14px;border:1px solid var(--rule);border-radius:999px;background:var(--card)}
+nav.toc a:hover{border-color:var(--ink)}
+section.row{padding:56px 0 24px;border-bottom:1px solid var(--rule)}
+section.row .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:32px;align-items:end;margin-bottom:32px}
+section.row .label{font-family:'Source Serif 4',Georgia,serif;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+section.row h2{font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.05;margin:0}
+section.row .lede{font-size:16px;line-height:1.55;color:var(--muted);margin:0}
+.screens{display:flex;flex-wrap:wrap;gap:40px 32px}
+.screen{width:390px;max-width:100%}
+.phone{width:390px;height:844px;overflow:hidden;border-radius:44px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 18px 48px rgba(28,27,25,.18);position:relative;background:#000}
+.phone>div{position:absolute;left:0;top:0}
+.screen h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:20px;margin:20px 0 6px}
+.screen p{font-size:14px;line-height:1.5;color:var(--muted);margin:0}
+.phone a{text-decoration:none;color:inherit}
+.phone a:hover{color:inherit}
+section.notes{padding:56px 0 96px}
+section.notes h2{font-family:'Source Serif 4',Georgia,serif;font-weight:600;font-size:clamp(24px,3vw,32px);margin:0 0 20px}
+section.notes .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+section.notes .card{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:22px 24px}
+section.notes .card h4{font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;margin:0 0 8px}
+section.notes .card p{font-size:14px;line-height:1.5;color:var(--muted);margin:0}
+footer{padding:0 0 64px;font-size:13px;color:var(--muted)}
+@media (max-width:900px){section.row .head{grid-template-columns:1fr;gap:12px}}
+@media (max-width:440px){
+  .wrap{padding:0 16px}
+  .screen{width:100%}
+  .phone{transform:scale(.88);transform-origin:top left;margin-bottom:-100px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Get Wisdom · design explorations · 2 November 2026</div>
+  <h1>Four ways through Proverbs</h1>
+  <p>Three visual directions for the cloud, the passage and the trail, plus four patterns for composing a scenario from several tags. Every row walks the same session — <em>conflict with a neighbor → 15:1 → anger → 29:11</em>, with a fork between 16:32 and 14:29 — so the directions compare like for like. Nothing on any screen is written by the app: the words are the text (Berean Standard Bible), the tags, and the controls.</p>
+  <nav class="toc">
+    <a href="#a">A · Typographic</a>
+    <a href="#b">B · Dark devotional</a>
+    <a href="#c">C · Card</a>
+    <a href="#d">D · Composing a scenario</a>
+    <a href="#notes">Open questions</a>
+  </nav>
+</header>
+<section class="row" id="a">
+  <div class="head">
+    <div><div class="label">Direction A</div><h2>Typographic</h2></div>
+    <p class="lede">The book as a weighted word list, grouped by axis. Warm white ground, serif for anything that is text or a tag, sans for the app’s own controls.</p>
+  </div>
+  <div class="screens">
+    <figure class="screen" id="main" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FBFAF7; color: #1C1B19; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 64px 24px 12px; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px">
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <div style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #5A5750">Cloud</div>
+      <h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; font-weight: 600; line-height: 1.1">The whole book</h1>
+    </div>
+    <button aria-label="Clouds and trails" style="width: 44px; height: 44px; border: 1px solid #D9D5CC; background: #FFFFFF; border-radius: 22px; display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+    </button>
+  </div>
+
+  <div style="padding: 0 24px 12px">
+    <label for="find" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Find a tag</label>
+    <input id="find" type="text" placeholder="Find a tag" style="width: 100%; box-sizing: border-box; height: 44px; border: 1px solid #D9D5CC; border-radius: 10px; padding: 0 14px; font: 500 15px Inter, system-ui, sans-serif; background: #FFFFFF; color: #1C1B19">
+  </div>
+
+  <div style="flex: 1; overflow: hidden; padding: 4px 24px 0; display: flex; flex-direction: column; gap: 22px">
+
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5750">Situation</div>
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 14px; row-gap: 4px; font-family: 'Source Serif 4', Georgia, serif; line-height: 1.2">
+        <a href="#a-passage" style="text-decoration: none; font-size: 28px; font-weight: 600">conflict with a neighbor</a>
+        <a href="#" style="text-decoration: none; font-size: 20px">being wronged</a>
+        <a href="#" style="text-decoration: none; font-size: 24px">a decision under pressure</a>
+        <a href="#" style="text-decoration: none; font-size: 16px; color: #5A5750">lending money</a>
+        <a href="#" style="text-decoration: none; font-size: 22px">correcting a child</a>
+        <a href="#" style="text-decoration: none; font-size: 16px; color: #5A5750">being flattered</a>
+        <a href="#" style="text-decoration: none; font-size: 18px">grief</a>
+        <a href="#" style="text-decoration: none; font-size: 18px">poverty</a>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5750">Attitude</div>
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 14px; row-gap: 4px; font-family: 'Source Serif 4', Georgia, serif; line-height: 1.2">
+        <a href="#" style="text-decoration: none; font-size: 30px; font-weight: 600; color: #3A4A8C">anger</a>
+        <a href="#" style="text-decoration: none; font-size: 26px">pride</a>
+        <a href="#" style="text-decoration: none; font-size: 22px">humility</a>
+        <a href="#" style="text-decoration: none; font-size: 16px; color: #5A5750">envy</a>
+        <a href="#" style="text-decoration: none; font-size: 20px">fear</a>
+        <a href="#" style="text-decoration: none; font-size: 18px">contentment</a>
+        <a href="#" style="text-decoration: none; font-size: 16px; color: #5A5750">impatience</a>
+        <a href="#" style="text-decoration: none; font-size: 22px">greed</a>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5750">Domain</div>
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 14px; row-gap: 4px; font-family: 'Source Serif 4', Georgia, serif; line-height: 1.2">
+        <a href="#" style="text-decoration: none; font-size: 32px; font-weight: 600">speech</a>
+        <a href="#" style="text-decoration: none; font-size: 26px">money and work</a>
+        <a href="#" style="text-decoration: none; font-size: 22px">family</a>
+        <a href="#" style="text-decoration: none; font-size: 18px">friendship</a>
+        <a href="#" style="text-decoration: none; font-size: 20px">justice</a>
+        <a href="#" style="text-decoration: none; font-size: 24px">the fear of the Lord</a>
+        <a href="#" style="text-decoration: none; font-size: 16px; color: #5A5750">food and drink</a>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5750">Role</div>
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 14px; row-gap: 4px; font-family: 'Source Serif 4', Georgia, serif; line-height: 1.2">
+        <a href="#" style="text-decoration: none; font-size: 24px">son</a>
+        <a href="#" style="text-decoration: none; font-size: 20px">king</a>
+        <a href="#" style="text-decoration: none; font-size: 22px">neighbor</a>
+        <a href="#" style="text-decoration: none; font-size: 26px">the sluggard</a>
+        <a href="#" style="text-decoration: none; font-size: 18px">the scoffer</a>
+        <a href="#" style="text-decoration: none; font-size: 16px; color: #5A5750">servant</a>
+        <a href="#" style="text-decoration: none; font-size: 20px">the poor</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="padding: 10px 24px 28px; border-top: 1px solid #E8E4DB; display: flex; align-items: center; justify-content: space-between; background: #FBFAF7">
+    <a href="#a-trail" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; font-weight: 500">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h8"/></svg>
+      Trail · 5 steps
+    </a>
+    <div style="font-size: 13px; color: #5A5750">Today, 3:42 PM</div>
+  </div>
+</div></div>
+      <figcaption><h3>Cloud</h3><p>Every tag fits because it is text. Size carries weight; axis headers give the cloud a spine. Density is handled by scrolling, not by hiding.</p></figcaption>
+    </figure>
+    <figure class="screen" id="a-passage" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FBFAF7; color: #1C1B19; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 58px 16px 8px; display: flex; align-items: center; justify-content: space-between">
+    <a href="#main" aria-label="Back to cloud" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div style="font-size: 13px; color: #5A5750; display: flex; align-items: center; gap: 6px">
+      <span>from</span>
+      <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; color: #1C1B19">conflict with a neighbor</span>
+    </div>
+    <button aria-label="More" style="width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#1C1B19"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+    </button>
+  </div>
+
+  <div style="flex: 1; overflow: hidden; padding: 16px 28px 0; display: flex; flex-direction: column; gap: 28px">
+
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <div style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #5A5750">Proverbs 15:1</div>
+      <p style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; line-height: 1.3; font-weight: 400">A gentle answer turns away wrath,<br>but a harsh word stirs up anger.</p>
+      <div style="font-size: 12px; color: #5A5750">Berean Standard Bible</div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <a href="#" style="text-decoration: none; font-size: 13px; font-weight: 500; padding: 8px 12px; border: 1px solid #D9D5CC; border-radius: 999px; background: #FFFFFF; min-height: 36px; box-sizing: border-box; display: flex; align-items: center">conflict with a neighbor</a>
+      <a href="#" style="text-decoration: none; font-size: 13px; font-weight: 500; padding: 8px 12px; border: 1px solid #3A4A8C; border-radius: 999px; background: #EEF0F8; color: #3A4A8C; min-height: 36px; box-sizing: border-box; display: flex; align-items: center">anger</a>
+      <a href="#" style="text-decoration: none; font-size: 13px; font-weight: 500; padding: 8px 12px; border: 1px solid #D9D5CC; border-radius: 999px; background: #FFFFFF; min-height: 36px; box-sizing: border-box; display: flex; align-items: center">speech</a>
+      <a href="#" style="text-decoration: none; font-size: 13px; font-weight: 500; padding: 8px 12px; border: 1px solid #D9D5CC; border-radius: 999px; background: #FFFFFF; min-height: 36px; box-sizing: border-box; display: flex; align-items: center">speaks carefully</a>
+      <a href="#" style="text-decoration: none; font-size: 13px; font-weight: 500; padding: 8px 12px; border: 1px solid #D9D5CC; border-radius: 999px; background: #FFFFFF; min-height: 36px; box-sizing: border-box; display: flex; align-items: center">strife</a>
+      <a href="#" style="text-decoration: none; font-size: 13px; font-weight: 500; padding: 8px 12px; border: 1px dashed #B5B0A5; border-radius: 999px; background: transparent; color: #5A5750; min-height: 36px; box-sizing: border-box; display: flex; align-items: center">+ tag</a>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 0">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5750; padding-bottom: 10px; border-bottom: 1px solid #E8E4DB">Linked passages</div>
+
+      <a href="#" style="text-decoration: none; display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid #E8E4DB; min-height: 44px">
+        <div style="width: 6px; height: 6px; margin-top: 8px; border-radius: 3px; background: #1C1B19; flex-shrink: 0"></div>
+        <div style="display: flex; flex-direction: column; gap: 3px; flex: 1">
+          <div style="font-size: 12px; color: #5A5750">15:18 · shares <span style="color: #1C1B19">anger</span>, <span style="color: #1C1B19">strife</span></div>
+          <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; line-height: 1.3">A hot-tempered man stirs up strife, but a slow-to-anger man calms dispute.</div>
+        </div>
+      </a>
+
+      <a href="#" style="text-decoration: none; display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid #E8E4DB; min-height: 44px">
+        <div style="width: 6px; height: 6px; margin-top: 8px; border-radius: 3px; background: #6E6A62; flex-shrink: 0"></div>
+        <div style="display: flex; flex-direction: column; gap: 3px; flex: 1">
+          <div style="font-size: 12px; color: #5A5750">29:11 · shares <span style="color: #1C1B19">anger</span></div>
+          <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; line-height: 1.3">A fool vents all his anger, but a wise man holds it back.</div>
+        </div>
+      </a>
+
+      <a href="#" style="text-decoration: none; display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid #E8E4DB; min-height: 44px">
+        <div style="width: 6px; height: 6px; margin-top: 8px; border-radius: 3px; background: #B5B0A5; flex-shrink: 0"></div>
+        <div style="display: flex; flex-direction: column; gap: 3px; flex: 1">
+          <div style="font-size: 12px; color: #5A5750">25:15 · shares <span style="color: #1C1B19">speaks carefully</span></div>
+          <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; line-height: 1.3">Through patience a ruler can be persuaded, and a gentle tongue can break a bone.</div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <div style="padding: 10px 16px 28px; border-top: 1px solid #E8E4DB; display: flex; align-items: center; justify-content: space-around; background: #FBFAF7">
+    <button style="min-width: 72px; height: 44px; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font: 500 11px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4l10-10-4-4L4 16z"/></svg>
+      Note
+    </button>
+    <button style="min-width: 72px; height: 44px; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font: 500 11px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7l9 9-7 7-9-9z"/><circle cx="8" cy="8" r="1.2"/></svg>
+      Tag
+    </button>
+    <button style="min-width: 72px; height: 44px; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font: 500 11px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 10h8M8 14h5"/></svg>
+      Group
+    </button>
+    <a href="#a-trail" style="text-decoration: none; min-width: 72px; height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font: 500 11px Inter, system-ui, sans-serif; color: #3A4A8C">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3A4A8C" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h8"/></svg>
+      Trail · 2
+    </a>
+  </div>
+</div></div>
+      <figcaption><h3>Passage</h3><p>The verse at reading size with its reference above and its version below. Tags as chips; linked passages as a list, strongest first, each saying which tags it shares.</p></figcaption>
+    </figure>
+    <figure class="screen" id="a-trail" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FBFAF7; color: #1C1B19; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 58px 16px 8px; display: flex; align-items: center; justify-content: space-between">
+    <a href="#a-passage" aria-label="Back to passage" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg>
+    </a>
+    <div style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #5A5750">Trail</div>
+    <button style="height: 44px; padding: 0 12px; border: 0; background: transparent; font: 500 14px Inter, system-ui, sans-serif; color: #3A4A8C; cursor: pointer">Name</button>
+  </div>
+
+  <div style="padding: 8px 28px 20px; display: flex; flex-direction: column; gap: 4px">
+    <h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 26px; font-weight: 600; line-height: 1.15">Today, 3:42 PM</h1>
+    <div style="font-size: 13px; color: #5A5750">Unnamed · 6 steps · expires in 30 days</div>
+  </div>
+
+  <div style="flex: 1; overflow: hidden; padding: 0 28px; display: flex; flex-direction: column">
+
+    <a href="#main" style="text-decoration: none; display: flex; align-items: center; gap: 12px; min-height: 48px">
+      <div style="width: 10px; height: 10px; border-radius: 5px; background: #1C1B19; flex-shrink: 0"></div>
+      <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px">conflict with a neighbor</div>
+      <div style="font-size: 11px; color: #5A5750; margin-left: auto">tag</div>
+    </a>
+
+    <div style="margin-left: 4px; border-left: 1.5px solid #CFCAC0; padding-left: 22px; display: flex; flex-direction: column">
+
+      <a href="#a-passage" style="text-decoration: none; display: flex; align-items: center; gap: 12px; min-height: 48px">
+        <div style="width: 10px; height: 10px; border-radius: 5px; background: #1C1B19; flex-shrink: 0"></div>
+        <div style="display: flex; flex-direction: column; gap: 1px">
+          <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px">15:1</div>
+          <div style="font-size: 12px; color: #5A5750">A gentle answer turns away wrath…</div>
+        </div>
+      </a>
+
+      <div style="margin-left: 4px; border-left: 1.5px solid #CFCAC0; padding-left: 22px; display: flex; flex-direction: column">
+
+        <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 12px; min-height: 48px">
+          <div style="width: 10px; height: 10px; border-radius: 5px; background: #1C1B19; flex-shrink: 0"></div>
+          <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px">anger</div>
+          <div style="font-size: 11px; color: #5A5750; margin-left: auto">tag</div>
+        </a>
+
+        <div style="margin-left: 4px; border-left: 1.5px solid #CFCAC0; padding-left: 22px; display: flex; flex-direction: column">
+
+          <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 12px; min-height: 48px">
+            <div style="width: 10px; height: 10px; border-radius: 5px; background: #1C1B19; flex-shrink: 0"></div>
+            <div style="display: flex; flex-direction: column; gap: 1px">
+              <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px">29:11</div>
+              <div style="font-size: 12px; color: #5A5750">A fool vents all his anger…</div>
+            </div>
+          </a>
+
+          <div style="margin-left: 4px; border-left: 1.5px solid #CFCAC0; padding-left: 22px; display: flex; flex-direction: column">
+
+            <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 12px; min-height: 48px">
+              <div style="width: 10px; height: 10px; border-radius: 5px; background: #B5B0A5; flex-shrink: 0"></div>
+              <div style="display: flex; flex-direction: column; gap: 1px">
+                <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; color: #5A5750">14:29</div>
+                <div style="font-size: 12px; color: #5A5750">A patient man has great understanding…</div>
+              </div>
+            </a>
+
+            <a href="#" aria-current="step" style="text-decoration: none; display: flex; align-items: center; gap: 12px; min-height: 52px; margin-left: -34px; padding-left: 22px; border-left: 2px solid #3A4A8C; background: #EEF0F8; border-radius: 0 8px 8px 0">
+              <div style="width: 10px; height: 10px; border-radius: 5px; background: #3A4A8C; flex-shrink: 0"></div>
+              <div style="display: flex; flex-direction: column; gap: 1px">
+                <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; color: #3A4A8C">16:32</div>
+                <div style="font-size: 12px; color: #3A4A8C">He who is slow to anger is better than a warrior…</div>
+              </div>
+              <div style="font-size: 11px; color: #3A4A8C; margin-left: auto; padding-right: 10px">here</div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 12px 28px 28px; border-top: 1px solid #E8E4DB; display: flex; gap: 10px; background: #FBFAF7">
+    <button style="flex: 1; height: 48px; border: 1px solid #D9D5CC; border-radius: 10px; background: #FFFFFF; font: 500 14px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer">Attach to a group</button>
+    <button style="flex: 1; height: 48px; border: 0; border-radius: 10px; background: #1C1B19; font: 500 14px Inter, system-ui, sans-serif; color: #FBFAF7; cursor: pointer">Name this trail</button>
+  </div>
+</div></div>
+      <figcaption><h3>Trail</h3><p>An indented tree with a left rail. The fork at 29:11 shows as two children; the current step is highlighted and every node is a tap target.</p></figcaption>
+    </figure>
+  </div>
+</section>
+<section class="row" id="b">
+  <div class="head">
+    <div><div class="label">Direction B</div><h2>Dark devotional</h2></div>
+    <p class="lede">Tags clustered on a map, the passage as a conversation. Dark ground, amber for the one thing on the trail, Fraunces for text and tags.</p>
+  </div>
+  <div class="screens">
+    <figure class="screen" id="b-cloud" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #14151A; color: #ECE8DF; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden; position: relative">
+
+  <div style="padding: 62px 24px 10px; display: flex; align-items: center; justify-content: space-between">
+    <h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 28px; font-weight: 400; line-height: 1.1">Whole book</h1>
+    <button aria-label="Clouds" style="width: 44px; height: 44px; border: 1px solid rgba(236,232,223,0.18); background: transparent; border-radius: 22px; display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ECE8DF" stroke-width="1.8" stroke-linecap="round"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><circle cx="12" cy="16" r="3"/></svg>
+    </button>
+  </div>
+
+  <div style="padding: 0 24px 6px; display: flex; gap: 8px; overflow: hidden">
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 0; background: #ECE8DF; color: #14151A; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer; white-space: nowrap">All axes</button>
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid rgba(236,232,223,0.18); background: transparent; color: #ECE8DF; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer; white-space: nowrap">Situation</button>
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid rgba(236,232,223,0.18); background: transparent; color: #ECE8DF; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer; white-space: nowrap">Attitude</button>
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid rgba(236,232,223,0.18); background: transparent; color: #ECE8DF; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer; white-space: nowrap">Domain</button>
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid rgba(236,232,223,0.18); background: transparent; color: #ECE8DF; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer; white-space: nowrap">Role</button>
+  </div>
+
+  <div style="position: relative; flex: 1; overflow: hidden; font-family: Fraunces, Georgia, serif">
+
+    <div aria-hidden="true" style="position: absolute; left: 6px; top: 8px; width: 214px; height: 176px; border: 1px solid rgba(236,232,223,0.07); border-radius: 50%"></div>
+    <div style="position: absolute; left: 24px; top: 12px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Situation</div>
+    <a href="#b-passage" style="position: absolute; left: 16px; top: 36px; padding: 10px 14px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.45); font-size: 17px; text-decoration: none; white-space: nowrap">conflict with a neighbor</a>
+    <a href="#" style="position: absolute; left: 40px; top: 86px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.22); font-size: 14px; text-decoration: none; white-space: nowrap">being wronged</a>
+    <a href="#" style="position: absolute; left: 158px; top: 86px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.18); font-size: 13px; text-decoration: none; white-space: nowrap; color: #A39E92">grief</a>
+    <a href="#" style="position: absolute; left: 14px; top: 130px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.30); font-size: 15px; text-decoration: none; white-space: nowrap">a decision under pressure</a>
+
+    <div aria-hidden="true" style="position: absolute; left: 212px; top: 8px; width: 176px; height: 176px; border: 1px solid rgba(236,232,223,0.07); border-radius: 50%"></div>
+    <div style="position: absolute; left: 240px; top: 12px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Attitude</div>
+    <a href="#" style="position: absolute; left: 228px; top: 34px; padding: 10px 14px; border-radius: 999px; border: 1px solid #D8A657; color: #D8A657; font-size: 18px; text-decoration: none; white-space: nowrap">anger</a>
+    <a href="#" style="position: absolute; left: 310px; top: 36px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.35); font-size: 15px; text-decoration: none; white-space: nowrap">pride</a>
+    <a href="#" style="position: absolute; left: 240px; top: 84px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.28); font-size: 14px; text-decoration: none; white-space: nowrap">humility</a>
+    <a href="#" style="position: absolute; left: 332px; top: 86px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.18); font-size: 13px; text-decoration: none; white-space: nowrap; color: #A39E92">envy</a>
+    <a href="#" style="position: absolute; left: 222px; top: 130px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.22); font-size: 14px; text-decoration: none; white-space: nowrap">fear</a>
+    <a href="#" style="position: absolute; left: 280px; top: 130px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.22); font-size: 14px; text-decoration: none; white-space: nowrap">contentment</a>
+
+    <div aria-hidden="true" style="position: absolute; left: 6px; top: 196px; width: 214px; height: 176px; border: 1px solid rgba(236,232,223,0.07); border-radius: 50%"></div>
+    <div style="position: absolute; left: 24px; top: 202px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Domain</div>
+    <a href="#" style="position: absolute; left: 16px; top: 226px; padding: 10px 14px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.5); font-size: 19px; text-decoration: none; white-space: nowrap">speech</a>
+    <a href="#" style="position: absolute; left: 104px; top: 228px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.3); font-size: 15px; text-decoration: none; white-space: nowrap">money and work</a>
+    <a href="#" style="position: absolute; left: 16px; top: 276px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.28); font-size: 14px; text-decoration: none; white-space: nowrap">family</a>
+    <a href="#" style="position: absolute; left: 86px; top: 276px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.2); font-size: 13px; text-decoration: none; white-space: nowrap; color: #A39E92">friendship</a>
+    <a href="#" style="position: absolute; left: 14px; top: 322px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.3); font-size: 15px; text-decoration: none; white-space: nowrap">the fear of the Lord</a>
+
+    <div aria-hidden="true" style="position: absolute; left: 212px; top: 196px; width: 176px; height: 176px; border: 1px solid rgba(236,232,223,0.07); border-radius: 50%"></div>
+    <div style="position: absolute; left: 240px; top: 202px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Role</div>
+    <a href="#" style="position: absolute; left: 236px; top: 226px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.3); font-size: 15px; text-decoration: none; white-space: nowrap">son</a>
+    <a href="#" style="position: absolute; left: 292px; top: 226px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.3); font-size: 15px; text-decoration: none; white-space: nowrap">neighbor</a>
+    <a href="#" style="position: absolute; left: 236px; top: 276px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.4); font-size: 16px; text-decoration: none; white-space: nowrap">the sluggard</a>
+    <a href="#" style="position: absolute; left: 236px; top: 322px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.2); font-size: 13px; text-decoration: none; white-space: nowrap; color: #A39E92">king</a>
+    <a href="#" style="position: absolute; left: 294px; top: 322px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.25); font-size: 14px; text-decoration: none; white-space: nowrap">the poor</a>
+
+    <div aria-hidden="true" style="position: absolute; left: 6px; top: 384px; width: 214px; height: 150px; border: 1px solid rgba(236,232,223,0.07); border-radius: 50%"></div>
+    <div style="position: absolute; left: 24px; top: 392px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Result</div>
+    <a href="#" style="position: absolute; left: 16px; top: 416px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.3); font-size: 15px; text-decoration: none; white-space: nowrap">ruin</a>
+    <a href="#" style="position: absolute; left: 70px; top: 416px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.3); font-size: 15px; text-decoration: none; white-space: nowrap">honor</a>
+    <a href="#" style="position: absolute; left: 138px; top: 416px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.35); font-size: 15px; text-decoration: none; white-space: nowrap">strife</a>
+    <a href="#" style="position: absolute; left: 16px; top: 462px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.2); font-size: 13px; text-decoration: none; white-space: nowrap; color: #A39E92">shame</a>
+    <a href="#" style="position: absolute; left: 84px; top: 462px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.28); font-size: 14px; text-decoration: none; white-space: nowrap">peace</a>
+    <a href="#" style="position: absolute; left: 150px; top: 462px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.2); font-size: 13px; text-decoration: none; white-space: nowrap; color: #A39E92">favor</a>
+
+    <div aria-hidden="true" style="position: absolute; left: 212px; top: 384px; width: 176px; height: 150px; border: 1px solid rgba(236,232,223,0.07); border-radius: 50%"></div>
+    <div style="position: absolute; left: 240px; top: 392px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Characteristic</div>
+    <a href="#" style="position: absolute; left: 236px; top: 416px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.35); font-size: 15px; text-decoration: none; white-space: nowrap">self-control</a>
+    <a href="#" style="position: absolute; left: 236px; top: 462px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.25); font-size: 14px; text-decoration: none; white-space: nowrap">seeks good counsel</a>
+    <a href="#" style="position: absolute; left: 236px; top: 508px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.28); font-size: 14px; text-decoration: none; white-space: nowrap">diligence</a>
+    <a href="#" style="position: absolute; left: 318px; top: 508px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.2); font-size: 13px; text-decoration: none; white-space: nowrap; color: #A39E92">laziness</a>
+
+  </div>
+
+  <a href="#b-trail" style="text-decoration: none; margin: 0 12px 12px; padding: 14px 18px 18px; border-radius: 18px; background: #1E2027; border: 1px solid rgba(236,232,223,0.1); display: flex; flex-direction: column; gap: 8px">
+    <div aria-hidden="true" style="width: 36px; height: 4px; border-radius: 2px; background: rgba(236,232,223,0.25); align-self: center"></div>
+    <div style="display: flex; align-items: center; justify-content: space-between">
+      <div style="font: 500 14px Inter, system-ui, sans-serif">Trail · 6 steps</div>
+      <div style="font: 400 13px Inter, system-ui, sans-serif; color: #A39E92">Today, 3:42 PM</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 6px; font-family: Fraunces, Georgia, serif; font-size: 13px; color: #A39E92">
+      <span>conflict with a neighbor</span><span aria-hidden="true">→</span><span>15:1</span><span aria-hidden="true">→</span><span style="color: #D8A657">anger</span><span aria-hidden="true">→</span><span>29:11</span><span aria-hidden="true">→</span><span>…</span>
+    </div>
+  </a>
+</div></div>
+      <figcaption><h3>Cloud</h3><p>A true map: tags sit inside faint axis rings, weight shows as size and border strength. Axis chips filter; the trail is a handle at the bottom.</p></figcaption>
+    </figure>
+    <figure class="screen" id="b-passage" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #14151A; color: #ECE8DF; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 58px 16px 0; display: flex; align-items: center; justify-content: space-between">
+    <a href="#b-cloud" aria-label="Back to the map" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ECE8DF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A39E92">Proverbs 15:1</div>
+    <button aria-label="More" style="width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#ECE8DF"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+    </button>
+  </div>
+
+  <div style="position: relative; flex: 1; overflow: hidden">
+
+    <div style="position: absolute; left: 16px; top: 14px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Tags on this passage</div>
+
+    <a href="#" style="position: absolute; left: 16px; top: 34px; padding: 9px 13px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.4); font-family: Fraunces, Georgia, serif; font-size: 15px; text-decoration: none; white-space: nowrap">conflict with a neighbor</a>
+    <a href="#" style="position: absolute; left: 214px; top: 34px; padding: 9px 13px; border-radius: 999px; border: 1px solid #D8A657; color: #D8A657; font-family: Fraunces, Georgia, serif; font-size: 15px; text-decoration: none; white-space: nowrap">anger</a>
+    <a href="#" style="position: absolute; left: 292px; top: 34px; padding: 9px 13px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.4); font-family: Fraunces, Georgia, serif; font-size: 15px; text-decoration: none; white-space: nowrap">speech</a>
+    <a href="#" style="position: absolute; left: 48px; top: 80px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.25); font-family: Fraunces, Georgia, serif; font-size: 14px; text-decoration: none; white-space: nowrap">speaks carefully</a>
+    <a href="#" style="position: absolute; left: 196px; top: 80px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.25); font-family: Fraunces, Georgia, serif; font-size: 14px; text-decoration: none; white-space: nowrap">strife</a>
+    <a href="#" style="position: absolute; left: 270px; top: 80px; padding: 8px 12px; border-radius: 999px; border: 1px dashed rgba(236,232,223,0.3); font: 500 13px Inter, system-ui, sans-serif; color: #A39E92; text-decoration: none; white-space: nowrap">+ tag</a>
+
+    <div style="position: absolute; left: 16px; top: 142px; width: 358px; box-sizing: border-box; padding: 26px 26px 22px; border-radius: 24px; background: #1E2027; border: 1px solid rgba(236,232,223,0.12); display: flex; flex-direction: column; gap: 14px">
+      <p style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 27px; line-height: 1.32; font-weight: 400">A gentle answer turns away wrath, but a harsh word stirs up anger.</p>
+      <div style="display: flex; align-items: center; justify-content: space-between; font: 400 12px Inter, system-ui, sans-serif; color: #A39E92">
+        <span>Proverbs 15:1</span>
+        <span>BSB</span>
+      </div>
+    </div>
+    <div aria-hidden="true" style="position: absolute; left: 56px; top: 321px; width: 18px; height: 18px; background: #1E2027; border-right: 1px solid rgba(236,232,223,0.12); border-bottom: 1px solid rgba(236,232,223,0.12); transform: rotate(45deg)"></div>
+
+    <div style="position: absolute; left: 16px; top: 350px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Linked passages, strongest first</div>
+
+    <a href="#" style="position: absolute; left: 16px; top: 374px; width: 290px; box-sizing: border-box; padding: 14px 16px; border-radius: 18px 18px 18px 4px; background: #1A1C22; border: 1px solid rgba(236,232,223,0.3); text-decoration: none; display: flex; flex-direction: column; gap: 4px">
+      <div style="font: 500 11px Inter, system-ui, sans-serif; color: #D8A657">15:18 · anger, strife</div>
+      <div style="font-family: Fraunces, Georgia, serif; font-size: 16px; line-height: 1.3">A hot-tempered man stirs up strife, but a slow-to-anger man calms dispute.</div>
+    </a>
+
+    <a href="#" style="position: absolute; left: 84px; top: 470px; width: 290px; box-sizing: border-box; padding: 14px 16px; border-radius: 18px 18px 4px 18px; background: #1A1C22; border: 1px solid rgba(236,232,223,0.2); text-decoration: none; display: flex; flex-direction: column; gap: 4px">
+      <div style="font: 500 11px Inter, system-ui, sans-serif; color: #D8A657">29:11 · anger</div>
+      <div style="font-family: Fraunces, Georgia, serif; font-size: 16px; line-height: 1.3">A fool vents all his anger, but a wise man holds it back.</div>
+    </a>
+
+    <a href="#" style="position: absolute; left: 16px; top: 552px; width: 270px; box-sizing: border-box; padding: 14px 16px; border-radius: 18px 18px 18px 4px; background: #1A1C22; border: 1px solid rgba(236,232,223,0.12); text-decoration: none; display: flex; flex-direction: column; gap: 4px; color: #C9C4B8">
+      <div style="font: 500 11px Inter, system-ui, sans-serif; color: #A39E92">25:15 · speaks carefully</div>
+      <div style="font-family: Fraunces, Georgia, serif; font-size: 15px; line-height: 1.3">Through patience a ruler can be persuaded, and a gentle tongue can break a bone.</div>
+    </a>
+
+  </div>
+
+  <div style="padding: 10px 16px 28px; border-top: 1px solid rgba(236,232,223,0.1); display: flex; align-items: center; justify-content: space-around">
+    <button style="min-width: 72px; height: 44px; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font: 500 11px Inter, system-ui, sans-serif; color: #ECE8DF; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ECE8DF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4l10-10-4-4L4 16z"/></svg>
+      Note
+    </button>
+    <button style="min-width: 72px; height: 44px; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font: 500 11px Inter, system-ui, sans-serif; color: #ECE8DF; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ECE8DF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7l9 9-7 7-9-9z"/><circle cx="8" cy="8" r="1.2"/></svg>
+      Tag
+    </button>
+    <button style="min-width: 72px; height: 44px; border: 0; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font: 500 11px Inter, system-ui, sans-serif; color: #ECE8DF; cursor: pointer">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ECE8DF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 10h8M8 14h5"/></svg>
+      Group
+    </button>
+    <a href="#b-trail" style="text-decoration: none; min-width: 72px; height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font: 500 11px Inter, system-ui, sans-serif; color: #D8A657">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D8A657" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h8"/></svg>
+      Trail
+    </a>
+  </div>
+</div></div>
+      <figcaption><h3>Passage</h3><p>Speech-bubble arrangement. The verse is the central bubble; linked passages are replies beneath it, strongest first, with tags above.</p></figcaption>
+    </figure>
+    <figure class="screen" id="b-trail" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #14151A; color: #ECE8DF; font-family: Inter, system-ui, sans-serif; position: relative; overflow: hidden">
+
+  <div aria-hidden="true" style="position: absolute; left: 0; top: 0; width: 390px; height: 844px; opacity: 0.28; font-family: Fraunces, Georgia, serif">
+    <div style="position: absolute; left: 24px; top: 70px; font-size: 28px">Whole book</div>
+    <div style="position: absolute; left: 16px; top: 150px; padding: 10px 14px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.45); font-size: 17px; white-space: nowrap">conflict with a neighbor</div>
+    <div style="position: absolute; left: 228px; top: 148px; padding: 10px 14px; border-radius: 999px; border: 1px solid #D8A657; color: #D8A657; font-size: 18px">anger</div>
+    <div style="position: absolute; left: 310px; top: 150px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.35); font-size: 15px">pride</div>
+    <div style="position: absolute; left: 40px; top: 200px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.22); font-size: 14px">being wronged</div>
+    <div style="position: absolute; left: 240px; top: 198px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.28); font-size: 14px">humility</div>
+  </div>
+
+  <div style="position: absolute; left: 0; top: 196px; width: 390px; height: 648px; box-sizing: border-box; background: #1E2027; border-radius: 22px 22px 0 0; border-top: 1px solid rgba(236,232,223,0.14); padding: 10px 20px 0; display: flex; flex-direction: column">
+
+    <div aria-hidden="true" style="width: 36px; height: 4px; border-radius: 2px; background: rgba(236,232,223,0.25); align-self: center"></div>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px">
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <div style="font-family: Fraunces, Georgia, serif; font-size: 22px">Today, 3:42 PM</div>
+        <div style="font-size: 12px; color: #A39E92">Unnamed · 8 steps</div>
+      </div>
+      <button style="height: 44px; padding: 0 14px; border: 1px solid rgba(236,232,223,0.18); border-radius: 22px; background: transparent; font: 500 14px Inter, system-ui, sans-serif; color: #ECE8DF; cursor: pointer">Name trail</button>
+    </div>
+
+    <div style="position: relative; flex: 1; font-family: Fraunces, Georgia, serif">
+
+      <button style="position: absolute; left: 0; top: 22px; height: 36px; padding: 0 12px; border: 1px dashed rgba(236,232,223,0.3); border-radius: 18px; background: transparent; font: 400 13px Inter, system-ui, sans-serif; color: #A39E92; cursor: pointer">… 2 earlier steps</button>
+      <div aria-hidden="true" style="position: absolute; left: 18px; top: 58px; width: 1.5px; height: 20px; background: rgba(236,232,223,0.3)"></div>
+
+      <a href="#b-cloud" style="position: absolute; left: 0; top: 78px; padding: 9px 14px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.4); font-size: 15px; text-decoration: none; white-space: nowrap">conflict with a neighbor</a>
+      <div aria-hidden="true" style="position: absolute; left: 18px; top: 116px; width: 1.5px; height: 22px; background: rgba(236,232,223,0.3)"></div>
+
+      <a href="#b-passage" style="position: absolute; left: 0; top: 138px; padding: 9px 14px; border-radius: 16px 16px 16px 4px; background: #1A1C22; border: 1px solid rgba(236,232,223,0.3); font-size: 15px; text-decoration: none; white-space: nowrap; display: flex; gap: 10px; align-items: baseline"><span>15:1</span><span style="font: 400 12px Inter, system-ui, sans-serif; color: #A39E92">A gentle answer…</span></a>
+      <div aria-hidden="true" style="position: absolute; left: 18px; top: 176px; width: 1.5px; height: 22px; background: rgba(236,232,223,0.3)"></div>
+
+      <a href="#" style="position: absolute; left: 0; top: 198px; padding: 9px 14px; border-radius: 999px; border: 1px solid #D8A657; color: #D8A657; font-size: 15px; text-decoration: none; white-space: nowrap">anger</a>
+      <div aria-hidden="true" style="position: absolute; left: 18px; top: 236px; width: 1.5px; height: 22px; background: rgba(236,232,223,0.3)"></div>
+
+      <a href="#" style="position: absolute; left: 0; top: 258px; padding: 9px 14px; border-radius: 16px 16px 16px 4px; background: #1A1C22; border: 1px solid rgba(236,232,223,0.3); font-size: 15px; text-decoration: none; white-space: nowrap; display: flex; gap: 10px; align-items: baseline"><span>29:11</span><span style="font: 400 12px Inter, system-ui, sans-serif; color: #A39E92">A fool vents all his anger…</span></a>
+
+      <div aria-hidden="true" style="position: absolute; left: 18px; top: 296px; width: 1.5px; height: 24px; background: rgba(236,232,223,0.3)"></div>
+      <div aria-hidden="true" style="position: absolute; left: 18px; top: 320px; width: 180px; height: 1.5px; background: rgba(236,232,223,0.3)"></div>
+      <div aria-hidden="true" style="position: absolute; left: 18px; top: 320px; width: 1.5px; height: 22px; background: rgba(236,232,223,0.3)"></div>
+      <div aria-hidden="true" style="position: absolute; left: 198px; top: 320px; width: 1.5px; height: 22px; background: rgba(236,232,223,0.3)"></div>
+
+      <a href="#" style="position: absolute; left: 0; top: 342px; padding: 9px 14px; border-radius: 16px 16px 16px 4px; background: #1A1C22; border: 1px solid rgba(236,232,223,0.16); color: #C9C4B8; font-size: 15px; text-decoration: none; white-space: nowrap; display: flex; flex-direction: column; gap: 2px"><span>14:29</span><span style="font: 400 12px Inter, system-ui, sans-serif; color: #A39E92">A patient man…</span></a>
+
+      <a href="#" aria-current="step" style="position: absolute; left: 180px; top: 342px; padding: 9px 14px; border-radius: 16px 16px 16px 4px; background: #2A2415; border: 1px solid #D8A657; color: #D8A657; font-size: 15px; text-decoration: none; white-space: nowrap; display: flex; flex-direction: column; gap: 2px"><span>16:32 · here</span><span style="font: 400 12px Inter, system-ui, sans-serif; color: #D8A657">He who is slow to anger…</span></a>
+
+      <div style="position: absolute; left: 0; top: 430px; font: 400 12px Inter, system-ui, sans-serif; color: #A39E92; line-height: 1.5">Tap any step to return there. A new step from an old one starts a new branch; nothing is lost.</div>
+
+    </div>
+
+    <div style="padding: 10px 0 28px; display: flex; gap: 10px">
+      <button style="flex: 1; height: 48px; border: 1px solid rgba(236,232,223,0.18); border-radius: 12px; background: transparent; font: 500 14px Inter, system-ui, sans-serif; color: #ECE8DF; cursor: pointer">Attach to a group</button>
+      <button style="flex: 1; height: 48px; border: 0; border-radius: 12px; background: #D8A657; font: 500 14px Inter, system-ui, sans-serif; color: #14151A; cursor: pointer">Name this trail</button>
+    </div>
+  </div>
+</div></div>
+      <figcaption><h3>Trail</h3><p>A pulled-up panel over the dimmed map. A real branch is drawn at the fork, and an elided “2 earlier steps” node shows how a long tree collapses.</p></figcaption>
+    </figure>
+  </div>
+</section>
+<section class="row" id="c">
+  <div class="head">
+    <div><div class="label">Direction C</div><h2>Card</h2></div>
+    <p class="lede">One verse in large type, after the Wisdom Deck. Near-black ground, a single muted green accent, Newsreader for the text.</p>
+  </div>
+  <div class="screens">
+    <figure class="screen" id="c-cloud" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #0E0E10; color: #F2EFE8; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 62px 20px 14px; display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; align-items: center; justify-content: space-between">
+      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; line-height: 1">Whole book</h1>
+      <button aria-label="Find a tag" style="width: 44px; height: 44px; border: 0; background: #1C1C21; border-radius: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>
+      </button>
+    </div>
+    <div style="display: flex; background: #1C1C21; border-radius: 12px; padding: 3px; gap: 3px">
+      <button style="flex: 1; height: 38px; border: 0; border-radius: 9px; background: #F2EFE8; color: #0E0E10; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer">Tags</button>
+      <button style="flex: 1; height: 38px; border: 0; border-radius: 9px; background: transparent; color: #F2EFE8; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer">Groups</button>
+      <button style="flex: 1; height: 38px; border: 0; border-radius: 9px; background: transparent; color: #F2EFE8; font: 500 13px Inter, system-ui, sans-serif; cursor: pointer">Trails</button>
+    </div>
+  </div>
+
+  <div style="padding: 0 20px 8px; display: flex; align-items: center; justify-content: space-between; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">
+    <span>By weight · all axes</span>
+    <button style="height: 32px; padding: 0 8px; border: 0; background: transparent; font: 500 11px Inter, system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB7A6; cursor: pointer">Sort</button>
+  </div>
+
+  <div style="flex: 1; overflow: hidden; padding: 0 12px; display: flex; flex-direction: column; gap: 6px">
+
+    <a href="#c-passage" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 14px; min-height: 64px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.1">speech</div>
+        <div style="font-size: 12px; color: #9A968E">Domain · 61 passages</div>
+      </div>
+      <div aria-hidden="true" style="width: 56px; height: 4px; border-radius: 2px; background: #2A2A31; overflow: hidden"><div style="width: 100%; height: 4px; background: #F2EFE8"></div></div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 14px; min-height: 64px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.1">money and work</div>
+        <div style="font-size: 12px; color: #9A968E">Domain · 48 passages</div>
+      </div>
+      <div aria-hidden="true" style="width: 56px; height: 4px; border-radius: 2px; background: #2A2A31; overflow: hidden"><div style="width: 80%; height: 4px; background: #F2EFE8"></div></div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 14px; min-height: 64px; box-sizing: border-box; background: #1C1C21; border-radius: 14px; border: 1px solid #7FB7A6">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.1; color: #7FB7A6">anger</div>
+        <div style="font-size: 12px; color: #9A968E">Attitude · 23 passages · on your trail</div>
+      </div>
+      <div aria-hidden="true" style="width: 56px; height: 4px; border-radius: 2px; background: #2A2A31; overflow: hidden"><div style="width: 42%; height: 4px; background: #7FB7A6"></div></div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 14px; min-height: 64px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.1">the sluggard</div>
+        <div style="font-size: 12px; color: #9A968E">Role · 19 passages</div>
+      </div>
+      <div aria-hidden="true" style="width: 56px; height: 4px; border-radius: 2px; background: #2A2A31; overflow: hidden"><div style="width: 36%; height: 4px; background: #F2EFE8"></div></div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 14px; min-height: 64px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.1">conflict with a neighbor</div>
+        <div style="font-size: 12px; color: #9A968E">Situation · 17 passages</div>
+      </div>
+      <div aria-hidden="true" style="width: 56px; height: 4px; border-radius: 2px; background: #2A2A31; overflow: hidden"><div style="width: 32%; height: 4px; background: #F2EFE8"></div></div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 14px; min-height: 64px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.1">pride</div>
+        <div style="font-size: 12px; color: #9A968E">Attitude · 16 passages</div>
+      </div>
+      <div aria-hidden="true" style="width: 56px; height: 4px; border-radius: 2px; background: #2A2A31; overflow: hidden"><div style="width: 30%; height: 4px; background: #F2EFE8"></div></div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 14px; min-height: 64px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.1">the fear of the Lord</div>
+        <div style="font-size: 12px; color: #9A968E">Domain · 14 passages</div>
+      </div>
+      <div aria-hidden="true" style="width: 56px; height: 4px; border-radius: 2px; background: #2A2A31; overflow: hidden"><div style="width: 26%; height: 4px; background: #F2EFE8"></div></div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 14px; min-height: 64px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.1">correcting a child</div>
+        <div style="font-size: 12px; color: #9A968E">Situation · 12 passages</div>
+      </div>
+      <div aria-hidden="true" style="width: 56px; height: 4px; border-radius: 2px; background: #2A2A31; overflow: hidden"><div style="width: 22%; height: 4px; background: #F2EFE8"></div></div>
+    </a>
+
+  </div>
+
+  <div style="padding: 10px 20px 28px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #1C1C21">
+    <a href="#c-trail" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; font-weight: 500">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h8"/></svg>
+      Trail · 6
+    </a>
+    <button style="height: 44px; padding: 0 16px; border: 0; border-radius: 22px; background: #1C1C21; font: 500 13px Inter, system-ui, sans-serif; color: #9A968E; cursor: pointer; display: flex; align-items: center; gap: 8px">
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9A968E" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+      What's going on?
+    </button>
+  </div>
+</div></div>
+      <figcaption><h3>Cloud</h3><p>A ranked list with weight bars. The most honest treatment of density: every tag is a row, sortable, with its axis and passage count.</p></figcaption>
+    </figure>
+    <figure class="screen" id="c-passage" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #0E0E10; color: #F2EFE8; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 58px 16px 0; display: flex; align-items: center; justify-content: space-between">
+    <a href="#c-cloud" aria-label="Back to the list" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div style="font-size: 13px; color: #9A968E">from <span style="color: #F2EFE8">conflict with a neighbor</span></div>
+    <button aria-label="More" style="width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#F2EFE8"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+    </button>
+  </div>
+
+  <div style="margin: 12px 16px 0; padding: 36px 28px 28px; background: #1C1C21; border-radius: 24px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 352px; box-sizing: border-box">
+    <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; line-height: 1.22; font-weight: 400; letter-spacing: -0.01em">A gentle answer turns away wrath, but a harsh word stirs up anger.</p>
+    <div style="display: flex; align-items: flex-end; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 18px">Proverbs 15:1</div>
+        <div style="font-size: 12px; color: #9A968E">Berean Standard Bible</div>
+      </div>
+      <div style="display: flex; gap: 6px">
+        <button aria-label="Add a note" style="width: 44px; height: 44px; border: 0; border-radius: 22px; background: #26262C; display: flex; align-items: center; justify-content: center; cursor: pointer">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4l10-10-4-4L4 16z"/></svg>
+        </button>
+        <button aria-label="Add a tag" style="width: 44px; height: 44px; border: 0; border-radius: 22px; background: #26262C; display: flex; align-items: center; justify-content: center; cursor: pointer">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7l9 9-7 7-9-9z"/><circle cx="8" cy="8" r="1.2"/></svg>
+        </button>
+        <button aria-label="Add to a group" style="width: 44px; height: 44px; border: 0; border-radius: 22px; background: #26262C; display: flex; align-items: center; justify-content: center; cursor: pointer">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 10h8M8 14h5"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 14px 16px 0; display: flex; gap: 8px; overflow: hidden">
+    <a href="#" style="text-decoration: none; height: 36px; padding: 0 12px; border-radius: 18px; background: #1C1C21; font: 500 13px Inter, system-ui, sans-serif; display: flex; align-items: center; white-space: nowrap">conflict with a neighbor</a>
+    <a href="#" style="text-decoration: none; height: 36px; padding: 0 12px; border-radius: 18px; background: #1C1C21; color: #7FB7A6; font: 500 13px Inter, system-ui, sans-serif; display: flex; align-items: center; white-space: nowrap">anger</a>
+    <a href="#" style="text-decoration: none; height: 36px; padding: 0 12px; border-radius: 18px; background: #1C1C21; font: 500 13px Inter, system-ui, sans-serif; display: flex; align-items: center; white-space: nowrap">speech</a>
+    <a href="#" style="text-decoration: none; height: 36px; padding: 0 12px; border-radius: 18px; background: #1C1C21; font: 500 13px Inter, system-ui, sans-serif; display: flex; align-items: center; white-space: nowrap">speaks carefully</a>
+  </div>
+
+  <div style="padding: 22px 16px 6px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Follow a thread</div>
+
+  <div style="flex: 1; overflow: hidden; padding: 0 16px; display: flex; flex-direction: column; gap: 8px">
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 16px; min-height: 60px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 18px; width: 52px; flex-shrink: 0">15:18</div>
+      <div style="flex: 1; font-size: 13px; line-height: 1.35; color: #C9C5BC">A hot-tempered man stirs up strife, but a slow-to-anger man calms dispute.</div>
+      <div aria-hidden="true" style="display: flex; gap: 3px"><div style="width: 4px; height: 14px; border-radius: 2px; background: #F2EFE8"></div><div style="width: 4px; height: 14px; border-radius: 2px; background: #F2EFE8"></div><div style="width: 4px; height: 14px; border-radius: 2px; background: #F2EFE8"></div></div>
+    </a>
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 16px; min-height: 60px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 18px; width: 52px; flex-shrink: 0">29:11</div>
+      <div style="flex: 1; font-size: 13px; line-height: 1.35; color: #C9C5BC">A fool vents all his anger, but a wise man holds it back.</div>
+      <div aria-hidden="true" style="display: flex; gap: 3px"><div style="width: 4px; height: 14px; border-radius: 2px; background: #F2EFE8"></div><div style="width: 4px; height: 14px; border-radius: 2px; background: #F2EFE8"></div><div style="width: 4px; height: 14px; border-radius: 2px; background: #3A3A42"></div></div>
+    </a>
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 14px; padding: 12px 16px; min-height: 60px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 18px; width: 52px; flex-shrink: 0">25:15</div>
+      <div style="flex: 1; font-size: 13px; line-height: 1.35; color: #C9C5BC">Through patience a ruler can be persuaded, and a gentle tongue can break a bone.</div>
+      <div aria-hidden="true" style="display: flex; gap: 3px"><div style="width: 4px; height: 14px; border-radius: 2px; background: #F2EFE8"></div><div style="width: 4px; height: 14px; border-radius: 2px; background: #3A3A42"></div><div style="width: 4px; height: 14px; border-radius: 2px; background: #3A3A42"></div></div>
+    </a>
+  </div>
+
+  <div style="padding: 10px 20px 28px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #1C1C21">
+    <a href="#c-trail" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; font-weight: 500; color: #7FB7A6">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7FB7A6" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h8"/></svg>
+      Trail · step 2 of 6
+    </a>
+    <div style="font-size: 13px; color: #9A968E">Today, 3:42 PM</div>
+  </div>
+</div></div>
+      <figcaption><h3>Passage</h3><p>The passage is a card in 36-point type, with note, tag and group actions on the card itself. Threads to follow sit below as smaller cards.</p></figcaption>
+    </figure>
+    <figure class="screen" id="c-trail" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #0E0E10; color: #F2EFE8; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 58px 16px 0; display: flex; align-items: center; justify-content: space-between">
+    <a href="#c-passage" aria-label="Back to passage" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg>
+    </a>
+    <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Trail</div>
+    <button style="height: 44px; padding: 0 12px; border: 0; background: transparent; font: 500 14px Inter, system-ui, sans-serif; color: #7FB7A6; cursor: pointer">Name</button>
+  </div>
+
+  <div style="padding: 10px 20px 18px; display: flex; flex-direction: column; gap: 4px">
+    <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; line-height: 1.05">Today, 3:42 PM</h1>
+    <div style="font-size: 13px; color: #9A968E">Unnamed · 6 steps · kept for 30 days</div>
+  </div>
+
+  <div style="flex: 1; overflow: hidden; padding: 0 16px; display: flex; flex-direction: column; gap: 6px">
+
+    <a href="#c-cloud" style="text-decoration: none; display: flex; align-items: center; gap: 12px; padding: 12px 16px; min-height: 52px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="font-size: 11px; color: #9A968E; width: 14px">1</div>
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; flex: 1">conflict with a neighbor</div>
+      <div style="font-size: 11px; color: #9A968E">tag</div>
+    </a>
+
+    <a href="#c-passage" style="text-decoration: none; display: flex; align-items: center; gap: 12px; padding: 12px 16px; min-height: 52px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="font-size: 11px; color: #9A968E; width: 14px">2</div>
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; width: 52px">15:1</div>
+      <div style="flex: 1; font-size: 13px; color: #C9C5BC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">A gentle answer turns away wrath…</div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 12px; padding: 12px 16px; min-height: 52px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="font-size: 11px; color: #9A968E; width: 14px">3</div>
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; flex: 1; color: #7FB7A6">anger</div>
+      <div style="font-size: 11px; color: #9A968E">tag</div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 12px; padding: 12px 16px; min-height: 52px; box-sizing: border-box; background: #1C1C21; border-radius: 14px">
+      <div style="font-size: 11px; color: #9A968E; width: 14px">4</div>
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; width: 52px">29:11</div>
+      <div style="flex: 1; font-size: 13px; color: #C9C5BC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">A fool vents all his anger…</div>
+    </a>
+
+    <div style="padding: 10px 4px 2px; display: flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">
+      <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9A968E" stroke-width="2" stroke-linecap="round"><path d="M12 4v6M12 10l-6 6M12 10l6 6"/></svg>
+      Fork from 29:11
+    </div>
+
+    <div style="display: flex; gap: 6px">
+      <a href="#" style="text-decoration: none; flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; min-height: 112px; box-sizing: border-box; background: #1C1C21; border-radius: 14px; color: #C9C5BC">
+        <div style="display: flex; justify-content: space-between; font-size: 11px; color: #9A968E"><span>5a</span><span>earlier</span></div>
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 19px">14:29</div>
+        <div style="font-size: 12px; line-height: 1.35">A patient man has great understanding…</div>
+      </a>
+      <a href="#" aria-current="step" style="text-decoration: none; flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; min-height: 112px; box-sizing: border-box; background: #16211E; border: 1px solid #7FB7A6; border-radius: 14px">
+        <div style="display: flex; justify-content: space-between; font-size: 11px; color: #7FB7A6"><span>5b</span><span>here</span></div>
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; color: #7FB7A6">16:32</div>
+        <div style="font-size: 12px; line-height: 1.35; color: #C9C5BC">He who is slow to anger is better than a warrior…</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div style="padding: 12px 16px 28px; display: flex; gap: 8px; border-top: 1px solid #1C1C21">
+    <button style="flex: 1; height: 48px; border: 0; border-radius: 12px; background: #1C1C21; font: 500 14px Inter, system-ui, sans-serif; color: #F2EFE8; cursor: pointer">Attach to a group</button>
+    <button style="flex: 1; height: 48px; border: 0; border-radius: 12px; background: #F2EFE8; font: 500 14px Inter, system-ui, sans-serif; color: #0E0E10; cursor: pointer">Name this trail</button>
+  </div>
+</div></div>
+      <figcaption><h3>Trail</h3><p>The trail as a stack of steps. The fork becomes two cards side by side, with the current one outlined.</p></figcaption>
+    </figure>
+  </div>
+</section>
+<section class="row" id="d">
+  <div class="head">
+    <div><div class="label">Direction D</div><h2>Composing a scenario</h2></div>
+    <p class="lede">The primary use case: a scenario is several tags across axes. Four ways to build the query, with full matches ranked above partial ones and related tags suggested. Same scenario on every screen: conflict with a neighbor + anger + neighbor.</p>
+  </div>
+  <div class="screens">
+    <figure class="screen" id="d-search" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FBFAF7; color: #1C1B19; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 62px 24px 10px; display: flex; align-items: flex-end; justify-content: space-between">
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <div style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #5A5750">Scenario</div>
+      <h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 28px; font-weight: 600; line-height: 1.1">What's going on</h1>
+    </div>
+    <a href="#main" style="text-decoration: none; height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 500; color: #3A4A8C">Cloud</a>
+  </div>
+
+  <div style="margin: 0 24px; padding: 8px; border: 1px solid #D9D5CC; border-radius: 14px; background: #FFFFFF; display: flex; flex-wrap: wrap; gap: 6px; align-items: center">
+    <span style="display: flex; align-items: center; gap: 6px; height: 36px; padding: 0 6px 0 12px; border-radius: 999px; background: #1C1B19; color: #FBFAF7; font-size: 13px; font-weight: 500">conflict with a neighbor <button aria-label="Remove conflict with a neighbor" style="width: 28px; height: 28px; border: 0; border-radius: 14px; background: rgba(251,250,247,0.15); color: #FBFAF7; font: 500 14px Inter, system-ui, sans-serif; cursor: pointer">×</button></span>
+    <span style="display: flex; align-items: center; gap: 6px; height: 36px; padding: 0 6px 0 12px; border-radius: 999px; background: #1C1B19; color: #FBFAF7; font-size: 13px; font-weight: 500">anger <button aria-label="Remove anger" style="width: 28px; height: 28px; border: 0; border-radius: 14px; background: rgba(251,250,247,0.15); color: #FBFAF7; font: 500 14px Inter, system-ui, sans-serif; cursor: pointer">×</button></span>
+    <span style="display: flex; align-items: center; gap: 6px; height: 36px; padding: 0 6px 0 12px; border-radius: 999px; background: #1C1B19; color: #FBFAF7; font-size: 13px; font-weight: 500">neighbor <button aria-label="Remove neighbor" style="width: 28px; height: 28px; border: 0; border-radius: 14px; background: rgba(251,250,247,0.15); color: #FBFAF7; font: 500 14px Inter, system-ui, sans-serif; cursor: pointer">×</button></span>
+    <label for="addtag" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Add a tag</label>
+    <input id="addtag" type="text" placeholder="Add a tag…" style="flex: 1; min-width: 100px; height: 36px; border: 0; background: transparent; font: 400 15px Inter, system-ui, sans-serif; color: #1C1B19; padding: 0 6px">
+  </div>
+
+  <div style="padding: 12px 24px 0; display: flex; flex-direction: column; gap: 8px">
+    <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5750">Suggested</div>
+    <div style="display: flex; gap: 6px; overflow: hidden">
+      <button style="height: 36px; padding: 0 12px; border: 1px dashed #8C877C; border-radius: 999px; background: transparent; font: 500 13px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer; white-space: nowrap">+ being wronged</button>
+      <button style="height: 36px; padding: 0 12px; border: 1px dashed #8C877C; border-radius: 999px; background: transparent; font: 500 13px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer; white-space: nowrap">+ strife</button>
+      <button style="height: 36px; padding: 0 12px; border: 1px dashed #8C877C; border-radius: 999px; background: transparent; font: 500 13px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer; white-space: nowrap">+ speech</button>
+      <button style="height: 36px; padding: 0 12px; border: 1px dashed #8C877C; border-radius: 999px; background: transparent; font: 500 13px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer; white-space: nowrap">+ peace</button>
+    </div>
+  </div>
+
+  <div style="flex: 1; overflow: hidden; padding: 20px 24px 0; display: flex; flex-direction: column">
+
+    <div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 8px; border-bottom: 1px solid #1C1B19">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #1C1B19">Carry all three</div>
+      <div style="font-size: 12px; color: #5A5750">3 passages</div>
+    </div>
+
+    <a href="#a-passage" style="text-decoration: none; display: flex; flex-direction: column; gap: 5px; padding: 12px 0; border-bottom: 1px solid #E8E4DB; min-height: 44px">
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #5A5750"><span style="color: #1C1B19">24:28–29</span><span aria-hidden="true" style="display: flex; gap: 3px"><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span></span></div>
+      <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; line-height: 1.3">Do not testify against your neighbor without cause, and do not deceive with your lips. Do not say, “I will do to him as he has done to me; I will repay the man according to his deeds.”</div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 5px; padding: 12px 0; border-bottom: 1px solid #E8E4DB; min-height: 44px">
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #5A5750"><span style="color: #1C1B19">3:29–30</span><span aria-hidden="true" style="display: flex; gap: 3px"><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span></span></div>
+      <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; line-height: 1.3">Do not devise evil against your neighbor, for he trustfully dwells beside you. Do not accuse a man without cause, when he has done you no harm.</div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 5px; padding: 12px 0; border-bottom: 1px solid #E8E4DB; min-height: 44px">
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #5A5750"><span style="color: #1C1B19">25:8–9</span><span aria-hidden="true" style="display: flex; gap: 3px"><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span></span></div>
+      <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; line-height: 1.3">Do not bring hastily to court, for what will you do in the end when your neighbor puts you to shame? Argue your case with your neighbor without betraying another’s confidence…</div>
+    </a>
+
+    <div style="display: flex; align-items: baseline; justify-content: space-between; padding: 22px 0 8px; border-bottom: 1px solid #B5B0A5">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A5750">Carry two of three</div>
+      <div style="font-size: 12px; color: #5A5750">4 passages</div>
+    </div>
+
+    <a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 5px; padding: 12px 0; border-bottom: 1px solid #E8E4DB; min-height: 44px">
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #5A5750"><span style="color: #1C1B19">15:1</span><span aria-hidden="true" style="display: flex; gap: 3px"><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span><span style="width: 8px; height: 8px; border-radius: 4px; background: #1C1B19"></span><span style="width: 8px; height: 8px; border-radius: 4px; border: 1px solid #B5B0A5; box-sizing: border-box"></span></span><span>not neighbor</span></div>
+      <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; line-height: 1.3; color: #3D3B36">A gentle answer turns away wrath, but a harsh word stirs up anger.</div>
+    </a>
+
+  </div>
+
+  <div style="padding: 10px 24px 28px; border-top: 1px solid #E8E4DB; display: flex; align-items: center; justify-content: space-between; background: #FBFAF7">
+    <a href="#a-trail" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; font-weight: 500">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h8"/></svg>
+      Trail · 1 step
+    </a>
+    <button style="height: 44px; padding: 0 14px; border: 1px solid #D9D5CC; border-radius: 10px; background: #FFFFFF; font: 500 13px Inter, system-ui, sans-serif; color: #1C1B19; cursor: pointer">Save as context group</button>
+  </div>
+</div></div>
+      <figcaption><h3>Search-first</h3><p>After Apple Photos and Things. Chips accumulate in one field, suggestions sit in a row beneath, and results appear directly below in two bands. Three dots per row show which chosen tags it carries.</p></figcaption>
+    </figure>
+    <figure class="screen" id="d-intersect" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #14151A; color: #ECE8DF; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden; position: relative">
+
+  <div style="padding: 62px 24px 10px; display: flex; align-items: center; justify-content: space-between">
+    <h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-size: 28px; font-weight: 400; line-height: 1.1">Whole book</h1>
+    <div style="font-size: 12px; color: #A39E92">Tap tags to combine</div>
+  </div>
+
+  <div style="position: relative; flex: 1; overflow: hidden; font-family: Fraunces, Georgia, serif">
+
+    <div style="position: absolute; left: 24px; top: 8px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Situation</div>
+    <a href="#" aria-pressed="true" style="position: absolute; left: 16px; top: 32px; padding: 10px 14px; border-radius: 999px; background: #D8A657; color: #14151A; border: 1px solid #D8A657; font-size: 17px; text-decoration: none; white-space: nowrap">conflict with a neighbor</a>
+    <a href="#" style="position: absolute; left: 40px; top: 82px; padding: 8px 12px; border-radius: 999px; border: 1px dashed #D8A657; color: #D8A657; font-size: 14px; text-decoration: none; white-space: nowrap">being wronged</a>
+    <a href="#" style="position: absolute; left: 160px; top: 82px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 13px; text-decoration: none; white-space: nowrap">grief</a>
+    <a href="#" style="position: absolute; left: 14px; top: 126px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 15px; text-decoration: none; white-space: nowrap">a decision under pressure</a>
+
+    <div style="position: absolute; left: 240px; top: 8px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Attitude</div>
+    <a href="#" aria-pressed="true" style="position: absolute; left: 228px; top: 30px; padding: 10px 14px; border-radius: 999px; background: #D8A657; color: #14151A; border: 1px solid #D8A657; font-size: 18px; text-decoration: none; white-space: nowrap">anger</a>
+    <a href="#" style="position: absolute; left: 310px; top: 32px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 15px; text-decoration: none; white-space: nowrap">pride</a>
+    <a href="#" style="position: absolute; left: 240px; top: 80px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 14px; text-decoration: none; white-space: nowrap">humility</a>
+    <a href="#" style="position: absolute; left: 332px; top: 82px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 13px; text-decoration: none; white-space: nowrap">envy</a>
+    <a href="#" style="position: absolute; left: 222px; top: 126px; padding: 8px 12px; border-radius: 999px; border: 1px dashed #D8A657; color: #D8A657; font-size: 14px; text-decoration: none; white-space: nowrap">impatience</a>
+
+    <div style="position: absolute; left: 24px; top: 196px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Domain</div>
+    <a href="#" style="position: absolute; left: 16px; top: 220px; padding: 10px 14px; border-radius: 999px; border: 1px dashed #D8A657; color: #D8A657; font-size: 19px; text-decoration: none; white-space: nowrap">speech</a>
+    <a href="#" style="position: absolute; left: 110px; top: 224px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 15px; text-decoration: none; white-space: nowrap">money and work</a>
+    <a href="#" style="position: absolute; left: 16px; top: 272px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 14px; text-decoration: none; white-space: nowrap">family</a>
+    <a href="#" style="position: absolute; left: 86px; top: 272px; padding: 8px 12px; border-radius: 999px; border: 1px dashed #D8A657; color: #D8A657; font-size: 14px; text-decoration: none; white-space: nowrap">justice</a>
+
+    <div style="position: absolute; left: 240px; top: 196px; font: 500 10px Inter, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #A39E92">Role</div>
+    <a href="#" style="position: absolute; left: 236px; top: 222px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 15px; text-decoration: none; white-space: nowrap">son</a>
+    <a href="#" aria-pressed="true" style="position: absolute; left: 290px; top: 220px; padding: 9px 13px; border-radius: 999px; background: #D8A657; color: #14151A; border: 1px solid #D8A657; font-size: 16px; text-decoration: none; white-space: nowrap">neighbor</a>
+    <a href="#" style="position: absolute; left: 236px; top: 272px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(236,232,223,0.12); color: #6F6B63; font-size: 15px; text-decoration: none; white-space: nowrap">the sluggard</a>
+    <a href="#" style="position: absolute; left: 236px; top: 318px; padding: 8px 12px; border-radius: 999px; border: 1px dashed #D8A657; color: #D8A657; font-size: 14px; text-decoration: none; white-space: nowrap">friend</a>
+
+    <div style="position: absolute; left: 24px; top: 378px; display: flex; align-items: center; gap: 14px; font: 400 11px Inter, system-ui, sans-serif; color: #A39E92">
+      <span style="display: flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 7px; background: #D8A657"></span>chosen</span>
+      <span style="display: flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 7px; border: 1px dashed #D8A657; box-sizing: border-box"></span>suggested</span>
+      <span style="display: flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 7px; border: 1px solid rgba(236,232,223,0.12); box-sizing: border-box"></span>not with these</span>
+    </div>
+  </div>
+
+  <div style="margin: 0 12px 12px; padding: 14px 18px 18px; border-radius: 18px; background: #1E2027; border: 1px solid rgba(236,232,223,0.1); display: flex; flex-direction: column; gap: 12px">
+    <div aria-hidden="true" style="width: 36px; height: 4px; border-radius: 2px; background: rgba(236,232,223,0.25); align-self: center"></div>
+    <div style="display: flex; flex-wrap: wrap; gap: 6px">
+      <span style="display: flex; align-items: center; gap: 4px; height: 34px; padding: 0 4px 0 12px; border-radius: 999px; background: #D8A657; color: #14151A; font: 500 13px Inter, system-ui, sans-serif">conflict with a neighbor <button aria-label="Remove" style="width: 28px; height: 28px; border: 0; border-radius: 14px; background: rgba(20,21,26,0.15); color: #14151A; font: 500 14px Inter, system-ui, sans-serif; cursor: pointer">×</button></span>
+      <span style="display: flex; align-items: center; gap: 4px; height: 34px; padding: 0 4px 0 12px; border-radius: 999px; background: #D8A657; color: #14151A; font: 500 13px Inter, system-ui, sans-serif">anger <button aria-label="Remove" style="width: 28px; height: 28px; border: 0; border-radius: 14px; background: rgba(20,21,26,0.15); color: #14151A; font: 500 14px Inter, system-ui, sans-serif; cursor: pointer">×</button></span>
+      <span style="display: flex; align-items: center; gap: 4px; height: 34px; padding: 0 4px 0 12px; border-radius: 999px; background: #D8A657; color: #14151A; font: 500 13px Inter, system-ui, sans-serif">neighbor <button aria-label="Remove" style="width: 28px; height: 28px; border: 0; border-radius: 14px; background: rgba(20,21,26,0.15); color: #14151A; font: 500 14px Inter, system-ui, sans-serif; cursor: pointer">×</button></span>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+      <div style="font: 400 13px Inter, system-ui, sans-serif; color: #A39E92; line-height: 1.4"><span style="color: #ECE8DF; font-weight: 500">3 passages</span> carry all three<br>4 more carry two</div>
+      <a href="#d-results" style="text-decoration: none; height: 48px; padding: 0 20px; border-radius: 12px; background: #ECE8DF; color: #14151A; font: 500 14px Inter, system-ui, sans-serif; display: flex; align-items: center; white-space: nowrap">See passages</a>
+    </div>
+  </div>
+</div></div>
+      <figcaption><h3>Pick in the cloud</h3><p>After Bear. The cloud stays the surface: chosen tags fill solid, suggested ones get a dashed outline, tags that share no passages with the set go dim. A composer panel keeps the count live.</p></figcaption>
+    </figure>
+    <figure class="screen" id="d-facets" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #0E0E10; color: #F2EFE8; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 62px 20px 16px; display: flex; align-items: flex-end; justify-content: space-between">
+    <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; line-height: 1">Build a scenario</h1>
+    <button style="height: 44px; padding: 0 8px; border: 0; background: transparent; font: 500 14px Inter, system-ui, sans-serif; color: #9A968E; cursor: pointer">Clear</button>
+  </div>
+
+  <div style="flex: 1; overflow: hidden; padding: 0 12px; display: flex; flex-direction: column; gap: 6px">
+
+    <div style="padding: 12px 14px 12px; background: #1C1C21; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Situation</div>
+        <button style="height: 32px; padding: 0 8px; border: 0; background: transparent; font: 500 12px Inter, system-ui, sans-serif; color: #7FB7A6; cursor: pointer">Change</button>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center">
+        <span style="height: 36px; padding: 0 12px; border-radius: 18px; background: #F2EFE8; color: #0E0E10; font-family: Newsreader, Georgia, serif; font-size: 17px; display: flex; align-items: center">conflict with a neighbor</span>
+        <button style="height: 36px; padding: 0 12px; border: 1px dashed #5A5A63; border-radius: 18px; background: transparent; font-family: Newsreader, Georgia, serif; font-size: 15px; color: #C9C5BC; cursor: pointer">+ being wronged</button>
+      </div>
+    </div>
+
+    <div style="padding: 12px 14px 12px; background: #1C1C21; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Attitude</div>
+        <button style="height: 32px; padding: 0 8px; border: 0; background: transparent; font: 500 12px Inter, system-ui, sans-serif; color: #7FB7A6; cursor: pointer">Change</button>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center">
+        <span style="height: 36px; padding: 0 12px; border-radius: 18px; background: #F2EFE8; color: #0E0E10; font-family: Newsreader, Georgia, serif; font-size: 17px; display: flex; align-items: center">anger</span>
+        <button style="height: 36px; padding: 0 12px; border: 1px dashed #5A5A63; border-radius: 18px; background: transparent; font-family: Newsreader, Georgia, serif; font-size: 15px; color: #C9C5BC; cursor: pointer">+ impatience</button>
+        <button style="height: 36px; padding: 0 12px; border: 1px dashed #5A5A63; border-radius: 18px; background: transparent; font-family: Newsreader, Georgia, serif; font-size: 15px; color: #C9C5BC; cursor: pointer">+ pride</button>
+      </div>
+    </div>
+
+    <div style="padding: 12px 14px 12px; background: #1C1C21; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Role</div>
+        <button style="height: 32px; padding: 0 8px; border: 0; background: transparent; font: 500 12px Inter, system-ui, sans-serif; color: #7FB7A6; cursor: pointer">Change</button>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center">
+        <span style="height: 36px; padding: 0 12px; border-radius: 18px; background: #F2EFE8; color: #0E0E10; font-family: Newsreader, Georgia, serif; font-size: 17px; display: flex; align-items: center">neighbor</span>
+        <button style="height: 36px; padding: 0 12px; border: 1px dashed #5A5A63; border-radius: 18px; background: transparent; font-family: Newsreader, Georgia, serif; font-size: 15px; color: #C9C5BC; cursor: pointer">+ friend</button>
+      </div>
+    </div>
+
+    <a href="#" style="text-decoration: none; padding: 14px; min-height: 56px; box-sizing: border-box; background: transparent; border: 1px solid #26262C; border-radius: 14px; display: flex; align-items: center; justify-content: space-between">
+      <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Domain</div>
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #9A968E">Any <span style="color: #7FB7A6">· speech suggested</span>
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9A968E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </div>
+    </a>
+
+    <a href="#" style="text-decoration: none; padding: 14px; min-height: 56px; box-sizing: border-box; background: transparent; border: 1px solid #26262C; border-radius: 14px; display: flex; align-items: center; justify-content: space-between">
+      <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Result</div>
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #9A968E">Any
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9A968E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </div>
+    </a>
+
+    <a href="#" style="text-decoration: none; padding: 14px; min-height: 56px; box-sizing: border-box; background: transparent; border: 1px solid #26262C; border-radius: 14px; display: flex; align-items: center; justify-content: space-between">
+      <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Characteristic</div>
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #9A968E">Any
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9A968E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </div>
+    </a>
+
+  </div>
+
+  <div style="padding: 12px 16px 28px; border-top: 1px solid #1C1C21; display: flex; flex-direction: column; gap: 10px">
+    <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #9A968E">
+      <div aria-hidden="true" style="flex: 1; height: 6px; border-radius: 3px; background: #1C1C21; overflow: hidden; display: flex"><div style="width: 43%; height: 6px; background: #F2EFE8"></div><div style="width: 57%; height: 6px; background: #3A3A42"></div></div>
+      <span><span style="color: #F2EFE8; font-weight: 500">3</span> all three · <span style="color: #F2EFE8; font-weight: 500">4</span> two</span>
+    </div>
+    <a href="#d-results" style="text-decoration: none; height: 50px; border-radius: 12px; background: #F2EFE8; color: #0E0E10; font: 500 15px Inter, system-ui, sans-serif; display: flex; align-items: center; justify-content: center">Show 7 passages</a>
+  </div>
+</div></div>
+      <figcaption><h3>One axis at a time</h3><p>After Mela and Reminders smart lists. A card per axis, suggestions inside the axis they belong to, empty axes collapsed to “Any”. The bar previews the full-versus-partial split.</p></figcaption>
+    </figure>
+    <figure class="screen" id="d-results" style="margin:0">
+      <div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #0E0E10; color: #F2EFE8; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden">
+
+  <div style="padding: 58px 16px 0; display: flex; align-items: center; justify-content: space-between">
+    <a href="#d-facets" aria-label="Back to the scenario" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">7 passages</div>
+    <button style="height: 44px; padding: 0 8px; border: 0; background: transparent; font: 500 14px Inter, system-ui, sans-serif; color: #7FB7A6; cursor: pointer">Edit</button>
+  </div>
+
+  <div style="padding: 6px 16px 0; display: flex; gap: 6px; flex-wrap: wrap">
+    <span style="height: 32px; padding: 0 12px; border-radius: 16px; background: #F2EFE8; color: #0E0E10; font: 500 13px Inter, system-ui, sans-serif; display: flex; align-items: center">conflict with a neighbor</span>
+    <span style="height: 32px; padding: 0 12px; border-radius: 16px; background: #F2EFE8; color: #0E0E10; font: 500 13px Inter, system-ui, sans-serif; display: flex; align-items: center">anger</span>
+    <span style="height: 32px; padding: 0 12px; border-radius: 16px; background: #F2EFE8; color: #0E0E10; font: 500 13px Inter, system-ui, sans-serif; display: flex; align-items: center">neighbor</span>
+  </div>
+
+  <div style="flex: 1; overflow: hidden; padding: 18px 12px 0; display: flex; flex-direction: column; gap: 6px">
+
+    <div style="padding: 0 6px 4px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #F2EFE8">Carry all three · 3</div>
+
+    <a href="#c-passage" style="text-decoration: none; display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; background: #1C1C21; border-radius: 16px">
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; line-height: 1.3">Do not say, “I will do to him as he has done to me; I will repay the man according to his deeds.”</div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 15px; color: #C9C5BC">24:29</div>
+        <div aria-label="Carries conflict with a neighbor, anger, neighbor" style="display: flex; gap: 4px">
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">conflict</span>
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">anger</span>
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">neighbor</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; background: #1C1C21; border-radius: 16px">
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; line-height: 1.3">Do not devise evil against your neighbor, for he trustfully dwells beside you.</div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 15px; color: #C9C5BC">3:29</div>
+        <div aria-label="Carries conflict with a neighbor, anger, neighbor" style="display: flex; gap: 4px">
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">conflict</span>
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">anger</span>
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">neighbor</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; background: #1C1C21; border-radius: 16px">
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; line-height: 1.3">Argue your case with your neighbor without betraying another’s confidence…</div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 15px; color: #C9C5BC">25:9</div>
+        <div aria-label="Carries conflict with a neighbor, anger, neighbor" style="display: flex; gap: 4px">
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">conflict</span>
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">anger</span>
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">neighbor</span>
+        </div>
+      </div>
+    </a>
+
+    <div style="padding: 14px 6px 4px; display: flex; align-items: center; justify-content: space-between">
+      <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A968E">Carry two of three · 4</div>
+      <button style="height: 32px; padding: 0 10px; border: 1px dashed #5A5A63; border-radius: 16px; background: transparent; font: 500 12px Inter, system-ui, sans-serif; color: #C9C5BC; cursor: pointer">+ being wronged</button>
+    </div>
+
+    <a href="#" style="text-decoration: none; display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; background: #16161A; border: 1px solid #26262C; border-radius: 16px">
+      <div style="font-family: Newsreader, Georgia, serif; font-size: 19px; line-height: 1.3; color: #D9D5CC">A gentle answer turns away wrath, but a harsh word stirs up anger.</div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+        <div style="font-family: Newsreader, Georgia, serif; font-size: 15px; color: #C9C5BC">15:1</div>
+        <div aria-label="Carries conflict with a neighbor and anger, not neighbor" style="display: flex; gap: 4px">
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">conflict</span>
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; background: #2E3B36; color: #7FB7A6; font-size: 11px; font-weight: 500; display: flex; align-items: center">anger</span>
+          <span style="height: 22px; padding: 0 8px; border-radius: 11px; border: 1px solid #3A3A42; color: #8A867E; font-size: 11px; font-weight: 500; display: flex; align-items: center; box-sizing: border-box; text-decoration: line-through">neighbor</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <div style="padding: 10px 20px 28px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #1C1C21">
+    <a href="#c-trail" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; font-weight: 500">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2EFE8" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 12h8"/></svg>
+      Trail · 1
+    </a>
+    <button style="height: 44px; padding: 0 14px; border: 0; border-radius: 12px; background: #1C1C21; font: 500 13px Inter, system-ui, sans-serif; color: #F2EFE8; cursor: pointer">Save as context group</button>
+  </div>
+</div></div>
+      <figcaption><h3>Results</h3><p>After WebMD and Ada: the “why it matched” view. Each card wears the chosen tags it carries; in the partial band the missing one is struck through. A suggestion sits at the band boundary.</p></figcaption>
+    </figure>
+  </div>
+</section>
+<section class="notes" id="notes">
+  <h2>What the screens raise but cannot settle</h2>
+  <div class="grid">
+    <div class="card"><h4>Hiding versus dimming</h4><p>In D2, tags that share no passages with the chosen set go dim. Hiding them would be cleaner but breaks the rule that every curated tag stays in the cloud (ISC-10).</p></div>
+    <div class="card"><h4>Order within a band</h4><p>Full matches rank above partial ones (ISC-44). Within a band, rows could sort by how many chosen tags they carry, by link weight, or by book order. The screens assume weight.</p></div>
+    <div class="card"><h4>Saving a scenario</h4><p>“Save as context group” on the results screen quietly turns a query into the seed of a context group. Whether that is the intended front door to groups is an open decision.</p></div>
+    <div class="card"><h4>Tree as surface or panel</h4><p>A and C treat the trail as a screen of its own; B pulls it up over the cloud. The choice decides how often the user sees the fork they could return to.</p></div>
+    <div class="card"><h4>Cloud density</h4><p>A scrolls, B maps, C ranks. Each handles “every tag must be present” differently; only a full-count prototype will show which survives the real vocabulary.</p></div>
+    <div class="card"><h4>Verse text</h4><p>The BSB text shown here is from memory and must be checked against the shipped file before any screen goes further.</p></div>
+  </div>
+</section>
+<footer>Mockups only. Controls for later features (axis filters, “What’s going on?”) are placed for position, not scope.</footer>
+</div>
+</body>
+</html>

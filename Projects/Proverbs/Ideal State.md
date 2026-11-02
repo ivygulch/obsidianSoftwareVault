@@ -2,10 +2,10 @@
 type: isa
 project: Proverbs
 status: building
-criteria_open: 43
+criteria_open: 46
 criteria_done: 0
 created: 2026-10-26
-updated: 2026-10-26
+updated: 2026-11-02
 ---
 
 # Proverbs — Ideal State
@@ -16,7 +16,7 @@ updated: 2026-10-26
 
 ## Ideal State
 
-Proverbs is how I find what the book says about what is happening in my life, by following the book's structure instead of reading it in chapter order. I open the app to a cloud of tags, a word map of the categories and keywords the book has been given. I pick the one that looks closest to what I am dealing with and it shows me its passages. From any passage, links lead outward to other passages and other tags, and the links are weighted, so the ones that belong together in sense stand out from the ones that merely share a word. How that weight is decided is not yet settled. I follow one, then another. The path I take is kept as a tree I can see and move back along, so a detour is never lost: I return to a fork and take the other branch. It works the way a wiki about one book would, if the book had been linked by someone who knows it. If a friend asks, it is Proverbs linked up like a wiki: you start from whatever you are dealing with, follow the threads, and keep the trail.
+Proverbs is how I find what the book says about what is happening in my life, by following the book's structure instead of reading it in chapter order. I open the app to a cloud of tags, a word map of the categories and keywords the book has been given. I come with a particular scenario in mind, and a scenario is usually several tags at once, on different axes: a situation, an attitude, a role, an area of life. The tags are a search index computed over the whole book ahead of time. I pick the tags that together describe what I am dealing with, one or several, and the app shows me the passages that speak to that combination, the ones carrying every tag I chose before the ones carrying only some. What I am looking for is counsel from the book itself on my scenario; the cloud, the links, and the trail are how I reach it. When I select a tag, the app suggests related tags that may be pertinent, drawn from the curated index itself, so I can widen or sharpen the scenario without hunting through the cloud. Suggestions are a setting I can switch off. From any passage, links lead outward to other passages and other tags, and the links are weighted, so the ones that belong together in sense stand out from the ones that merely share a word. How that weight is decided is not yet settled. I follow one, then another. The path I take is kept as a tree I can see and move back along, so a detour is never lost: I return to a fork and take the other branch. It works the way a wiki about one book would, if the book had been linked by someone who knows it. If a friend asks, it is Proverbs linked up like a wiki: you start from whatever you are dealing with, follow the threads, and keep the trail.
 
 The passage is the focus. When one is selected it is shown in full, in the text's own words with its reference, and its connections are arranged around it. A speech-bubble look is one option for that arrangement; the exact UI is undecided. Nothing on the screen is written by the app. The words are the text, the tags, and my own notes. The app finds and arranges; it never interprets. My own application notes and the public-domain commentaries belong to a later layer, one level below the passage, and are not part of finding.
 
@@ -54,6 +54,8 @@ A year on, I have a handful of named trails and context groups I return to, a cl
 
 ## Decisions
 
+- 2026-11-02 — When the user selects a tag, the app suggests related tags that may be pertinent; the suggestions come from the curated index (tags sharing passages or linked to the selected tag), never generated, and are offered as tags only. A setting enables or disables suggestions; on by default (default assumed, not stated). ISC-45 and ISC-46 added. How relatedness is computed is open, as link weighting is.
+- 2026-11-02 — Primary use case restated: the user comes with a particular scenario in mind, usually a combination of several tags across axes, and wants counsel from the book on it; the tags are a precomputed search index over the book. Replaces "I pick the one that looks closest to what I am dealing with and it shows me its passages." Reason: a single-tag entry undersells the index; real scenarios span a situation, an attitude, a role, and a domain at once, and the meander follows from the result rather than replacing it. ISC-44 added; ISC-11 stays as the single-tag case. How results beyond the all-tags set are ordered, and how the combination is composed in the UI, remain open.
 - 2026-10-26 — Some tags are version-specific, because translations and underlying texts differ; a version-specific tag belongs to its version and is not shown against another. Added to Constraints.
 - 2026-10-26 — Text order reversed: start with a freely available version (BSB or another); investigate ESV and other commercial licenses only after a working prototype. Replaces "the ESV if Crossway's terms allow it, and otherwise the BSB." Reason: the prototype should not wait on a licensing conversation.
 - 2026-10-26 — Context group defined: a cloud the user creates and names for something ongoing in their life (a person, a situation, a project); it holds the passages they put in it, their notes on it, and any trails they attach; opening it shows those passages and their tags as a map in the same cloud view; it differs from a curated group only in that the user made it and can edit it, and it may reference a curated group. Decided in `/isa-criteria` batch 4 (D1, ISC-22).
@@ -410,5 +412,29 @@ _**Status** values: `open` · `done` · `dropped`. **Scope** is optional: `v1`, 
 - **Scope:** v1
 - **Eval level:** assert
 - **Eval:** `ISC_43_versionTagsReferenceShippedVersions` (missing).
+- **Status:** open
+- **Last checked:** —
+
+### ISC-44 — A scenario of several tags
+- **Criterion:** Selecting more than one tag yields a passage list in which every passage carrying all the selected tags appears before any passage carrying only some of them, with the user's overrides applied and version-specific tags respected. Each passage shows which of the selected tags it carries. How passages within each band are ordered is open and not tested here.
+- **Scope:** v1
+- **Eval level:** assert
+- **Eval:** `ISC_44_multiTagScenarioRanksFullMatchesFirst` (missing); for sample combinations of two and three tags across different axes, asserts the all-tags set is complete and precedes every partial match, and that each row's carried-tags set equals the data after overrides.
+- **Status:** open
+- **Last checked:** —
+
+### ISC-45 — Related tags are suggested
+- **Criterion:** When a tag is selected and suggestions are enabled, the app presents a set of related tags, each an existing tag in the active cloud, none already selected, each derived from the curated index (sharing a passage with the selected tag or linked to it), in descending relatedness order. The result contains tags only, no prose. How relatedness is computed is open and not tested here.
+- **Scope:** v1
+- **Eval level:** assert
+- **Eval:** `ISC_45_selectedTagYieldsRelatedTags` (missing); for a sample of tags, asserts every suggestion exists in the cloud, is not the selected tag or any already-selected tag, shares a passage with or is linked to the selected tag in the data, and the list is in descending relatedness order.
+- **Status:** open
+- **Last checked:** —
+
+### ISC-46 — Suggestions can be switched off
+- **Criterion:** A setting enables or disables suggested tags. When off, selecting a tag presents no suggestions anywhere; when on again, they return. The default is on.
+- **Scope:** v1
+- **Eval level:** assert
+- **Eval:** `ISC_46_suggestionSettingTogglesSuggestions` (missing); default state is on, toggling off yields an empty suggestion set for every sampled tag, toggling on restores it.
 - **Status:** open
 - **Last checked:** —

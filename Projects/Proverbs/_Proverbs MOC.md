@@ -8,6 +8,8 @@ Proverbs linked up like a wiki: a cloud of tags over the whole book, weighted li
 
 - [[Projects/Proverbs/Ideal State|Ideal State]] — ISA: intent, constraints, decisions, criteria with evals
 - [[Projects/Proverbs/Design|Design]] — how it is built: working mode, scaffold decisions, open implementation questions
+- [[Get Wisdom Design Document]] — standalone snapshot of everything decided and open (2026-11-02), written to paste into a chat for exploring design alternatives
+- [[_Design Explorations MOC|Design Explorations]] — versioned UI explorations from Claude.ai chat (HTML presentation plus Rationale per version); v1 2026-11-02
 - [[Applying Proverbs]] — the originating idea note: one-liner, three questions, prior art, open questions
 - [[Exploration Plan]] — seven research phases, kill criteria, earlier V1 candidate and long-range vision (2026-10-04; predates the ISA)
 - [[Idea Backlog]] — every raw idea, grouped
