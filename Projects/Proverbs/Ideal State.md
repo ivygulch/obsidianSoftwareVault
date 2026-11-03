@@ -5,7 +5,7 @@ status: building
 criteria_open: 46
 criteria_done: 0
 created: 2026-10-26
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Proverbs — Ideal State
@@ -54,6 +54,7 @@ A year on, I have a handful of named trails and context groups I return to, a cl
 
 ## Decisions
 
+- 2026-11-03 — Form (antithetical pair, better-than saying, numerical saying, instruction, warning, observation) is not a user-facing axis. It stays in the builder's schema as an attribute on the passage, used for passage boundaries, text layout in the passage view, finding paired and repeated sayings for editorial links, and tagger consistency; it is never emitted as a tag into the curated data, so it never appears in the cloud. Reason: a scenario is never described by form, and ISC-10 would otherwise put six form tags in the cloud that match nothing anyone is dealing with. Six user-facing axes remain: Situation, Attitude, Characteristic, Result, Domain, Role.
 - 2026-11-02 — When the user selects a tag, the app suggests related tags that may be pertinent; the suggestions come from the curated index (tags sharing passages or linked to the selected tag), never generated, and are offered as tags only. A setting enables or disables suggestions; on by default (default assumed, not stated). ISC-45 and ISC-46 added. How relatedness is computed is open, as link weighting is.
 - 2026-11-02 — Primary use case restated: the user comes with a particular scenario in mind, usually a combination of several tags across axes, and wants counsel from the book on it; the tags are a precomputed search index over the book. Replaces "I pick the one that looks closest to what I am dealing with and it shows me its passages." Reason: a single-tag entry undersells the index; real scenarios span a situation, an attitude, a role, and a domain at once, and the meander follows from the result rather than replacing it. ISC-44 added; ISC-11 stays as the single-tag case. How results beyond the all-tags set are ordered, and how the combination is composed in the UI, remain open.
 - 2026-10-26 — Some tags are version-specific, because translations and underlying texts differ; a version-specific tag belongs to its version and is not shown against another. Added to Constraints.

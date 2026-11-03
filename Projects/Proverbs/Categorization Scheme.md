@@ -3,7 +3,7 @@ type: note
 status: draft
 tags: [proverbs, app-idea, taxonomy, data-model]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-11-03
 ---
 
 # Applying Proverbs — Categorization Scheme (draft)
@@ -26,9 +26,9 @@ Each type is a separate axis. A passage can carry categories from several types 
 | **Result** | The outcome the passage promises or warns of | ruin, honor, poverty, long life, shame, peace, favor, strife, security |
 | **Domain** | The area of life | speech, money and work, family, friendship, leadership and rulers, justice, the fear of the Lord, learning and instruction, food and drink, the body |
 | **Role** | Who the passage is about or addressed to | son, parent, king, friend, neighbor, servant, wife, the poor, the rich, the scoffer, the sluggard |
-| **Form** | How the saying works | antithetical pair, better-than saying, numerical saying, instruction, warning, observation |
+| ~~**Form**~~ | How the saying works | antithetical pair, better-than saying, numerical saying, instruction, warning, observation. **Decided 2026-11-03: not a user-facing axis.** Kept as a passage attribute in the builder for boundaries, layout, editorial-link finding, and tagger consistency; never emitted as a tag |
 
-Open: whether Domain and Situation are one axis or two; whether Form is worth exposing to users or only to the categorizer; whether Characteristic should keep the deck's seven as a fixed top level.
+Open: whether Domain and Situation are one axis or two; whether Characteristic should keep the deck's seven as a fixed top level. Settled: Form is categorizer-only (ISA Decision 2026-11-03).
 
 ## Keywords
 

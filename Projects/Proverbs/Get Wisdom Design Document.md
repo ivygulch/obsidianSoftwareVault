@@ -3,7 +3,7 @@ type: design-doc
 project: Proverbs
 status: snapshot
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Get Wisdom — Design Document
@@ -95,9 +95,9 @@ Each axis is separate; a passage can carry values from several at once.
 | Result | The outcome promised or warned of | ruin, honor, poverty, long life, shame, peace, favor, strife, security |
 | Domain | The area of life | speech, money and work, family, friendship, leadership and rulers, justice, the fear of the Lord, learning and instruction, food and drink, the body |
 | Role | Who the passage is about or addressed to | son, parent, king, friend, neighbor, servant, wife, the poor, the rich, the scoffer, the sluggard |
-| Form | How the saying works | antithetical pair, better-than saying, numerical saying, instruction, warning, observation |
+| Form (builder only) | How the saying works | antithetical pair, better-than saying, numerical saying, instruction, warning, observation. Decided 2026-11-03: a passage attribute in the builder, never a user-facing tag |
 
-Open on the axes: whether Domain and Situation are one axis or two; whether Form is exposed to users or only to the categorizer; whether Characteristic keeps the deck's seven as a fixed top level.
+Open on the axes: whether Domain and Situation are one axis or two; whether Characteristic keeps the deck's seven as a fixed top level. Settled 2026-11-03: Form is not a user-facing axis; six axes reach the cloud.
 
 ### Links
 
@@ -174,6 +174,7 @@ Open: the builder's authoring surface for tags, links, groups, passage boundarie
 
 ## 10. Decisions log
 
+- 2026-11-03 — Form is not a user-facing axis; it stays in the builder as a passage attribute and is never emitted as a tag. Six axes reach the cloud.
 - 2026-11-02 — Selecting a tag suggests related tags from the curated index; a setting switches suggestions off; default on. ISC-45 and ISC-46 added.
 - 2026-11-02 — Primary use case restated: a scenario is usually several tags across axes; the tags are a precomputed search index; the user wants counsel from the book on that scenario. ISC-44 added (full matches before partial matches).
 - 2026-10-27 — Builder is an iPhone and iPad app on TCA 2.0 (superseding macOS-only); Supabase Postgres store; three roles; USFM confirmed as the import format; import is admin-only; supabase-swift never in the user app.
@@ -205,7 +206,7 @@ These are the places where design alternatives are wanted.
 ### Content and data
 
 - **Link weighting.** Weights exist and order links; how they are computed (shared axis values, keyword overlap, editorial weight, some combination) is unsettled.
-- **Axis questions.** Domain versus Situation as one or two axes; whether Form is user-facing; whether Characteristic keeps a fixed top seven. Whether a user can hide or rename app categories.
+- **Axis questions.** Domain versus Situation as one or two axes; whether Characteristic keeps a fixed top seven. (Form settled 2026-11-03: builder-only.) Whether a user can hide or rename app categories.
 - **Fixed versus growing.** Whether the categorization ships as fixed data or grows over releases (the update path is designed either way).
 - **Which version ships first,** and whether to ship two with a switch.
 - **Whether the BSB's footnotes and cross-references** are under the same CC0 dedication as its text.
